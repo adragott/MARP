@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MARP)(type Legacy)(uri /media/penguin/Storage/Shared/MARP/MARP_Electrical/SAMD21_TESTING/Libraries/MARP.lib)(options "")(descr ""))
+)
