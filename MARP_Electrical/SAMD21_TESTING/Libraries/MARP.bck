@@ -12,4 +12,9 @@ K USB Serial
 F http://www.ftdichip.com/Products/ICs/FT232RL.htm
 $ENDCMP
 #
+$CMP SW_SPDT
+D Switch, single pole double throw
+K switch single-pole double-throw spdt ON-ON
+$ENDCMP
+#
 #End Doc Library
