@@ -1,0 +1,21 @@
+Download ISO
+Run Etcher (or really any software that puts an iso on a usb)
+boot up mint usb
+Run mint from flash drive
+load into mint desktop from the usb and open the installer
+Choose NOT to connect to internet
+check installing third party software
+"What kind of install do you want" (ie wipe disk and install mint or install alongside): Choose something else
+Creating Partitions:
+	First, create a boot partition:
+		EXT4, /boot, 2048MB
+	Next, create root partition:
+		EXT4, /, 30000MB (Size here needs to be at least 20GB)
+	Create swap area:
+		swaparea, N/A, (swap amount = (RAM * 1024 * 1.5))
+				Example: 8GB * 1024 * 1.5 = 12228MB swap size
+	Create home partition:
+		EXT4, /home, Whatever size you want (where Documents, downloads, videos, etc) goes
+	Create usr partition:
+		EXT4, /usr, whatever size you want (think of this as where your programs will go, although its not exactly true and its not always the case)
+
