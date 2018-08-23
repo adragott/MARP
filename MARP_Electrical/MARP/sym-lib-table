@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MARP)(type Legacy)(uri ${KIPRJMOD}/Libraries/MARP.lib)(options "")(descr ""))
+)

@@ -208,4 +208,61 @@ Wire Wire Line
 Wire Wire Line
 	3900 3850 3900 3650
 Connection ~ 3900 3650
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5B6A5B6A
+P 3850 5700
+F 0 "J?" H 3900 6117 50  0000 C CNN
+F 1 "CORTEX_DEBUGGER" H 3900 6026 50  0000 C CNN
+F 2 "" H 3850 5700 50  0001 C CNN
+F 3 "~" H 3850 5700 50  0001 C CNN
+	1    3850 5700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 5800
+NoConn ~ 3650 5900
+NoConn ~ 4150 5800
+Wire Wire Line
+	5750 5750 4750 5750
+Wire Wire Line
+	4750 5750 4750 5600
+Wire Wire Line
+	4750 5600 4150 5600
+Wire Wire Line
+	5750 5850 4800 5850
+Wire Wire Line
+	4800 5850 4800 5500
+Wire Wire Line
+	4800 5500 4150 5500
+NoConn ~ 4150 5700
+Wire Wire Line
+	4150 5900 4350 5900
+Wire Wire Line
+	4350 5900 4350 2750
+Wire Wire Line
+	4350 2750 5750 2750
+Wire Wire Line
+	3650 5500 3500 5500
+Text GLabel 3500 5500 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	3150 5600 3150 5700
+Wire Wire Line
+	3150 5600 3650 5600
+Wire Wire Line
+	3650 5700 3150 5700
+Connection ~ 3150 5700
+Wire Wire Line
+	3150 5700 3150 6000
+$Comp
+L power:GND #PWR?
+U 1 1 5B6AAE54
+P 3150 6000
+F 0 "#PWR?" H 3150 5750 50  0001 C CNN
+F 1 "GND" H 3155 5827 50  0000 C CNN
+F 2 "" H 3150 6000 50  0001 C CNN
+F 3 "" H 3150 6000 50  0001 C CNN
+	1    3150 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
