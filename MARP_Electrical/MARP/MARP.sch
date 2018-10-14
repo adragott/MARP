@@ -141,12 +141,6 @@ F 8 "Unavailable" H 6150 4150 50  0001 L BNN "Field8"
 	1    6150 4150
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 11850 0    8800 8250
-U 5B7E0FCD
-F0 "MARP_PM" 50
-F1 "marp_power_manager.sch" 50
-$EndSheet
 $Comp
 L XBEE_900HP:XBP9B-XCWT-002 U4
 U 1 1 5B7E3A21
@@ -821,4 +815,10 @@ F 3 "" H 10950 3000 50  0001 C CNN
 	1    10950 3000
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 12100 50   8800 8250
+U 5B7E0FCD
+F0 "MARP_PM" 50
+F1 "marp_power_manager.sch" 50
+$EndSheet
 $EndSCHEMATC
