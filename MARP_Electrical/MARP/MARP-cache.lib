@@ -1,41 +1,46 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector:292304-1
+# CD74HC4050M_CD74HC4050M
 #
-DEF Connector:292304-1 P 0 40 Y Y 1 L N
-F0 "P" 0 250 50 H V L BNN
-F1 "Connector:292304-1" 0 -300 50 H V L BNN
-F2 "TE_292304-1" 0 -450 50 H I L BNN
-F3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/292304-1/A31725-ND/773785?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 -550 50 H I L BNN
-F4 "TE Connectivity" 0 -700 50 H I L BNN
-F5 "A31725-ND" 0 -850 50 H I L BNN "Field6"
-F6 "292304-1" 0 450 50 H I L BNN "Field7"
-F7 "http://www.te.com/usa-en/product-292304-1.html" 50 600 50 H I L BNN "Field9"
-F8 "USB B R/A RECP CONNECTOR,LEAD FREE" 50 800 50 H I L BNN "Field10"
+DEF CD74HC4050M_CD74HC4050M U 0 40 Y Y 1 L N
+F0 "U" -211 805 50 H V L BNN
+F1 "CD74HC4050M_CD74HC4050M" -154 -1173 50 H V L BNN
+F2 "SOIC127P600X175-16N" 0 0 50 H I L BNN
+F3 "SOIC-16 Harris" 0 0 50 H I L BNN
+F4 "CD74HC4050M" 0 0 50 H I L BNN
+F5 "Texas" 0 0 50 H I L BNN "Field6"
+F6 "Unavailable" 0 0 50 H I L BNN "Field7"
+F7 "None" 0 0 50 H I L BNN "Field8"
 DRAW
-P 2 0 0 10 -50 -200 0 -250 N
-P 2 0 0 10 -50 200 -50 -200 N
-P 2 0 0 10 0 -250 300 -250 N
-P 2 0 0 30 0 -150 100 -150 N
-P 2 0 0 30 0 -50 100 -50 N
-P 2 0 0 30 0 50 100 50 N
-P 2 0 0 30 0 150 100 150 N
-P 2 0 0 10 0 250 -50 200 N
-P 2 0 0 10 300 -250 300 250 N
-P 2 0 0 10 300 250 0 250 N
-X VCC 1 -200 150 200 R 40 40 0 0 W
-X D- 2 -200 50 200 R 40 40 0 0 B
-X D+ 3 -200 -50 200 R 40 40 0 0 B
-X GND 4 -200 -150 200 R 40 40 0 0 P
+P 2 0 0 16 -500 -1000 500 -1000 N
+P 2 0 0 16 -500 700 -500 -1000 N
+P 2 0 0 16 500 -1000 500 700 N
+P 2 0 0 16 500 700 -500 700 N
+X VCC 1 -700 400 200 R 40 40 0 0 W
+X 4Y 10 700 200 200 L 40 40 0 0 O
+X 5A 11 -700 -200 200 R 40 40 0 0 I
+X 5Y 12 700 100 200 L 40 40 0 0 O
+X NC 13 -700 -800 200 R 40 40 0 0 N
+X 6A 14 -700 -300 200 R 40 40 0 0 I
+X 6Y 15 700 0 200 L 40 40 0 0 O
+X NC_2 16 -700 -700 200 R 40 40 0 0 N
+X 1Y 2 700 500 200 L 40 40 0 0 O
+X 1A 3 -700 200 200 R 40 40 0 0 I
+X 2Y 4 700 400 200 L 40 40 0 0 O
+X 2A 5 -700 100 200 R 40 40 0 0 I
+X 3Y 6 700 300 200 L 40 40 0 0 O
+X 3A 7 -700 -500 200 R 40 40 0 0 I
+X GND 8 -700 0 200 R 40 40 0 0 P
+X 4A 9 -700 -100 200 R 40 40 0 0 I
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_02x05_Odd_Even
+# Connector_Generic_Conn_02x05_Odd_Even
 #
-DEF Connector_Generic:Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "Connector_Generic:Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F1 "Connector_Generic_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -66,11 +71,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:CP1
+# Device_CP1
 #
-DEF Device:CP1 C 0 10 N N 1 F N
+DEF Device_CP1 C 0 10 N N 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:CP1" 25 -100 50 H V L CNN
+F1 "Device_CP1" 25 -100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -86,11 +91,11 @@ X ~ 2 0 -150 130 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:CP1_Small
+# Device_CP1_Small
 #
-DEF Device:CP1_Small C 0 10 N N 1 F N
+DEF Device_CP1_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device:CP1_Small" 10 -80 50 H V L CNN
+F1 "Device_CP1_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -106,11 +111,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C_Small
+# Device_C_Small
 #
-DEF Device:C_Small C 0 10 N N 1 F N
+DEF Device_C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device:C_Small" 10 -80 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -124,11 +129,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Ferrite_Bead_Small
+# Device_Ferrite_Bead_Small
 #
-DEF Device:Ferrite_Bead_Small L 0 0 N Y 1 F N
-F0 "L" 75 50 50 H V L CNN
-F1 "Device:Ferrite_Bead_Small" 75 -50 50 H V L CNN
+DEF Device_Ferrite_Bead_Small FB 0 0 N Y 1 F N
+F0 "FB" 75 50 50 H V L CNN
+F1 "Device_Ferrite_Bead_Small" 75 -50 50 H V L CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -145,11 +150,11 @@ X ~ 2 0 -100 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 N N 1 F N
+DEF Device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -168,11 +173,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_Small
+# Device_R_Small
 #
-DEF Device:R_Small R 0 10 N N 1 F N
+DEF Device_R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "Device:R_Small" 30 -40 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -185,11 +190,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Interface_USB:FT232RL
+# Interface_USB_FT232RL
 #
-DEF Interface_USB:FT232RL U 0 40 Y Y 1 F N
+DEF Interface_USB_FT232RL U 0 40 Y Y 1 F N
 F0 "U" -650 900 50 H V L CNN
-F1 "Interface_USB:FT232RL" 400 900 50 H V L CNN
+F1 "Interface_USB_FT232RL" 400 900 50 H V L CNN
 F2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -226,11 +231,41 @@ X DCR 9 800 200 150 L 50 50 1 1 I L
 ENDDRAW
 ENDDEF
 #
-# MARP:2x2_Connector
+# MARP-rescue_292304-1-Connector
 #
-DEF MARP:2x2_Connector J 0 40 Y Y 1 F N
+DEF MARP-rescue_292304-1-Connector P 0 40 Y Y 1 L N
+F0 "P" 0 250 50 H V L BNN
+F1 "MARP-rescue_292304-1-Connector" 0 -300 50 H V L BNN
+F2 "TE_292304-1" 0 -450 50 H I L BNN
+F3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/292304-1/A31725-ND/773785?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 -550 50 H I L BNN
+F4 "TE Connectivity" 0 -700 50 H I L BNN
+F5 "A31725-ND" 0 -850 50 H I L BNN "Field6"
+F6 "292304-1" 0 450 50 H I L BNN "Field7"
+F7 "http://www.te.com/usa-en/product-292304-1.html" 50 600 50 H I L BNN "Field9"
+F8 "USB B R/A RECP CONNECTOR,LEAD FREE" 50 800 50 H I L BNN "Field10"
+DRAW
+P 2 0 0 10 -50 -200 0 -250 N
+P 2 0 0 10 -50 200 -50 -200 N
+P 2 0 0 10 0 -250 300 -250 N
+P 2 0 0 30 0 -150 100 -150 N
+P 2 0 0 30 0 -50 100 -50 N
+P 2 0 0 30 0 50 100 50 N
+P 2 0 0 30 0 150 100 150 N
+P 2 0 0 10 0 250 -50 200 N
+P 2 0 0 10 300 -250 300 250 N
+P 2 0 0 10 300 250 0 250 N
+X VCC 1 -200 150 200 R 40 40 0 0 W
+X D- 2 -200 50 200 R 40 40 0 0 B
+X D+ 3 -200 -50 200 R 40 40 0 0 B
+X GND 4 -200 -150 200 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# MARP_2x2_Connector
+#
+DEF MARP_2x2_Connector J 0 40 Y Y 1 F N
 F0 "J" 0 350 50 H V C CNN
-F1 "MARP:2x2_Connector" 0 -300 50 H V C CNN
+F1 "MARP_2x2_Connector" 0 -300 50 H V C CNN
 F2 "" 100 0 50 H I C CNN
 F3 "" 100 0 50 H I C CNN
 DRAW
@@ -242,11 +277,11 @@ X Vcc ~ -250 100 100 R 39 39 1 1 I
 ENDDRAW
 ENDDEF
 #
-# MARP:ATSAMD21J18A-AU
+# MARP_ATSAMD21J18A-AU
 #
-DEF MARP:ATSAMD21J18A-AU U 0 40 N Y 1 L N
+DEF MARP_ATSAMD21J18A-AU U 0 40 N Y 1 L N
 F0 "U" -603 2010 50 H V L BNN
-F1 "MARP:ATSAMD21J18A-AU" -603 -2211 50 H V L BNN
+F1 "MARP_ATSAMD21J18A-AU" -603 -2211 50 H V L BNN
 F2 "QFP50P1200X1200X120_64N" 0 0 50 H I L BNN
 F3 "None" 0 0 50 H I L BNN
 F4 "Microchip" 0 0 50 H I L BNN
@@ -326,11 +361,25 @@ X PB06 9 800 600 200 L 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
-# MAX31855:CAP_CERAMIC0603
+# MAX31855_+5V
 #
-DEF MAX31855:CAP_CERAMIC0603 C 0 40 Y Y 1 L N
+DEF MAX31855_+5V #P+ 0 40 Y Y 1 L P
+F0 "#P+" 0 0 50 H I C CNN
+F1 "MAX31855_+5V" -100 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 0 -50 -75 N
+P 2 1 0 0 50 -75 0 0 N
+X +5V 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# MAX31855_CAP_CERAMIC0603
+#
+DEF MAX31855_CAP_CERAMIC0603 C 0 40 Y Y 1 L N
 F0 "C" 100 100 50 H V L BNN
-F1 "MAX31855:CAP_CERAMIC0603" 100 0 50 H V L BNN
+F1 "MAX31855_CAP_CERAMIC0603" 100 0 50 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -343,11 +392,11 @@ X P$2 2 0 -100 100 U 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# Regulator_Switching:LM2576HVS-ADJ
+# Regulator_Switching_LM2576HVS-ADJ
 #
-DEF Regulator_Switching:LM2576HVS-ADJ U 0 10 Y Y 1 F N
+DEF Regulator_Switching_LM2576HVS-ADJ U 0 10 Y Y 1 F N
 F0 "U" -400 250 50 H V L CNN
-F1 "Regulator_Switching:LM2576HVS-ADJ" 0 250 50 H V L CNN
+F1 "Regulator_Switching_LM2576HVS-ADJ" 0 250 50 H V L CNN
 F2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" 0 -250 50 H I L CIN
 F3 "" 0 0 50 H I C CNN
 ALIAS LM2576HVS-3.3 LM2576HVS-5 LM2576HVS-15 LM2576HVS-ADJ LM2576S-12 LM2576S-3.3 LM2576S-5 LM2576S-15 LM2576S-ADJ LM2575BU-ADJ LM2575-3.3BU LM2575-5.0BU LM2575-12BU GL2576-3.3TA5R GL2576-5.0TA5R GL2576-12TA5R GL2576-15TA5R GL2576-ATA5R
@@ -364,11 +413,11 @@ X ~ON~/OFF 5 -500 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# XBEE_900HP:XBP9B-XCWT-002
+# XBEE_900HP_XBP9B-XCWT-002
 #
-DEF XBEE_900HP:XBP9B-XCWT-002 U 0 40 Y Y 1 L N
+DEF XBEE_900HP_XBP9B-XCWT-002 U 0 40 Y Y 1 L N
 F0 "U" -901 1001 50 H V L BNN
-F1 "XBEE_900HP:XBP9B-XCWT-002" -902 -1002 50 H V L BNN
+F1 "XBEE_900HP_XBP9B-XCWT-002" -902 -1002 50 H V L BNN
 F2 "DIP2200W51P200L3294H279Q20P" 0 0 50 H I L BNN
 F3 "Xbee-Pro Xsc S3b, 900 Mhz, 250mw, Wire Antenna, 19.2 Kbps" 0 0 50 H I L BNN
 F4 "Digi International" 0 0 50 H I L BNN
@@ -403,11 +452,11 @@ X NDTR/SLEEP_RQ/DIO8 9 -1100 -100 200 R 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
-# dk_Interface-Sensor-and-Detector-Interfaces:MAX31855KASA_
+# dk_Interface-Sensor-and-Detector-Interfaces_MAX31855KASA_
 #
-DEF dk_Interface-Sensor-and-Detector-Interfaces:MAX31855KASA_ U 0 40 Y Y 1 F N
+DEF dk_Interface-Sensor-and-Detector-Interfaces_MAX31855KASA_ U 0 40 Y Y 1 F N
 F0 "U" -201 40 60 H V L CNN
-F1 "dk_Interface-Sensor-and-Detector-Interfaces:MAX31855KASA_" 223 -646 60 H V L CNN
+F1 "dk_Interface-Sensor-and-Detector-Interfaces_MAX31855KASA_" 223 -646 60 H V L CNN
 F2 "digikey-footprints:SOIC-8_W3.9mm" 200 200 60 H I L CNN
 F3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" 200 300 60 H I L CNN
 F4 "MAX31855KASA+-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -432,11 +481,11 @@ X DNC 8 -200 -500 100 R 50 50 1 1 N N
 ENDDRAW
 ENDDEF
 #
-# dk_Pushbutton-Switches:GPTS203211B
+# dk_Pushbutton-Switches_GPTS203211B
 #
-DEF dk_Pushbutton-Switches:GPTS203211B S 0 40 Y Y 1 F N
+DEF dk_Pushbutton-Switches_GPTS203211B S 0 40 Y Y 1 F N
 F0 "S" -150 150 50 H V C CNN
-F1 "dk_Pushbutton-Switches:GPTS203211B" 0 -100 50 H V C CNN
+F1 "dk_Pushbutton-Switches_GPTS203211B" 0 -100 50 H V C CNN
 F2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" 200 200 50 H I L CNN
 F3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" 200 300 60 H I L CNN
 F4 "CW181-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -461,11 +510,80 @@ X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# dk_Transistors-FETs-MOSFETs-Single_FQP27P06
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF dk_Transistors-FETs-MOSFETs-Single_FQP27P06 Q 0 0 Y Y 1 F N
+F0 "Q" -106 143 60 H V R CNN
+F1 "dk_Transistors-FETs-MOSFETs-Single_FQP27P06" 136 0 60 V V C CNN
+F2 "digikey-footprints:TO-92-3" 200 200 60 H I L CNN
+F3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" 200 300 60 H I L CNN
+F4 "FQP27P06-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "FQP27P06" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - FETs, MOSFETs - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "MOSFET P-CH 60V 27A TO-220" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -50 0 130 0 1 0 f
+C 0 -75 5 0 1 0 N
+C 0 -55 5 0 1 0 N
+C 0 75 5 0 1 0 N
+P 2 0 1 0 0 -55 -100 -55 N
+P 3 0 1 0 -200 -100 -120 -100 -120 55 N
+P 3 0 1 0 0 -100 0 0 -100 0 N
+P 3 0 1 0 0 100 0 55 -100 55 N
+P 5 0 1 0 -5 -75 40 -75 40 55 40 75 -5 75 N
+P 2 1 1 0 -100 -55 -100 -75 N
+P 2 1 1 0 -100 -55 -100 -35 N
+P 2 1 1 0 -100 0 -100 -20 N
+P 2 1 1 0 -100 0 -100 20 N
+P 2 1 1 0 -100 75 -100 35 N
+P 2 1 1 0 60 20 20 20 N
+P 4 1 1 0 -15 0 -45 20 -45 -20 -15 0 F
+P 4 1 1 0 40 20 20 -10 60 -10 40 20 F
+X G 1 -300 -100 100 R 50 50 1 1 B
+X D 2 0 200 100 D 50 50 1 1 B
+X S 3 0 -200 100 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# power_+3V3
+#
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_-3V3
+#
+DEF power_-3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 100 50 H I C CNN
+F1 "power_-3V3" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 30 50 0 100 -30 50 0 50 F
+X -3V3 1 0 0 0 U 50 50 0 0 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -474,11 +592,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:VCC
+# power_VCC
 #
-DEF power:VCC #PWR 0 0 Y Y 1 F P
+DEF power_VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VCC" 0 150 50 H V C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
