@@ -1,0 +1,685 @@
+EESchema Schematic File Version 4
+LIBS:MARP-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Interface-Sensor-and-Detector-Interfaces:MAX31855KASA_ U?
+U 1 1 5C1953D4
+P 1300 1450
+F 0 "U?" V 1403 709 60  0000 R CNN
+F 1 "MAX31855KASA_" V 1297 709 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 1500 1650 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 1500 1750 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 1500 1850 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 1500 1950 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 1500 2050 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 1500 2150 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 1500 2250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 1500 2350 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 1500 2450 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 1500 2550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1500 2650 60  0001 L CNN "Status"
+	1    1300 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 1250 2300 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5C195745
+P 2300 1250
+F 0 "#PWR?" H 2300 1000 50  0001 C CNN
+F 1 "GND" V 2305 1122 50  0000 R CNN
+F 2 "" H 2300 1250 50  0001 C CNN
+F 3 "" H 2300 1250 50  0001 C CNN
+	1    2300 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 1350 1000 1350
+$Comp
+L MAX31855:+3V3 #+3V3?
+U 1 1 5C209C62
+P 900 1350
+F 0 "#+3V3?" H 900 1350 50  0001 C CNN
+F 1 "+3V3" V 900 1419 59  0000 L CNN
+F 2 "" H 900 1350 50  0001 C CNN
+F 3 "" H 900 1350 50  0001 C CNN
+	1    900  1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 1750 1500 2050
+$Comp
+L Device:C C?
+U 1 1 5C209D10
+P 1350 2050
+F 0 "C?" V 1500 2050 50  0000 C CNN
+F 1 "10nF" V 1189 2050 50  0000 C CNN
+F 2 "" H 1388 1900 50  0001 C CNN
+F 3 "~" H 1350 2050 50  0001 C CNN
+	1    1350 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 1750 1200 2050
+Wire Wire Line
+	1200 1750 1400 1750
+Wire Wire Line
+	1200 2050 1200 2300
+Connection ~ 1200 2050
+Wire Wire Line
+	1500 2050 1500 2300
+Connection ~ 1500 2050
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C209EAC
+P 1200 2400
+F 0 "FB?" V 1150 2500 50  0000 L CNN
+F 1 "470OHM" V 1050 2400 50  0000 L CNN
+F 2 "" V 1130 2400 50  0001 C CNN
+F 3 "~" H 1200 2400 50  0001 C CNN
+	1    1200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C209EE2
+P 1500 2400
+F 0 "FB?" V 1550 2550 50  0000 L CNN
+F 1 "470OHM" V 1650 2400 50  0000 L CNN
+F 2 "" V 1430 2400 50  0001 C CNN
+F 3 "~" H 1500 2400 50  0001 C CNN
+	1    1500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2500 1200 2500
+Wire Wire Line
+	1250 2700 1300 2700
+Wire Wire Line
+	1500 2500 1450 2500
+Wire Wire Line
+	1450 2500 1450 2700
+Wire Wire Line
+	1450 2700 1400 2700
+Wire Wire Line
+	1250 2500 1250 2700
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C20AD6F
+P 1400 2900
+F 0 "J?" V 1553 2813 50  0000 R CNN
+F 1 "TP0_1_P" V 1462 2813 50  0000 R CNN
+F 2 "" H 1400 2900 50  0001 C CNN
+F 3 "~" H 1400 2900 50  0001 C CNN
+	1    1400 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C20ADC7
+P 1300 2900
+F 0 "J?" V 1450 3050 50  0000 R CNN
+F 1 "TP0_1_N" V 1350 3200 50  0000 R CNN
+F 2 "" H 1300 2900 50  0001 C CNN
+F 3 "~" H 1300 2900 50  0001 C CNN
+	1    1300 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 1750 1600 2000
+Wire Wire Line
+	1600 2000 1700 2000
+Text GLabel 1700 2000 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	1700 1750 1700 1850
+Wire Wire Line
+	1700 1850 1850 1850
+Text GLabel 1850 1850 2    50   Input ~ 0
+~SPI0_THERMO0_SS
+$Comp
+L dk_Interface-Sensor-and-Detector-Interfaces:MAX31855KASA_ U?
+U 1 1 5C20CF9D
+P 3650 1400
+F 0 "U?" V 3753 659 60  0000 R CNN
+F 1 "MAX31855KASA_" V 3647 659 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 3850 1600 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 3850 1700 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 3850 1800 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 3850 1900 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3850 2000 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 3850 2100 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 3850 2200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 3850 2300 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 3850 2400 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 3850 2500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3850 2600 60  0001 L CNN "Status"
+	1    3650 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 1200 4650 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5C20CFA4
+P 4650 1200
+F 0 "#PWR?" H 4650 950 50  0001 C CNN
+F 1 "GND" V 4655 1072 50  0000 R CNN
+F 2 "" H 4650 1200 50  0001 C CNN
+F 3 "" H 4650 1200 50  0001 C CNN
+	1    4650 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 1300 3350 1300
+$Comp
+L MAX31855:+3V3 #+3V?
+U 1 1 5C20CFAB
+P 3250 1300
+F 0 "#+3V?" H 3250 1300 50  0001 C CNN
+F 1 "+3V3" V 3250 1369 59  0000 L CNN
+F 2 "" H 3250 1300 50  0001 C CNN
+F 3 "" H 3250 1300 50  0001 C CNN
+	1    3250 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 1700 3850 2000
+$Comp
+L Device:C C?
+U 1 1 5C20CFB2
+P 3700 2000
+F 0 "C?" V 3850 2000 50  0000 C CNN
+F 1 "10nF" V 3539 2000 50  0000 C CNN
+F 2 "" H 3738 1850 50  0001 C CNN
+F 3 "~" H 3700 2000 50  0001 C CNN
+	1    3700 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 1700 3550 2000
+Wire Wire Line
+	3550 1700 3750 1700
+Wire Wire Line
+	3550 2000 3550 2250
+Connection ~ 3550 2000
+Wire Wire Line
+	3850 2000 3850 2250
+Connection ~ 3850 2000
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C20CFBE
+P 3550 2350
+F 0 "FB?" V 3500 2450 50  0000 L CNN
+F 1 "470OHM" V 3400 2350 50  0000 L CNN
+F 2 "" V 3480 2350 50  0001 C CNN
+F 3 "~" H 3550 2350 50  0001 C CNN
+	1    3550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C20CFC4
+P 3850 2350
+F 0 "FB?" V 3900 2500 50  0000 L CNN
+F 1 "470OHM" V 4000 2350 50  0000 L CNN
+F 2 "" V 3780 2350 50  0001 C CNN
+F 3 "~" H 3850 2350 50  0001 C CNN
+	1    3850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2450 3550 2450
+Wire Wire Line
+	3600 2650 3650 2650
+Wire Wire Line
+	3850 2450 3800 2450
+Wire Wire Line
+	3800 2450 3800 2650
+Wire Wire Line
+	3800 2650 3750 2650
+Wire Wire Line
+	3600 2450 3600 2650
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C20CFD0
+P 3750 2850
+F 0 "J?" V 3903 2763 50  0000 R CNN
+F 1 "TP1_1_P" V 3812 2763 50  0000 R CNN
+F 2 "" H 3750 2850 50  0001 C CNN
+F 3 "~" H 3750 2850 50  0001 C CNN
+	1    3750 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C20CFD6
+P 3650 2850
+F 0 "J?" V 3800 3000 50  0000 R CNN
+F 1 "TP1_1_N" V 3700 3200 50  0000 R CNN
+F 2 "" H 3650 2850 50  0001 C CNN
+F 3 "~" H 3650 2850 50  0001 C CNN
+	1    3650 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 1700 3950 1950
+Wire Wire Line
+	3950 1950 4050 1950
+Text GLabel 4050 1950 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	4050 1700 4050 1800
+Wire Wire Line
+	4050 1800 4200 1800
+Text GLabel 4200 1800 2    50   Input ~ 0
+~SPI0_THERMO1_SS
+$Comp
+L dk_Interface-Sensor-and-Detector-Interfaces:MAX31855KASA_ U?
+U 1 1 5C20DC33
+P 6050 1350
+F 0 "U?" V 6153 609 60  0000 R CNN
+F 1 "MAX31855KASA_" V 6047 609 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 6250 1550 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6250 1650 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 6250 1750 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 6250 1850 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6250 1950 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 6250 2050 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6250 2150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 6250 2250 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 6250 2350 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 6250 2450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6250 2550 60  0001 L CNN "Status"
+	1    6050 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 1150 7050 1150
+$Comp
+L power:GND #PWR?
+U 1 1 5C20DC3A
+P 7050 1150
+F 0 "#PWR?" H 7050 900 50  0001 C CNN
+F 1 "GND" V 7055 1022 50  0000 R CNN
+F 2 "" H 7050 1150 50  0001 C CNN
+F 3 "" H 7050 1150 50  0001 C CNN
+	1    7050 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 1250 5750 1250
+$Comp
+L MAX31855:+3V3 #+3V?
+U 1 1 5C20DC41
+P 5650 1250
+F 0 "#+3V?" H 5650 1250 50  0001 C CNN
+F 1 "+3V3" V 5650 1319 59  0000 L CNN
+F 2 "" H 5650 1250 50  0001 C CNN
+F 3 "" H 5650 1250 50  0001 C CNN
+	1    5650 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 1650 6250 1950
+$Comp
+L Device:C C?
+U 1 1 5C20DC48
+P 6100 1950
+F 0 "C?" V 6250 1950 50  0000 C CNN
+F 1 "10nF" V 5939 1950 50  0000 C CNN
+F 2 "" H 6138 1800 50  0001 C CNN
+F 3 "~" H 6100 1950 50  0001 C CNN
+	1    6100 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 1650 5950 1950
+Wire Wire Line
+	5950 1650 6150 1650
+Wire Wire Line
+	5950 1950 5950 2200
+Connection ~ 5950 1950
+Wire Wire Line
+	6250 1950 6250 2200
+Connection ~ 6250 1950
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C20DC54
+P 5950 2300
+F 0 "FB?" V 5900 2400 50  0000 L CNN
+F 1 "470OHM" V 5800 2300 50  0000 L CNN
+F 2 "" V 5880 2300 50  0001 C CNN
+F 3 "~" H 5950 2300 50  0001 C CNN
+	1    5950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C20DC5A
+P 6250 2300
+F 0 "FB?" V 6300 2450 50  0000 L CNN
+F 1 "470OHM" V 6400 2300 50  0000 L CNN
+F 2 "" V 6180 2300 50  0001 C CNN
+F 3 "~" H 6250 2300 50  0001 C CNN
+	1    6250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2400 5950 2400
+Wire Wire Line
+	6000 2600 6050 2600
+Wire Wire Line
+	6250 2400 6200 2400
+Wire Wire Line
+	6200 2400 6200 2600
+Wire Wire Line
+	6200 2600 6150 2600
+Wire Wire Line
+	6000 2400 6000 2600
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C20DC66
+P 6150 2800
+F 0 "J?" V 6303 2713 50  0000 R CNN
+F 1 "TP2_1_P" V 6212 2713 50  0000 R CNN
+F 2 "" H 6150 2800 50  0001 C CNN
+F 3 "~" H 6150 2800 50  0001 C CNN
+	1    6150 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C20DC6C
+P 6050 2800
+F 0 "J?" V 6200 2950 50  0000 R CNN
+F 1 "TP2_1_N" V 6100 3150 50  0000 R CNN
+F 2 "" H 6050 2800 50  0001 C CNN
+F 3 "~" H 6050 2800 50  0001 C CNN
+	1    6050 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 1650 6350 1900
+Wire Wire Line
+	6350 1900 6450 1900
+Text GLabel 6450 1900 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	6450 1650 6450 1750
+Wire Wire Line
+	6450 1750 6600 1750
+Text GLabel 6600 1750 2    50   Input ~ 0
+~SPI0_THERMO2_SS
+$Comp
+L dk_Interface-Sensor-and-Detector-Interfaces:MAX31855KASA_ U?
+U 1 1 5C20E7CA
+P 8500 1350
+F 0 "U?" V 8603 609 60  0000 R CNN
+F 1 "MAX31855KASA_" V 8497 609 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 8700 1550 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8700 1650 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 8700 1750 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 8700 1850 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 8700 1950 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 8700 2050 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8700 2150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 8700 2250 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 8700 2350 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 8700 2450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8700 2550 60  0001 L CNN "Status"
+	1    8500 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 1150 9500 1150
+$Comp
+L power:GND #PWR?
+U 1 1 5C20E7D1
+P 9500 1150
+F 0 "#PWR?" H 9500 900 50  0001 C CNN
+F 1 "GND" V 9505 1022 50  0000 R CNN
+F 2 "" H 9500 1150 50  0001 C CNN
+F 3 "" H 9500 1150 50  0001 C CNN
+	1    9500 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 1250 8200 1250
+$Comp
+L MAX31855:+3V3 #+3V?
+U 1 1 5C20E7D8
+P 8100 1250
+F 0 "#+3V?" H 8100 1250 50  0001 C CNN
+F 1 "+3V3" V 8100 1319 59  0000 L CNN
+F 2 "" H 8100 1250 50  0001 C CNN
+F 3 "" H 8100 1250 50  0001 C CNN
+	1    8100 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 1650 8700 1950
+$Comp
+L Device:C C?
+U 1 1 5C20E7DF
+P 8550 1950
+F 0 "C?" V 8700 1950 50  0000 C CNN
+F 1 "10nF" V 8389 1950 50  0000 C CNN
+F 2 "" H 8588 1800 50  0001 C CNN
+F 3 "~" H 8550 1950 50  0001 C CNN
+	1    8550 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 1650 8400 1950
+Wire Wire Line
+	8400 1650 8600 1650
+Wire Wire Line
+	8400 1950 8400 2200
+Connection ~ 8400 1950
+Wire Wire Line
+	8700 1950 8700 2200
+Connection ~ 8700 1950
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C20E7EB
+P 8400 2300
+F 0 "FB?" V 8350 2400 50  0000 L CNN
+F 1 "470OHM" V 8250 2300 50  0000 L CNN
+F 2 "" V 8330 2300 50  0001 C CNN
+F 3 "~" H 8400 2300 50  0001 C CNN
+	1    8400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C20E7F1
+P 8700 2300
+F 0 "FB?" V 8750 2450 50  0000 L CNN
+F 1 "470OHM" V 8850 2300 50  0000 L CNN
+F 2 "" V 8630 2300 50  0001 C CNN
+F 3 "~" H 8700 2300 50  0001 C CNN
+	1    8700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2400 8400 2400
+Wire Wire Line
+	8450 2600 8500 2600
+Wire Wire Line
+	8700 2400 8650 2400
+Wire Wire Line
+	8650 2400 8650 2600
+Wire Wire Line
+	8650 2600 8600 2600
+Wire Wire Line
+	8450 2400 8450 2600
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C20E7FD
+P 8600 2800
+F 0 "J?" V 8753 2713 50  0000 R CNN
+F 1 "TP3_1_P" V 8662 2713 50  0000 R CNN
+F 2 "" H 8600 2800 50  0001 C CNN
+F 3 "~" H 8600 2800 50  0001 C CNN
+	1    8600 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C20E803
+P 8500 2800
+F 0 "J?" V 8650 2950 50  0000 R CNN
+F 1 "TP3_1_N" V 8550 3100 50  0000 R CNN
+F 2 "" H 8500 2800 50  0001 C CNN
+F 3 "~" H 8500 2800 50  0001 C CNN
+	1    8500 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 1650 8800 1900
+Wire Wire Line
+	8800 1900 8900 1900
+Text GLabel 8900 1900 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	8900 1650 8900 1750
+Wire Wire Line
+	8900 1750 9050 1750
+Text GLabel 9050 1750 2    50   Input ~ 0
+~SPI0_THERMO3_SS
+$Comp
+L Analog:AD5593R U?
+U 1 1 5C212B84
+P 3800 4200
+F 0 "U?" H 3800 3422 50  0000 C CNN
+F 1 "AD5593R" H 3800 3513 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 4800 3700 50  0001 C CIN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD5593R.pdf" H 3800 4000 50  0001 C CNN
+	1    3800 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 4900 4200 4900
+$Comp
+L Device:CP1 C?
+U 1 1 5C2159A6
+P 4200 5050
+F 0 "C?" H 4315 5096 50  0000 L CNN
+F 1 "CP1" H 4315 5005 50  0000 L CNN
+F 2 "" H 4200 5050 50  0001 C CNN
+F 3 "~" H 4200 5050 50  0001 C CNN
+	1    4200 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5200 4200 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5C2169AA
+P 4200 5250
+F 0 "#PWR?" H 4200 5000 50  0001 C CNN
+F 1 "GND" H 4205 5077 50  0000 C CNN
+F 2 "" H 4200 5250 50  0001 C CNN
+F 3 "" H 4200 5250 50  0001 C CNN
+	1    4200 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 4900
+$Comp
+L MAX31855:+3V3 #+3V3?
+U 1 1 5C218CC1
+P 4750 4900
+F 0 "#+3V3?" H 4750 4900 50  0001 C CNN
+F 1 "+3V3" V 4750 4969 59  0000 L CNN
+F 2 "" H 4750 4900 50  0001 C CNN
+F 3 "" H 4750 4900 50  0001 C CNN
+	1    4750 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 4100 4600 4100
+NoConn ~ 4300 3900
+$Comp
+L Device:CP1 C?
+U 1 1 5C21DF85
+P 5200 3950
+F 0 "C?" H 5315 3996 50  0000 L CNN
+F 1 "CP1" H 5315 3905 50  0000 L CNN
+F 2 "" H 5200 3950 50  0001 C CNN
+F 3 "~" H 5200 3950 50  0001 C CNN
+	1    5200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4300 4750 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5C221E10
+P 5200 4200
+F 0 "#PWR?" H 5200 3950 50  0001 C CNN
+F 1 "GND" H 5205 4027 50  0000 C CNN
+F 2 "" H 5200 4200 50  0001 C CNN
+F 3 "" H 5200 4200 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4900 4650 4900
+Wire Wire Line
+	4750 4300 4750 3800
+Wire Wire Line
+	4750 3800 5200 3800
+Wire Wire Line
+	5200 4100 5200 4200
+Wire Wire Line
+	4300 4500 4450 4500
+Text GLabel 4450 4500 2    50   Input ~ 0
+I2C0_SCL
+Wire Wire Line
+	4300 4600 4450 4600
+Text GLabel 4450 4600 2    50   Input ~ 0
+I2C0_SDA
+Wire Wire Line
+	4600 4100 4600 3900
+$Comp
+L MAX31855:+3V3 #+3V3?
+U 1 1 5C2D8E3F
+P 4600 3800
+F 0 "#+3V3?" H 4600 3800 50  0001 C CNN
+F 1 "+3V3" H 4600 3921 59  0000 C CNN
+F 2 "" H 4600 3800 50  0001 C CNN
+F 3 "" H 4600 3800 50  0001 C CNN
+	1    4600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX31855:+3V3 #+3V3?
+U 1 1 5C2D8EB2
+P 3500 5000
+F 0 "#+3V3?" H 3500 5000 50  0001 C CNN
+F 1 "+3V3" V 3500 5069 59  0000 L CNN
+F 2 "" H 3500 5000 50  0001 C CNN
+F 3 "" H 3500 5000 50  0001 C CNN
+	1    3500 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 5000 3700 5000
+Wire Wire Line
+	3700 4900 3700 5000
+$EndSCHEMATC
