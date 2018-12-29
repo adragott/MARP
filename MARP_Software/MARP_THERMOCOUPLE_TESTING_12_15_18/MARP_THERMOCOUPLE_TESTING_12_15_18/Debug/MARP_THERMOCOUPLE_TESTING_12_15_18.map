@@ -59,7 +59,6 @@ Common symbol       size              file
 errno               0x4               c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-reent.o)
 spi_sercom5_mod     0xc               src/drivers/p_spi.o
 _sercom_instances   0x18              src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-spi_dummy           0x2               src/drivers/p_spi.o
 spi_sercom1_mod     0xc               src/drivers/p_spi.o
 
 Discarded input sections
@@ -318,7 +317,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 src/ASF/common2/services/delay/sam0/systick_counter.o
  .debug_macro   0x00000000       0x16 src/ASF/common2/services/delay/sam0/systick_counter.o
  .debug_line    0x00000000      0x9ce src/ASF/common2/services/delay/sam0/systick_counter.o
- .debug_str     0x00000000    0x830f2 src/ASF/common2/services/delay/sam0/systick_counter.o
+ .debug_str     0x00000000    0x830db src/ASF/common2/services/delay/sam0/systick_counter.o
  .comment       0x00000000       0x5a src/ASF/common2/services/delay/sam0/systick_counter.o
  .debug_frame   0x00000000       0x64 src/ASF/common2/services/delay/sam0/systick_counter.o
  .ARM.attributes
@@ -577,7 +576,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xb2 src/ASF/sam0/drivers/sercom/sercom.o
  .debug_macro   0x00000000       0x10 src/ASF/sam0/drivers/sercom/sercom.o
  .debug_line    0x00000000      0xbdd src/ASF/sam0/drivers/sercom/sercom.o
- .debug_str     0x00000000    0x845d5 src/ASF/sam0/drivers/sercom/sercom.o
+ .debug_str     0x00000000    0x845be src/ASF/sam0/drivers/sercom/sercom.o
  .comment       0x00000000       0x5a src/ASF/sam0/drivers/sercom/sercom.o
  .debug_frame   0x00000000       0xbc src/ASF/sam0/drivers/sercom/sercom.o
  .ARM.attributes
@@ -1073,7 +1072,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 src/ASF/sam0/drivers/sercom/usart/usart.o
  .debug_macro   0x00000000       0x51 src/ASF/sam0/drivers/sercom/usart/usart.o
  .debug_line    0x00000000      0xd48 src/ASF/sam0/drivers/sercom/usart/usart.o
- .debug_str     0x00000000    0x8538e src/ASF/sam0/drivers/sercom/usart/usart.o
+ .debug_str     0x00000000    0x85377 src/ASF/sam0/drivers/sercom/usart/usart.o
  .comment       0x00000000       0x5a src/ASF/sam0/drivers/sercom/usart/usart.o
  .debug_frame   0x00000000       0xac src/ASF/sam0/drivers/sercom/usart/usart.o
  .ARM.attributes
@@ -1341,7 +1340,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .debug_macro   0x00000000       0x51 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .debug_line    0x00000000      0xcd6 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
- .debug_str     0x00000000    0x845d4 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
+ .debug_str     0x00000000    0x845bd src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .comment       0x00000000       0x5a src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .debug_frame   0x00000000      0x110 src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
  .ARM.attributes
@@ -1609,26 +1608,277 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 src/ASF/sam0/drivers/sercom/spi/spi.o
  .debug_macro   0x00000000       0x35 src/ASF/sam0/drivers/sercom/spi/spi.o
  .debug_line    0x00000000     0x137e src/ASF/sam0/drivers/sercom/spi/spi.o
- .debug_str     0x00000000    0x8535f src/ASF/sam0/drivers/sercom/spi/spi.o
+ .debug_str     0x00000000    0x85348 src/ASF/sam0/drivers/sercom/spi/spi.o
  .comment       0x00000000       0x5a src/ASF/sam0/drivers/sercom/spi/spi.o
  .debug_frame   0x00000000      0x120 src/ASF/sam0/drivers/sercom/spi/spi.o
  .ARM.attributes
                 0x00000000       0x32 src/ASF/sam0/drivers/sercom/spi/spi.o
  .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/devices/thermocouple.o
  .text          0x00000000        0x0 src/devices/thermocouple.o
  .data          0x00000000        0x0 src/devices/thermocouple.o
  .bss           0x00000000        0x0 src/devices/thermocouple.o
- .debug_info    0x00000000       0x21 src/devices/thermocouple.o
- .debug_abbrev  0x00000000       0x13 src/devices/thermocouple.o
+ .text.thermocouple_init
+                0x00000000        0x2 src/devices/thermocouple.o
+ .bss.cpu_irq_critical_section_counter
+                0x00000000        0x4 src/devices/thermocouple.o
+ .bss.cpu_irq_prev_interrupt_state
+                0x00000000        0x1 src/devices/thermocouple.o
+ .debug_info    0x00000000      0xa7f src/devices/thermocouple.o
+ .debug_abbrev  0x00000000      0x1cd src/devices/thermocouple.o
  .debug_aranges
-                0x00000000       0x18 src/devices/thermocouple.o
- .debug_macro   0x00000000       0x11 src/devices/thermocouple.o
+                0x00000000       0x20 src/devices/thermocouple.o
+ .debug_ranges  0x00000000       0x10 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x65b src/devices/thermocouple.o
  .debug_macro   0x00000000      0x8c2 src/devices/thermocouple.o
- .debug_line    0x00000000       0x3e src/devices/thermocouple.o
- .debug_str     0x00000000     0x25b0 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x16d src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x6d7 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x22 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x87 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x51 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xef src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x6a src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x1df src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x10 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x76 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x6db src/devices/thermocouple.o
+ .debug_macro   0x00000000      0xdd8 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x22 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x40 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x3a src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x1f src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x250 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x681 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x8b5 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x230 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0xd60 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x4cb src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x9f8 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x82b src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x455 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x5e src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x8fd src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x21c src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x95b src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x5e src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x667 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x3af src/devices/thermocouple.o
+ .debug_macro   0x00000000      0xc7a src/devices/thermocouple.o
+ .debug_macro   0x00000000     0x1092 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0xc4a src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x6ba src/devices/thermocouple.o
+ .debug_macro   0x00000000     0x1bbf src/devices/thermocouple.o
+ .debug_macro   0x00000000     0x1440 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x344 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x7c src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xa0 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x4c src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xca src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x94 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x58 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x37d src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x82 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x18d src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xb8 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xa0 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xb8 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x1c src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x1c src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x1c src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x82 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x15a src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xdc src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x128 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x128 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x128 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x128 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x128 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x128 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x124 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xe2 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xe2 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xe2 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xe2 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xe2 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x130 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x106 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xfa src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x40f src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x40 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x37d src/devices/thermocouple.o
+ .debug_macro   0x00000000     0x1e52 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x6d src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x58 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x35 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x9c src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x35 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x353 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x10 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x58 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x1f src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x43 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x20 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x187 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x10 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x1c src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x52 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x40 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x10 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x40 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xd7 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x18b src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x29 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x51 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x3e src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x3df src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x11 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x2c3 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x2e src/devices/thermocouple.o
+ .debug_macro   0x00000000      0x9f4 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x18 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x12 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x2e src/devices/thermocouple.o
+ .debug_macro   0x00000000       0xb2 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x10 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x16 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x35 src/devices/thermocouple.o
+ .debug_macro   0x00000000       0x49 src/devices/thermocouple.o
+ .debug_line    0x00000000      0xcc9 src/devices/thermocouple.o
+ .debug_str     0x00000000    0x8747d src/devices/thermocouple.o
  .comment       0x00000000       0x5a src/devices/thermocouple.o
+ .debug_frame   0x00000000       0x20 src/devices/thermocouple.o
  .ARM.attributes
                 0x00000000       0x32 src/devices/thermocouple.o
+ .group         0x00000000        0x8 src/drivers/p_spi.o
  .group         0x00000000        0x8 src/drivers/p_spi.o
  .group         0x00000000        0x8 src/drivers/p_spi.o
  .group         0x00000000        0x8 src/drivers/p_spi.o
@@ -1756,11 +2006,11 @@ Discarded input sections
  .text.drive_ss_pin
                 0x00000000       0x50 src/drivers/p_spi.o
  .text.p_spi_init
-                0x00000000      0x100 src/drivers/p_spi.o
+                0x00000000        0x2 src/drivers/p_spi.o
  .text.p_spi_sensor_init
                 0x00000000        0x2 src/drivers/p_spi.o
  .text.p_spi_read
-                0x00000000       0x84 src/drivers/p_spi.o
+                0x00000000       0x80 src/drivers/p_spi.o
  .text.p_spi_write
                 0x00000000       0x50 src/drivers/p_spi.o
  .bss.cpu_irq_critical_section_counter
@@ -1768,16 +2018,16 @@ Discarded input sections
  .bss.cpu_irq_prev_interrupt_state
                 0x00000000        0x1 src/drivers/p_spi.o
  .rodata.p_spi_read.str1.4
-                0x00000000       0x3d src/drivers/p_spi.o
+                0x00000000       0x1e src/drivers/p_spi.o
  .rodata.p_spi_write.str1.4
                 0x00000000       0x12 src/drivers/p_spi.o
- .debug_info    0x00000000     0x38cd src/drivers/p_spi.o
- .debug_abbrev  0x00000000      0x416 src/drivers/p_spi.o
- .debug_loc     0x00000000      0x2fc src/drivers/p_spi.o
+ .debug_info    0x00000000     0x3399 src/drivers/p_spi.o
+ .debug_abbrev  0x00000000      0x374 src/drivers/p_spi.o
+ .debug_loc     0x00000000      0x211 src/drivers/p_spi.o
  .debug_aranges
                 0x00000000       0x40 src/drivers/p_spi.o
  .debug_ranges  0x00000000       0x30 src/drivers/p_spi.o
- .debug_macro   0x00000000      0x656 src/drivers/p_spi.o
+ .debug_macro   0x00000000      0x655 src/drivers/p_spi.o
  .debug_macro   0x00000000      0x8c2 src/drivers/p_spi.o
  .debug_macro   0x00000000      0x16d src/drivers/p_spi.o
  .debug_macro   0x00000000      0x6d7 src/drivers/p_spi.o
@@ -1888,6 +2138,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 src/drivers/p_spi.o
  .debug_macro   0x00000000       0x16 src/drivers/p_spi.o
  .debug_macro   0x00000000      0x2c3 src/drivers/p_spi.o
+ .debug_macro   0x00000000       0x2e src/drivers/p_spi.o
  .debug_macro   0x00000000      0x9f4 src/drivers/p_spi.o
  .debug_macro   0x00000000       0x18 src/drivers/p_spi.o
  .debug_macro   0x00000000       0x12 src/drivers/p_spi.o
@@ -1899,13 +2150,13 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 src/drivers/p_spi.o
  .debug_macro   0x00000000       0x35 src/drivers/p_spi.o
  .debug_macro   0x00000000       0x49 src/drivers/p_spi.o
- .debug_line    0x00000000      0xd82 src/drivers/p_spi.o
- .debug_str     0x00000000    0x8889a src/drivers/p_spi.o
+ .debug_line    0x00000000      0xd29 src/drivers/p_spi.o
+ .debug_str     0x00000000    0x883b3 src/drivers/p_spi.o
  .comment       0x00000000       0x5a src/drivers/p_spi.o
- .debug_frame   0x00000000       0xa0 src/drivers/p_spi.o
+ .debug_frame   0x00000000       0x88 src/drivers/p_spi.o
  .ARM.attributes
                 0x00000000       0x32 src/drivers/p_spi.o
- COMMON         0x00000000       0x1c src/drivers/p_spi.o
+ COMMON         0x00000000       0x18 src/drivers/p_spi.o
  .group         0x00000000        0x8 src/drivers/p_usart.o
  .text          0x00000000        0x0 src/drivers/p_usart.o
  .data          0x00000000        0x0 src/drivers/p_usart.o
@@ -1917,7 +2168,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x11 src/drivers/p_usart.o
  .debug_macro   0x00000000      0x8c2 src/drivers/p_usart.o
  .debug_line    0x00000000       0x39 src/drivers/p_usart.o
- .debug_str     0x00000000     0x25ab src/drivers/p_usart.o
+ .debug_str     0x00000000     0x2594 src/drivers/p_usart.o
  .comment       0x00000000       0x5a src/drivers/p_usart.o
  .ARM.attributes
                 0x00000000       0x32 src/drivers/p_usart.o
@@ -2246,6 +2497,7 @@ Discarded input sections
  .group         0x00000000        0x8 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .group         0x00000000        0x8 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .group         0x00000000        0x8 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+ .group         0x00000000        0x8 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .text          0x00000000        0x0 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .data          0x00000000        0x0 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .bss           0x00000000        0x0 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
@@ -2360,6 +2612,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x3e src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .debug_macro   0x00000000      0x3df src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .debug_macro   0x00000000      0x2c3 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+ .debug_macro   0x00000000       0x2e src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .debug_macro   0x00000000      0x9f4 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .debug_macro   0x00000000       0x18 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .debug_macro   0x00000000       0x12 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
@@ -3316,7 +3569,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x3df src/ASF/sam0/drivers/system/interrupt/system_interrupt.o
  .debug_macro   0x00000000       0x2e src/ASF/sam0/drivers/system/interrupt/system_interrupt.o
  .debug_line    0x00000000      0x9b2 src/ASF/sam0/drivers/system/interrupt/system_interrupt.o
- .debug_str     0x00000000    0x83848 src/ASF/sam0/drivers/system/interrupt/system_interrupt.o
+ .debug_str     0x00000000    0x83831 src/ASF/sam0/drivers/system/interrupt/system_interrupt.o
  .comment       0x00000000       0x5a src/ASF/sam0/drivers/system/interrupt/system_interrupt.o
  .debug_frame   0x00000000       0x74 src/ASF/sam0/drivers/system/interrupt/system_interrupt.o
  .ARM.attributes
@@ -4074,7 +4327,7 @@ Discarded input sections
  .debug_macro   0x00000000     0x1e52 src/ASF/sam0/utils/cmsis/samd21/source/system_samd21.o
  .debug_macro   0x00000000       0x6d src/ASF/sam0/utils/cmsis/samd21/source/system_samd21.o
  .debug_line    0x00000000      0x614 src/ASF/sam0/utils/cmsis/samd21/source/system_samd21.o
- .debug_str     0x00000000    0x6d24f src/ASF/sam0/utils/cmsis/samd21/source/system_samd21.o
+ .debug_str     0x00000000    0x6d238 src/ASF/sam0/utils/cmsis/samd21/source/system_samd21.o
  .comment       0x00000000       0x5a src/ASF/sam0/utils/cmsis/samd21/source/system_samd21.o
  .debug_frame   0x00000000       0x30 src/ASF/sam0/utils/cmsis/samd21/source/system_samd21.o
  .ARM.attributes
@@ -4169,11 +4422,12 @@ Discarded input sections
  .debug_macro   0x00000000       0x35 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
  .debug_macro   0x00000000      0x122 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
  .debug_line    0x00000000      0x409 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
- .debug_str     0x00000000     0x73e5 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
+ .debug_str     0x00000000     0x73ce src/ASF/sam0/utils/syscalls/gcc/syscalls.o
  .comment       0x00000000       0x5a src/ASF/sam0/utils/syscalls/gcc/syscalls.o
  .debug_frame   0x00000000       0xa0 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
  .ARM.attributes
                 0x00000000       0x32 src/ASF/sam0/utils/syscalls/gcc/syscalls.o
+ .group         0x00000000        0x8 src/main.o
  .group         0x00000000        0x8 src/main.o
  .group         0x00000000        0x8 src/main.o
  .group         0x00000000        0x8 src/main.o
@@ -4412,6 +4666,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 src/main.o
  .debug_macro   0x00000000       0x16 src/main.o
  .debug_macro   0x00000000      0x2c3 src/main.o
+ .debug_macro   0x00000000       0x2e src/main.o
  .debug_macro   0x00000000      0x9f4 src/main.o
  .debug_macro   0x00000000       0x18 src/main.o
  .debug_macro   0x00000000       0x12 src/main.o
@@ -4729,7 +4984,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
                 0x00002000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x2000
 
-.text           0x00000000      0x7fc
+.text           0x00000000      0x7e0
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                _sfixed = .
  *(.vectors .vectors.*)
@@ -4841,86 +5096,86 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
  .text.Reset_Handler
                 0x00000660       0xe4 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
                 0x00000660                Reset_Handler
- .text.main     0x00000744       0x2c src/main.o
+ .text.main     0x00000744       0x10 src/main.o
                 0x00000744                main
  .text.__libc_init_array
-                0x00000770       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
-                0x00000770                __libc_init_array
+                0x00000754       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
+                0x00000754                __libc_init_array
  *(.glue_7t)
- .glue_7t       0x000007b8        0x0 linker stubs
+ .glue_7t       0x0000079c        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x000007b8        0x0 linker stubs
+ .glue_7        0x0000079c        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
  .rodata.system_clock_source_enable
-                0x000007b8       0x24 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+                0x0000079c       0x24 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000007dc                . = ALIGN (0x4)
+                0x000007c0                . = ALIGN (0x4)
  *(.init)
- .init          0x000007dc        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x000007dc                _init
- .init          0x000007e0        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x000007e8                . = ALIGN (0x4)
-                0x000007e8                __preinit_array_start = .
+ .init          0x000007c0        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x000007c0                _init
+ .init          0x000007c4        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x000007cc                . = ALIGN (0x4)
+                0x000007cc                __preinit_array_start = .
  *(.preinit_array)
-                0x000007e8                __preinit_array_end = .
-                0x000007e8                . = ALIGN (0x4)
-                0x000007e8                __init_array_start = .
+                0x000007cc                __preinit_array_end = .
+                0x000007cc                . = ALIGN (0x4)
+                0x000007cc                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x000007e8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
-                0x000007ec                __init_array_end = .
-                0x000007ec                . = ALIGN (0x4)
+ .init_array    0x000007cc        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+                0x000007d0                __init_array_end = .
+                0x000007d0                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x000007ec                . = ALIGN (0x4)
+                0x000007d0                . = ALIGN (0x4)
  *(.fini)
- .fini          0x000007ec        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x000007ec                _fini
- .fini          0x000007f0        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x000007f8                . = ALIGN (0x4)
-                0x000007f8                __fini_array_start = .
+ .fini          0x000007d0        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x000007d0                _fini
+ .fini          0x000007d4        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x000007dc                . = ALIGN (0x4)
+                0x000007dc                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x000007f8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .fini_array    0x000007dc        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x000007fc                __fini_array_end = .
+                0x000007e0                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x000007fc                . = ALIGN (0x4)
-                0x000007fc                _efixed = .
+                0x000007e0                . = ALIGN (0x4)
+                0x000007e0                _efixed = .
                 [!provide]                PROVIDE (__exidx_start, .)
 
-.vfp11_veneer   0x000007fc        0x0
- .vfp11_veneer  0x000007fc        0x0 linker stubs
+.vfp11_veneer   0x000007e0        0x0
+ .vfp11_veneer  0x000007e0        0x0 linker stubs
 
-.v4_bx          0x000007fc        0x0
- .v4_bx         0x000007fc        0x0 linker stubs
+.v4_bx          0x000007e0        0x0
+ .v4_bx         0x000007e0        0x0 linker stubs
 
-.iplt           0x000007fc        0x0
- .iplt          0x000007fc        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x000007e0        0x0
+ .iplt          0x000007e0        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.eh_frame       0x000007fc        0x0
- .eh_frame      0x000007fc        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.eh_frame       0x000007e0        0x0
+ .eh_frame      0x000007e0        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.rel.dyn        0x000007fc        0x0
- .rel.iplt      0x000007fc        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x000007e0        0x0
+ .rel.iplt      0x000007e0        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.jcr            0x000007fc        0x0
- .jcr           0x000007fc        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.jcr            0x000007e0        0x0
+ .jcr           0x000007e0        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.igot.plt       0x000007fc        0x0
- .igot.plt      0x000007fc        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.igot.plt       0x000007e0        0x0
+ .igot.plt      0x000007e0        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                PROVIDE (__exidx_end, .)
-                0x000007fc                . = ALIGN (0x4)
-                0x000007fc                _etext = .
+                0x000007e0                . = ALIGN (0x4)
+                0x000007e0                _etext = .
 
-.relocate       0x20000000        0x4 load address 0x000007fc
+.relocate       0x20000000        0x4 load address 0x000007e0
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -4932,7 +5187,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
  *fill*         0x20000001        0x3 
                 0x20000004                _erelocate = .
 
-.bss            0x20000004       0x54 load address 0x00000800
+.bss            0x20000004       0x54 load address 0x000007e4
                 0x20000004                . = ALIGN (0x4)
                 0x20000004                _sbss = .
                 0x20000004                _szero = .
@@ -4952,7 +5207,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
                 0x20000058                _ebss = .
                 0x20000058                _ezero = .
 
-.stack          0x20000058     0x2000 load address 0x00000854
+.stack          0x20000058     0x2000 load address 0x00000838
                 0x20000058                . = ALIGN (0x8)
                 0x20000058                _sstack = .
                 0x20002058                . = (. + STACK_SIZE)
@@ -5007,7 +5262,7 @@ OUTPUT(MARP_THERMOCOUPLE_TESTING_12_15_18.elf elf32-littlearm)
  .comment       0x00000059       0x5a src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
  .comment       0x00000059       0x5a src/main.o
 
-.debug_info     0x00000000    0x11ddd
+.debug_info     0x00000000    0x115e4
  .debug_info    0x00000000     0x2be7 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
  .debug_info    0x00002be7      0xb07 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
  .debug_info    0x000036ee     0x12ad src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
@@ -5017,9 +5272,9 @@ OUTPUT(MARP_THERMOCOUPLE_TESTING_12_15_18.elf elf32-littlearm)
  .debug_info    0x0000b2c2     0x13f3 src/ASF/sam0/drivers/system/pinmux/pinmux.o
  .debug_info    0x0000c6b5      0xa73 src/ASF/sam0/drivers/system/system.o
  .debug_info    0x0000d128     0x3a3f src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_info    0x00010b67     0x1276 src/main.o
+ .debug_info    0x00010b67      0xa7d src/main.o
 
-.debug_abbrev   0x00000000     0x1d4f
+.debug_abbrev   0x00000000     0x1c3f
  .debug_abbrev  0x00000000      0x2d8 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
  .debug_abbrev  0x000002d8      0x22c src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
  .debug_abbrev  0x00000504      0x2dc src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
@@ -5029,9 +5284,9 @@ OUTPUT(MARP_THERMOCOUPLE_TESTING_12_15_18.elf elf32-littlearm)
  .debug_abbrev  0x000012ea      0x361 src/ASF/sam0/drivers/system/pinmux/pinmux.o
  .debug_abbrev  0x0000164b      0x1e1 src/ASF/sam0/drivers/system/system.o
  .debug_abbrev  0x0000182c      0x234 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_abbrev  0x00001a60      0x2ef src/main.o
+ .debug_abbrev  0x00001a60      0x1df src/main.o
 
-.debug_loc      0x00000000     0x1b45
+.debug_loc      0x00000000     0x1adc
  .debug_loc     0x00000000      0x161 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
  .debug_loc     0x00000161       0x8b src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
  .debug_loc     0x000001ec      0x13d src/ASF/sam0/drivers/port/port.o
@@ -5040,7 +5295,7 @@ OUTPUT(MARP_THERMOCOUPLE_TESTING_12_15_18.elf elf32-littlearm)
  .debug_loc     0x000016ef      0x36d src/ASF/sam0/drivers/system/pinmux/pinmux.o
  .debug_loc     0x00001a5c       0x20 src/ASF/sam0/drivers/system/system.o
  .debug_loc     0x00001a7c       0x40 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_loc     0x00001abc       0x89 src/main.o
+ .debug_loc     0x00001abc       0x20 src/main.o
 
 .debug_aranges  0x00000000      0x278
  .debug_aranges
@@ -5064,7 +5319,7 @@ OUTPUT(MARP_THERMOCOUPLE_TESTING_12_15_18.elf elf32-littlearm)
  .debug_aranges
                 0x00000258       0x20 src/main.o
 
-.debug_ranges   0x00000000      0x208
+.debug_ranges   0x00000000      0x1f0
  .debug_ranges  0x00000000       0x50 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
  .debug_ranges  0x00000050       0x18 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
  .debug_ranges  0x00000068       0x10 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
@@ -5074,24 +5329,24 @@ OUTPUT(MARP_THERMOCOUPLE_TESTING_12_15_18.elf elf32-littlearm)
  .debug_ranges  0x00000180       0x30 src/ASF/sam0/drivers/system/pinmux/pinmux.o
  .debug_ranges  0x000001b0       0x18 src/ASF/sam0/drivers/system/system.o
  .debug_ranges  0x000001c8       0x18 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_ranges  0x000001e0       0x28 src/main.o
+ .debug_ranges  0x000001e0       0x10 src/main.o
 
-.debug_macro    0x00000000     0x3692
+.debug_macro    0x00000000     0x3690
  .debug_macro   0x00000000      0x59c src/ASF/sam0/drivers/sercom/sercom_interrupt.o
  .debug_macro   0x0000059c      0x512 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
- .debug_macro   0x00000aae      0x54e src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
- .debug_macro   0x00000ffc      0x52c src/ASF/sam0/drivers/port/port.o
- .debug_macro   0x00001528      0x583 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
- .debug_macro   0x00001aab      0x298 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
- .debug_macro   0x00001d43      0x548 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
- .debug_macro   0x0000228b      0x522 src/ASF/sam0/drivers/system/pinmux/pinmux.o
- .debug_macro   0x000027ad       0x12 src/ASF/sam0/drivers/system/pinmux/pinmux.o
- .debug_macro   0x000027bf      0x555 src/ASF/sam0/drivers/system/system.o
- .debug_macro   0x00002d14      0x2f9 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_macro   0x0000300d       0x3a src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_macro   0x00003047      0x64b src/main.o
+ .debug_macro   0x00000aae      0x54d src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+ .debug_macro   0x00000ffb      0x52c src/ASF/sam0/drivers/port/port.o
+ .debug_macro   0x00001527      0x583 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+ .debug_macro   0x00001aaa      0x298 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+ .debug_macro   0x00001d42      0x548 src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+ .debug_macro   0x0000228a      0x522 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+ .debug_macro   0x000027ac       0x12 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+ .debug_macro   0x000027be      0x555 src/ASF/sam0/drivers/system/system.o
+ .debug_macro   0x00002d13      0x2f9 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+ .debug_macro   0x0000300c       0x3a src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+ .debug_macro   0x00003046      0x64a src/main.o
 
-.debug_line     0x00000000     0x660f
+.debug_line     0x00000000     0x65f8
  .debug_line    0x00000000      0xb81 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
  .debug_line    0x00000b81      0x8d7 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
  .debug_line    0x00001458      0x97f src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
@@ -5101,29 +5356,29 @@ OUTPUT(MARP_THERMOCOUPLE_TESTING_12_15_18.elf elf32-littlearm)
  .debug_line    0x00003fb5      0x951 src/ASF/sam0/drivers/system/pinmux/pinmux.o
  .debug_line    0x00004906      0x9fb src/ASF/sam0/drivers/system/system.o
  .debug_line    0x00005301      0x656 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
- .debug_line    0x00005957      0xcb8 src/main.o
+ .debug_line    0x00005957      0xca1 src/main.o
 
-.debug_str      0x00000000    0x8bf4e
- .debug_str     0x00000000    0x83afa src/ASF/sam0/drivers/sercom/sercom_interrupt.o
-                              0x84470 (size before relaxing)
- .debug_str     0x00083afa       0x94 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
-                              0x82ee2 (size before relaxing)
- .debug_str     0x00083b8e     0x3cef src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
-                              0x86bee (size before relaxing)
- .debug_str     0x0008787d      0x18d src/ASF/sam0/drivers/port/port.o
-                              0x8330e (size before relaxing)
- .debug_str     0x00087a0a     0x2dce src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
-                              0x8607b (size before relaxing)
- .debug_str     0x0008a7d8      0x27c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
-                              0x83ba5 (size before relaxing)
- .debug_str     0x0008aa54      0x179 src/ASF/sam0/drivers/system/pinmux/pinmux.o
-                              0x83384 (size before relaxing)
- .debug_str     0x0008abcd       0x47 src/ASF/sam0/drivers/system/system.o
-                              0x82fbf (size before relaxing)
- .debug_str     0x0008ac14      0xf25 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
-                              0x6e3cc (size before relaxing)
- .debug_str     0x0008bb39      0x415 src/main.o
-                              0x8764b (size before relaxing)
+.debug_str      0x00000000    0x8bf70
+ .debug_str     0x00000000    0x83ae3 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
+                              0x84459 (size before relaxing)
+ .debug_str     0x00083ae3       0x94 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
+                              0x82ecb (size before relaxing)
+ .debug_str     0x00083b77     0x3d41 src/ASF/sam0/boards/samd21_xplained_pro/board_init.o
+                              0x86c29 (size before relaxing)
+ .debug_str     0x000878b8      0x18d src/ASF/sam0/drivers/port/port.o
+                              0x832f7 (size before relaxing)
+ .debug_str     0x00087a45     0x2dce src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock.o
+                              0x86064 (size before relaxing)
+ .debug_str     0x0008a813      0x27c src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/gclk.o
+                              0x83b8e (size before relaxing)
+ .debug_str     0x0008aa8f      0x179 src/ASF/sam0/drivers/system/pinmux/pinmux.o
+                              0x8336d (size before relaxing)
+ .debug_str     0x0008ac08       0x47 src/ASF/sam0/drivers/system/system.o
+                              0x82fa8 (size before relaxing)
+ .debug_str     0x0008ac4f      0xf25 src/ASF/sam0/utils/cmsis/samd21/source/gcc/startup_samd21.o
+                              0x6e3b5 (size before relaxing)
+ .debug_str     0x0008bb74      0x3fc src/main.o
+                              0x8742d (size before relaxing)
 
 .debug_frame    0x00000000      0x584
  .debug_frame   0x00000000       0xe8 src/ASF/sam0/drivers/sercom/sercom_interrupt.o
@@ -5399,7 +5654,6 @@ main                                              src/main.o
                                                   c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
 memset                                            c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memset.o)
                                                   c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                                                  src/drivers/p_spi.o
                                                   c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
 p_spi_init                                        src/drivers/p_spi.o
 p_spi_read                                        src/drivers/p_spi.o
@@ -5414,9 +5668,7 @@ sercom_set_gclk_generator                         src/ASF/sam0/drivers/sercom/se
                                                   src/ASF/sam0/drivers/sercom/spi/spi.o
                                                   src/ASF/sam0/drivers/sercom/usart/usart.o
 software_init_hook                                c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
-spi_dummy                                         src/drivers/p_spi.o
 spi_init                                          src/ASF/sam0/drivers/sercom/spi/spi.o
-                                                  src/drivers/p_spi.o
 spi_read_buffer_wait                              src/ASF/sam0/drivers/sercom/spi/spi.o
                                                   src/drivers/p_spi.o
 spi_reset                                         src/ASF/sam0/drivers/sercom/spi/spi.o
@@ -5484,6 +5736,7 @@ system_pinmux_pin_set_config                      src/ASF/sam0/drivers/system/pi
                                                   src/ASF/sam0/drivers/port/port.o
                                                   src/ASF/sam0/drivers/sercom/spi/spi.o
                                                   src/ASF/sam0/drivers/sercom/usart/usart.o
+thermocouple_init                                 src/devices/thermocouple.o
 usart_abort_job                                   src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
 usart_get_job_status                              src/ASF/sam0/drivers/sercom/usart/usart_interrupt.o
 usart_init                                        src/ASF/sam0/drivers/sercom/usart/usart.o

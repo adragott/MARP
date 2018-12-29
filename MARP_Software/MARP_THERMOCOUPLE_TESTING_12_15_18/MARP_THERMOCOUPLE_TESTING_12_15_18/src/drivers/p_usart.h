@@ -8,7 +8,8 @@
 #ifndef _P_USART_H_
 #define _P_USART_H_
 
-
+	void pusart_init(void);
+	
 
 
 #endif

@@ -37,4 +37,13 @@
 #ifndef CONF_BOARD_H_INCLUDED
 #define CONF_BOARD_H_INCLUDED
 
+//SPI Bus Configuration
+//SERCOM 2
+#define SERCOM_2_FREQ
+#define THERMO_SERCOM
+#define THERMO_SS_0
+#define THERMO_SS_1
+#define THERMO_SS_2
+#define THERMO_SS_3
+
 #endif /* CONF_BOARD_H_INCLUDED */

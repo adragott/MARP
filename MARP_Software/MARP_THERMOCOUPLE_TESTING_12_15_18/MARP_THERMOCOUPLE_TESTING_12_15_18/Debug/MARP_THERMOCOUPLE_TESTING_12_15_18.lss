@@ -3,35 +3,35 @@ MARP_THERMOCOUPLE_TESTING_12_15_18.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         000007fc  00000000  00000000  00010000  2**2
+  0 .text         000007e0  00000000  00000000  00010000  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .relocate     00000004  20000000  000007fc  00020000  2**0
+  1 .relocate     00000004  20000000  000007e0  00020000  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          00000054  20000004  00000800  00020004  2**2
+  2 .bss          00000054  20000004  000007e4  00020004  2**2
                   ALLOC
-  3 .stack        00002000  20000058  00000854  00020004  2**0
+  3 .stack        00002000  20000058  00000838  00020004  2**0
                   ALLOC
   4 .ARM.attributes 00000028  00000000  00000000  00020004  2**0
                   CONTENTS, READONLY
   5 .comment      00000059  00000000  00000000  0002002c  2**0
                   CONTENTS, READONLY
-  6 .debug_info   00011ddd  00000000  00000000  00020085  2**0
+  6 .debug_info   000115e4  00000000  00000000  00020085  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_abbrev 00001d4f  00000000  00000000  00031e62  2**0
+  7 .debug_abbrev 00001c3f  00000000  00000000  00031669  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_loc    00001b45  00000000  00000000  00033bb1  2**0
+  8 .debug_loc    00001adc  00000000  00000000  000332a8  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_aranges 00000278  00000000  00000000  000356f6  2**0
+  9 .debug_aranges 00000278  00000000  00000000  00034d84  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_ranges 00000208  00000000  00000000  0003596e  2**0
+ 10 .debug_ranges 000001f0  00000000  00000000  00034ffc  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_macro  00003692  00000000  00000000  00035b76  2**0
+ 11 .debug_macro  00003690  00000000  00000000  000351ec  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_line   0000660f  00000000  00000000  00039208  2**0
+ 12 .debug_line   000065f8  00000000  00000000  0003887c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    0008bf4e  00000000  00000000  0003f817  2**0
+ 13 .debug_str    0008bf70  00000000  00000000  0003ee74  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_frame  00000584  00000000  00000000  000cb768  2**2
+ 14 .debug_frame  00000584  00000000  00000000  000cade4  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -66,7 +66,7 @@ Disassembly of section .text:
   ce:	bd10      	pop	{r4, pc}
   d0:	20000004 	.word	0x20000004
   d4:	00000000 	.word	0x00000000
-  d8:	000007fc 	.word	0x000007fc
+  d8:	000007e0 	.word	0x000007e0
 
 000000dc <frame_dummy>:
   dc:	4b08      	ldr	r3, [pc, #32]	; (100 <frame_dummy+0x24>)
@@ -89,8 +89,8 @@ Disassembly of section .text:
   fe:	e7f9      	b.n	f4 <frame_dummy+0x18>
  100:	00000000 	.word	0x00000000
  104:	20000008 	.word	0x20000008
- 108:	000007fc 	.word	0x000007fc
- 10c:	000007fc 	.word	0x000007fc
+ 108:	000007e0 	.word	0x000007e0
+ 10c:	000007e0 	.word	0x000007e0
  110:	00000000 	.word	0x00000000
 
 00000114 <SERCOM0_Handler>:
@@ -521,7 +521,7 @@ enum status_code system_clock_source_enable(
  314:	2000      	movs	r0, #0
 }
  316:	4770      	bx	lr
- 318:	000007b8 	.word	0x000007b8
+ 318:	0000079c 	.word	0x0000079c
  31c:	40000800 	.word	0x40000800
  320:	20000040 	.word	0x20000040
 
@@ -1415,7 +1415,7 @@ void Dummy_Handler(void)
  706:	4b0e      	ldr	r3, [pc, #56]	; (740 <Reset_Handler+0xe0>)
  708:	4798      	blx	r3
  70a:	e7fe      	b.n	70a <Reset_Handler+0xaa>
- 70c:	000007fc 	.word	0x000007fc
+ 70c:	000007e0 	.word	0x000007e0
  710:	20000000 	.word	0x20000000
  714:	20000004 	.word	0x20000004
  718:	20000004 	.word	0x20000004
@@ -1427,7 +1427,7 @@ void Dummy_Handler(void)
  730:	41005000 	.word	0x41005000
  734:	41004800 	.word	0x41004800
  738:	41004000 	.word	0x41004000
- 73c:	00000771 	.word	0x00000771
+ 73c:	00000755 	.word	0x00000755
  740:	00000745 	.word	0x00000745
 
 00000744 <main>:
@@ -1439,96 +1439,76 @@ int main (void)
 {
  744:	b510      	push	{r4, lr}
 	system_init();
- 746:	4b07      	ldr	r3, [pc, #28]	; (764 <main+0x20>)
+ 746:	4b02      	ldr	r3, [pc, #8]	; (750 <main+0xc>)
  748:	4798      	blx	r3
-	return (port_base->IN.reg & pin_mask);
- 74a:	4c07      	ldr	r4, [pc, #28]	; (768 <main+0x24>)
- 74c:	2080      	movs	r0, #128	; 0x80
- 74e:	0200      	lsls	r0, r0, #8
-		port_base->OUTSET.reg = pin_mask;
- 750:	4906      	ldr	r1, [pc, #24]	; (76c <main+0x28>)
- 752:	2280      	movs	r2, #128	; 0x80
- 754:	05d2      	lsls	r2, r2, #23
- 756:	e000      	b.n	75a <main+0x16>
- 758:	618a      	str	r2, [r1, #24]
-	return (port_base->IN.reg & pin_mask);
- 75a:	6a23      	ldr	r3, [r4, #32]
-	/* Insert application code here, after the board has been initialized. */
+	
+	
+}
+ 74a:	2000      	movs	r0, #0
+ 74c:	bd10      	pop	{r4, pc}
+ 74e:	46c0      	nop			; (mov r8, r8)
+ 750:	00000631 	.word	0x00000631
 
-	/* This skeleton code simply sets the LED to the state of the button. */
-	while (1) {
-		/* Is button pressed? */
-		if (port_pin_get_input_level(BUTTON_0_PIN) == BUTTON_0_ACTIVE) {
- 75c:	4203      	tst	r3, r0
- 75e:	d1fb      	bne.n	758 <main+0x14>
-	} else {
-		port_base->OUTCLR.reg = pin_mask;
- 760:	614a      	str	r2, [r1, #20]
- 762:	e7fa      	b.n	75a <main+0x16>
- 764:	00000631 	.word	0x00000631
- 768:	41004400 	.word	0x41004400
- 76c:	41004480 	.word	0x41004480
+00000754 <__libc_init_array>:
+ 754:	b570      	push	{r4, r5, r6, lr}
+ 756:	2600      	movs	r6, #0
+ 758:	4d0c      	ldr	r5, [pc, #48]	; (78c <__libc_init_array+0x38>)
+ 75a:	4c0d      	ldr	r4, [pc, #52]	; (790 <__libc_init_array+0x3c>)
+ 75c:	1b64      	subs	r4, r4, r5
+ 75e:	10a4      	asrs	r4, r4, #2
+ 760:	42a6      	cmp	r6, r4
+ 762:	d109      	bne.n	778 <__libc_init_array+0x24>
+ 764:	2600      	movs	r6, #0
+ 766:	f000 f82b 	bl	7c0 <_init>
+ 76a:	4d0a      	ldr	r5, [pc, #40]	; (794 <__libc_init_array+0x40>)
+ 76c:	4c0a      	ldr	r4, [pc, #40]	; (798 <__libc_init_array+0x44>)
+ 76e:	1b64      	subs	r4, r4, r5
+ 770:	10a4      	asrs	r4, r4, #2
+ 772:	42a6      	cmp	r6, r4
+ 774:	d105      	bne.n	782 <__libc_init_array+0x2e>
+ 776:	bd70      	pop	{r4, r5, r6, pc}
+ 778:	00b3      	lsls	r3, r6, #2
+ 77a:	58eb      	ldr	r3, [r5, r3]
+ 77c:	4798      	blx	r3
+ 77e:	3601      	adds	r6, #1
+ 780:	e7ee      	b.n	760 <__libc_init_array+0xc>
+ 782:	00b3      	lsls	r3, r6, #2
+ 784:	58eb      	ldr	r3, [r5, r3]
+ 786:	4798      	blx	r3
+ 788:	3601      	adds	r6, #1
+ 78a:	e7f2      	b.n	772 <__libc_init_array+0x1e>
+ 78c:	000007cc 	.word	0x000007cc
+ 790:	000007cc 	.word	0x000007cc
+ 794:	000007cc 	.word	0x000007cc
+ 798:	000007d0 	.word	0x000007d0
+ 79c:	000002a8 	.word	0x000002a8
+ 7a0:	00000288 	.word	0x00000288
+ 7a4:	00000288 	.word	0x00000288
+ 7a8:	00000314 	.word	0x00000314
+ 7ac:	0000029a 	.word	0x0000029a
+ 7b0:	000002b6 	.word	0x000002b6
+ 7b4:	0000028c 	.word	0x0000028c
+ 7b8:	000002c4 	.word	0x000002c4
+ 7bc:	00000304 	.word	0x00000304
 
-00000770 <__libc_init_array>:
- 770:	b570      	push	{r4, r5, r6, lr}
- 772:	2600      	movs	r6, #0
- 774:	4d0c      	ldr	r5, [pc, #48]	; (7a8 <__libc_init_array+0x38>)
- 776:	4c0d      	ldr	r4, [pc, #52]	; (7ac <__libc_init_array+0x3c>)
- 778:	1b64      	subs	r4, r4, r5
- 77a:	10a4      	asrs	r4, r4, #2
- 77c:	42a6      	cmp	r6, r4
- 77e:	d109      	bne.n	794 <__libc_init_array+0x24>
- 780:	2600      	movs	r6, #0
- 782:	f000 f82b 	bl	7dc <_init>
- 786:	4d0a      	ldr	r5, [pc, #40]	; (7b0 <__libc_init_array+0x40>)
- 788:	4c0a      	ldr	r4, [pc, #40]	; (7b4 <__libc_init_array+0x44>)
- 78a:	1b64      	subs	r4, r4, r5
- 78c:	10a4      	asrs	r4, r4, #2
- 78e:	42a6      	cmp	r6, r4
- 790:	d105      	bne.n	79e <__libc_init_array+0x2e>
- 792:	bd70      	pop	{r4, r5, r6, pc}
- 794:	00b3      	lsls	r3, r6, #2
- 796:	58eb      	ldr	r3, [r5, r3]
- 798:	4798      	blx	r3
- 79a:	3601      	adds	r6, #1
- 79c:	e7ee      	b.n	77c <__libc_init_array+0xc>
- 79e:	00b3      	lsls	r3, r6, #2
- 7a0:	58eb      	ldr	r3, [r5, r3]
- 7a2:	4798      	blx	r3
- 7a4:	3601      	adds	r6, #1
- 7a6:	e7f2      	b.n	78e <__libc_init_array+0x1e>
- 7a8:	000007e8 	.word	0x000007e8
- 7ac:	000007e8 	.word	0x000007e8
- 7b0:	000007e8 	.word	0x000007e8
- 7b4:	000007ec 	.word	0x000007ec
- 7b8:	000002a8 	.word	0x000002a8
- 7bc:	00000288 	.word	0x00000288
- 7c0:	00000288 	.word	0x00000288
- 7c4:	00000314 	.word	0x00000314
- 7c8:	0000029a 	.word	0x0000029a
- 7cc:	000002b6 	.word	0x000002b6
- 7d0:	0000028c 	.word	0x0000028c
- 7d4:	000002c4 	.word	0x000002c4
- 7d8:	00000304 	.word	0x00000304
+000007c0 <_init>:
+ 7c0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 7c2:	46c0      	nop			; (mov r8, r8)
+ 7c4:	bcf8      	pop	{r3, r4, r5, r6, r7}
+ 7c6:	bc08      	pop	{r3}
+ 7c8:	469e      	mov	lr, r3
+ 7ca:	4770      	bx	lr
 
-000007dc <_init>:
- 7dc:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
- 7de:	46c0      	nop			; (mov r8, r8)
- 7e0:	bcf8      	pop	{r3, r4, r5, r6, r7}
- 7e2:	bc08      	pop	{r3}
- 7e4:	469e      	mov	lr, r3
- 7e6:	4770      	bx	lr
+000007cc <__init_array_start>:
+ 7cc:	000000dd 	.word	0x000000dd
 
-000007e8 <__init_array_start>:
- 7e8:	000000dd 	.word	0x000000dd
+000007d0 <_fini>:
+ 7d0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 7d2:	46c0      	nop			; (mov r8, r8)
+ 7d4:	bcf8      	pop	{r3, r4, r5, r6, r7}
+ 7d6:	bc08      	pop	{r3}
+ 7d8:	469e      	mov	lr, r3
+ 7da:	4770      	bx	lr
 
-000007ec <_fini>:
- 7ec:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
- 7ee:	46c0      	nop			; (mov r8, r8)
- 7f0:	bcf8      	pop	{r3, r4, r5, r6, r7}
- 7f2:	bc08      	pop	{r3}
- 7f4:	469e      	mov	lr, r3
- 7f6:	4770      	bx	lr
-
-000007f8 <__fini_array_start>:
- 7f8:	000000b5 	.word	0x000000b5
+000007dc <__fini_array_start>:
+ 7dc:	000000b5 	.word	0x000000b5
