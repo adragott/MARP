@@ -6,23 +6,45 @@
  */ 
 
 #include "p_spi.h"
-
+#include "p_usart.h"
 static void drive_ss_pin(uint8_t pin, uint8_t status);
 static uint16_t spi_dummy = 0xFF;
 
+
+
+
 #warning come back to this and separate this function for readability
-void p_spi_init()
+void pspi_init()
 {
+	struct spi_config sercom_1_conf;
+	spi_get_config_defaults(&sercom_1_conf);
+	sercom_1_conf.character_size = SERCOM_1_CHAR_SIZE;
+	sercom_1_conf.mode_specific.master.baudrate = SERCOM_1_BAUD;
+	sercom_1_conf.pinmux_pad0 = EXT2_SPI_SERCOM_PINMUX_PAD0;
+	sercom_1_conf.pinmux_pad1 = EXT2_SPI_SERCOM_PINMUX_PAD1;
+	sercom_1_conf.pinmux_pad2 = EXT2_SPI_SERCOM_PINMUX_PAD2;
+	sercom_1_conf.pinmux_pad3 = EXT2_SPI_SERCOM_PINMUX_PAD3;
+	sercom_1_conf.mux_setting = EXT2_SPI_SERCOM_MUX_SETTING; //Extremely important
+	
+	
+	
+	spi_init(&spi_sercom1_mod, SERCOM1, &sercom_1_conf);
+	spi_enable(&spi_sercom1_mod);
+	
+	
+	
+	 
+	
 	
 }
 
 //Unused for now. Eventually will automatically attach sensors to their respective modules
-void p_spi_sensor_init(p_spi_sensor* sensor)
+void pspi_sensor_init(p_spi_sensor* sensor)
 {
 	
 }
 
-enum status_code p_spi_read(p_spi_sensor* sensor, uint8_t reg, uint8_t length)
+enum status_code pspi_read(p_spi_sensor* sensor, uint8_t reg, uint8_t length)
 {
 	//unused error handling for now
 	enum status_code ret = STATUS_OK;
@@ -30,28 +52,27 @@ enum status_code p_spi_read(p_spi_sensor* sensor, uint8_t reg, uint8_t length)
 	ret = spi_write_buffer_wait(sensor->spi_inst, &reg, 1);
 	if(ret != STATUS_OK)
 	{
-		printf("Error on write\n");
+		DEBUG("Error on write\n");
 		delay_ms(100000);
 		
 	}
 	ret = spi_read_buffer_wait(sensor->spi_inst, sensor->buffer, length, spi_dummy);
 	if(ret != STATUS_OK)
 	{
-		printf("Error on read\n");
+		DEBUG("Error on read\n");
 		delay_ms(100000);
 	}
 	drive_ss_pin(sensor->ss_pin, HIGH);
 	return ret;
 }
 
-enum status_code p_spi_write(p_spi_sensor* sensor, uint8_t length)
+enum status_code pspi_write(p_spi_sensor* sensor, uint8_t length)
 {
-	
 	enum status_code ret = STATUS_OK;
 	drive_ss_pin(sensor->ss_pin, LOW);
 	ret = spi_write_buffer_wait(sensor->spi_inst, sensor->buffer, length);
 	drive_ss_pin(sensor->ss_pin, HIGH);
-	if(ret != STATUS_OK) {printf("somethings goofed\n"); delay_ms(100000);}
+	if(ret != STATUS_OK) {DEBUG("somethings goofed\n"); delay_ms(100000);}
 	return ret;
 }
 

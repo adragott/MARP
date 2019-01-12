@@ -59,11 +59,20 @@
 // From module: Delay routines
 #include <delay.h>
 
+// From module: FatFS file system
+#include <diskio.h>
+#include <ff.h>
+#include <ffconf.h>
+#include <integer.h>
+
 // From module: Generic board support
 #include <board.h>
 
 // From module: Interrupt management - SAM implementation
 #include <interrupt.h>
+
+// From module: Memory Control Access Interface
+#include <ctrl_access.h>
 
 // From module: PORT - GPIO Pin Control
 #include <port.h>
@@ -71,15 +80,18 @@
 // From module: Part identification macros
 #include <parts.h>
 
+// From module: RTC - Real Time Counter in Calendar Mode (Callback APIs)
+#include <rtc_calendar.h>
+#include <rtc_calendar_interrupt.h>
+#include <rtc_tamper.h>
+
 // From module: SERCOM Callback API
 #include <sercom.h>
 #include <sercom_interrupt.h>
 
-// From module: SERCOM Polled API
-#include <sercom.h>
-
-// From module: SERCOM SPI - Serial Peripheral Interface (Polled APIs)
+// From module: SERCOM SPI - Serial Peripheral Interface (Callback APIs)
 #include <spi.h>
+#include <spi_interrupt.h>
 
 // From module: SERCOM USART - Serial Communications (Callback APIs)
 #include <usart.h>
@@ -103,5 +115,8 @@
 
 // From module: SYSTEM - Reset Management for SAM D20/D21/R21/D09/D10/D11/DA/HA
 #include <reset.h>
+
+// From module: Supported ports of FatFS
+#include <diskio.h>
 
 #endif // ASF_H

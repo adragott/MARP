@@ -18,16 +18,15 @@ typedef struct p_spi_sensor
 	Sercom* hw;
 }p_spi_sensor;
 
-void p_spi_init();
+void pspi_init(void);
 
-struct spi_module spi_sercom5_mod;
 struct spi_module spi_sercom1_mod;
 
 //See comments in implementation
-void p_spi_sensor_init(p_spi_sensor* sensor);
+void pspi_sensor_init(p_spi_sensor* sensor);
 
-enum status_code p_spi_read(p_spi_sensor* sensor, uint8_t reg, uint8_t length);
-enum status_code p_spi_write(p_spi_sensor* sensor, uint8_t length);
+enum status_code pspi_read(p_spi_sensor* sensor, uint8_t reg, uint8_t length);
+enum status_code pspi_write(p_spi_sensor* sensor, uint8_t length);
 
 
 

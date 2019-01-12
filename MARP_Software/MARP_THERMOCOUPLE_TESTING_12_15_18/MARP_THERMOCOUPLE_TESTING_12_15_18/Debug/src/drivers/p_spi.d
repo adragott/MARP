@@ -110,20 +110,33 @@ src/drivers/p_spi.d src/drivers/p_spi.o: ../src/drivers/p_spi.c \
  ../src/ASF/common/utils/interrupt.h \
  ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h \
  ../src/ASF/common2/services/delay/delay.h \
- ../src/ASF/common2/services/delay/sam0/systick_counter.h \
+ ../src/ASF/common2/services/delay/sam0/cycle_counter.h \
  ../src/ASF/sam0/drivers/system/clock/clock.h \
  ../src/ASF/sam0/drivers/system/clock/gclk.h \
  ../src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock_feature.h \
+ ../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/diskio.h \
+ ../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/integer.h \
+ ../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/ff.h \
+ ../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/ffconf.h \
+ ../src/config/conf_fatfs.h \
+ ../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/ffconf.h \
+ ../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/integer.h \
  ../src/ASF/common/boards/board.h \
  ../src/ASF/sam0/boards/samd21_xplained_pro/samd21_xplained_pro.h \
- ../src/config/conf_board.h ../src/ASF/sam0/drivers/port/port.h \
+ ../src/config/conf_board.h \
+ ../src/ASF/common/services/storage/ctrl_access/ctrl_access.h \
+ ../src/config/conf_access.h ../src/ASF/sam0/drivers/port/port.h \
  ../src/ASF/sam0/drivers/system/pinmux/pinmux.h \
+ ../src/ASF/sam0/drivers/rtc/rtc_calendar.h ../src/config/conf_clocks.h \
+ ../src/ASF/sam0/drivers/system/interrupt/system_interrupt.h \
+ ../src/ASF/sam0/drivers/system/interrupt/system_interrupt_samd21/system_interrupt_features.h \
+ ../src/ASF/sam0/drivers/rtc/rtc_calendar_interrupt.h \
+ ../src/ASF/sam0/drivers/rtc/rtc_calendar.h \
+ ../src/ASF/sam0/drivers/rtc/rtc_tamper.h \
  ../src/ASF/sam0/drivers/sercom/sercom.h \
  ../src/ASF/sam0/drivers/system/system.h \
  ../src/ASF/sam0/drivers/system/power/power_sam_d_r_h/power.h \
  ../src/ASF/sam0/drivers/system/reset/reset_sam_d_r_h/reset.h \
- ../src/ASF/sam0/drivers/system/interrupt/system_interrupt.h \
- ../src/ASF/sam0/drivers/system/interrupt/system_interrupt_samd21/system_interrupt_features.h \
  ../src/ASF/sam0/drivers/sercom/sercom_pinout.h \
  ../src/ASF/sam0/drivers/sercom/sercom_interrupt.h \
  ../src/ASF/sam0/drivers/sercom/sercom.h \
@@ -131,9 +144,12 @@ src/drivers/p_spi.d src/drivers/p_spi.o: ../src/drivers/p_spi.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\string.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\xlocale.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\string.h \
- ../src/config/conf_spi.h ../src/ASF/sam0/drivers/sercom/usart/usart.h \
+ ../src/config/conf_spi.h \
+ ../src/ASF/sam0/drivers/sercom/spi/spi_interrupt.h \
+ ../src/ASF/sam0/drivers/sercom/spi/spi.h \
+ ../src/ASF/sam0/drivers/sercom/usart/usart.h \
  ../src/ASF/sam0/drivers/sercom/usart/usart_interrupt.h \
- ../src/ASF/sam0/drivers/sercom/usart/usart.h
+ ../src/ASF/sam0/drivers/sercom/usart/usart.h ../src/drivers/p_usart.h
 
 ../src/drivers/p_spi.h:
 
@@ -363,7 +379,7 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/common2/services/delay/delay.h:
 
-../src/ASF/common2/services/delay/sam0/systick_counter.h:
+../src/ASF/common2/services/delay/sam0/cycle_counter.h:
 
 ../src/ASF/sam0/drivers/system/clock/clock.h:
 
@@ -371,15 +387,47 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da_ha1/clock_feature.h:
 
+../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/diskio.h:
+
+../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/integer.h:
+
+../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/ff.h:
+
+../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/ffconf.h:
+
+../src/config/conf_fatfs.h:
+
+../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/ffconf.h:
+
+../src/ASF/thirdparty/fatfs/fatfs-r0.09/src/integer.h:
+
 ../src/ASF/common/boards/board.h:
 
 ../src/ASF/sam0/boards/samd21_xplained_pro/samd21_xplained_pro.h:
 
 ../src/config/conf_board.h:
 
+../src/ASF/common/services/storage/ctrl_access/ctrl_access.h:
+
+../src/config/conf_access.h:
+
 ../src/ASF/sam0/drivers/port/port.h:
 
 ../src/ASF/sam0/drivers/system/pinmux/pinmux.h:
+
+../src/ASF/sam0/drivers/rtc/rtc_calendar.h:
+
+../src/config/conf_clocks.h:
+
+../src/ASF/sam0/drivers/system/interrupt/system_interrupt.h:
+
+../src/ASF/sam0/drivers/system/interrupt/system_interrupt_samd21/system_interrupt_features.h:
+
+../src/ASF/sam0/drivers/rtc/rtc_calendar_interrupt.h:
+
+../src/ASF/sam0/drivers/rtc/rtc_calendar.h:
+
+../src/ASF/sam0/drivers/rtc/rtc_tamper.h:
 
 ../src/ASF/sam0/drivers/sercom/sercom.h:
 
@@ -388,10 +436,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/ASF/sam0/drivers/system/power/power_sam_d_r_h/power.h:
 
 ../src/ASF/sam0/drivers/system/reset/reset_sam_d_r_h/reset.h:
-
-../src/ASF/sam0/drivers/system/interrupt/system_interrupt.h:
-
-../src/ASF/sam0/drivers/system/interrupt/system_interrupt_samd21/system_interrupt_features.h:
 
 ../src/ASF/sam0/drivers/sercom/sercom_pinout.h:
 
@@ -409,8 +453,14 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/config/conf_spi.h:
 
+../src/ASF/sam0/drivers/sercom/spi/spi_interrupt.h:
+
+../src/ASF/sam0/drivers/sercom/spi/spi.h:
+
 ../src/ASF/sam0/drivers/sercom/usart/usart.h:
 
 ../src/ASF/sam0/drivers/sercom/usart/usart_interrupt.h:
 
 ../src/ASF/sam0/drivers/sercom/usart/usart.h:
+
+../src/drivers/p_usart.h:

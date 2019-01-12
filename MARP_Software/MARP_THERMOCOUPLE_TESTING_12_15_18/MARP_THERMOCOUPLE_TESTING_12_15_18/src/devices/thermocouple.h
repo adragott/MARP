@@ -24,4 +24,6 @@ void thermocouple_init(uint8_t ID);
 void fill_thermo_data(void);
 
 void get_thermo_data(thermocouple* inst);
+
+
 #endif
