@@ -41,13 +41,20 @@ static p_spi_sensor test;
 
 uint8_t tempbuf[10];
 
+typedef union dataBytes
+{
+	uint32_t resultData;
+	uint8_t readBuffer[4];
+}dataBytes;
 
 int main (void)
 {
-	test.buffer = tempbuf;
+	union dataBytes data;
+	test.buffer = data.readBuffer;
 	test.hw = SERCOM1;
 	test.spi_inst = &spi_sercom1_mod;
 	test.ss_pin = 10;
+	
 	
 	system_init();
 	pusart_init();
@@ -60,10 +67,6 @@ int main (void)
 	{
 		tempbuf[x] = 0x0;
 	}
-	tempbuf[0] = 255;
-	tempbuf[1] = 0xa1;
-	tempbuf[2] = 0x1b;
-	tempbuf[3] = 0xb1;
 	for(;;)
 	{
 		
@@ -71,15 +74,28 @@ int main (void)
 		uint8_t tempbuf2[4];
 		PORT->Group[0].OUT.bit.OUT &= ~(1 << 10);
 		delay_ms(1);
-		spi_read_buffer_wait(&spi_sercom1_mod, &tempbuf2[3], 1, 0x00);
-		spi_read_buffer_wait(&spi_sercom1_mod, &tempbuf2[2], 1, 0x00);
-		spi_read_buffer_wait(&spi_sercom1_mod, &tempbuf2[1], 1, 0x00);
-		spi_read_buffer_wait(&spi_sercom1_mod, &tempbuf2[0], 1, 0x00);
-		DEBUG("PRINTING\n");
-		DEBUG("%u\t%u\t%u\t%u\n", tempbuf2[0], tempbuf2[1], tempbuf2[2], tempbuf2[3]);
-		DEBUG("%#x\t%#x\t%#x\t%#x\n", tempbuf2[0], tempbuf2[1], tempbuf2[2], tempbuf2[3]);
+		spi_read_buffer_wait(&spi_sercom1_mod, &data.readBuffer[3], 1, 0x00);
+		spi_read_buffer_wait(&spi_sercom1_mod, &data.readBuffer[2], 1, 0x00);
+		spi_read_buffer_wait(&spi_sercom1_mod, &data.readBuffer[1], 1, 0x00);
+		spi_read_buffer_wait(&spi_sercom1_mod, &data.readBuffer[0], 1, 0x00);
+		
+		DEBUG("%#x\t%#x\t%#x\t%#x\n", data.readBuffer[0], data.readBuffer[1], data.readBuffer[2], data.readBuffer[3]);
 		PORT->Group[0].OUT.bit.OUT |= (1 << 10);
+		float tempfloat = 0.f;
+		uint16_t tempData;
+		if(data.resultData & (uint32_t)1 << 31)
+		{
+			tempData = 0xC000 | ((data.resultData >> 18) & 0x3FFF);
+		}
+		else
+		{
+			tempData = data.resultData >> 18;
+		}
+		tempfloat = (float)(tempData/4.0);
+		DEBUG("%f\n", tempfloat);
+		
 		//service_handler();
+		delay_ms(100);
 		
 	}
 	
