@@ -2,9 +2,9 @@ EESchema Schematic File Version 4
 LIBS:MARP-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr E 44000 34000
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title "MARP Brain"
 Date ""
 Rev ""
@@ -14,935 +14,616 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+NoConn ~ 1600 6400
+NoConn ~ 1600 5000
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J2
-U 1 1 5B6A5B6A
-P 3850 5700
-F 0 "J2" H 3900 6117 50  0000 C CNN
-F 1 "CORTEX_DEBUGGER" H 3900 6026 50  0000 C CNN
-F 2 "" H 3850 5700 50  0001 C CNN
-F 3 "~" H 3850 5700 50  0001 C CNN
-	1    3850 5700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3650 5800
-NoConn ~ 3650 5900
-NoConn ~ 4150 5800
-Wire Wire Line
-	5350 5750 4750 5750
-Wire Wire Line
-	4750 5750 4750 5600
-Wire Wire Line
-	4750 5600 4150 5600
-Wire Wire Line
-	5350 5850 4800 5850
-Wire Wire Line
-	4800 5850 4800 5500
-Wire Wire Line
-	4800 5500 4150 5500
-NoConn ~ 4150 5700
-Wire Wire Line
-	4150 5900 4350 5900
-Wire Wire Line
-	3650 5500 3500 5500
-Wire Wire Line
-	3150 5600 3150 5700
-Wire Wire Line
-	3150 5600 3650 5600
-Wire Wire Line
-	3650 5700 3150 5700
-Connection ~ 3150 5700
-Wire Wire Line
-	3150 5700 3150 6000
-$Comp
-L power:GND #PWR09
-U 1 1 5B6AAE54
-P 3150 6000
-F 0 "#PWR09" H 3150 5750 50  0001 C CNN
-F 1 "GND" H 3155 5827 50  0000 C CNN
-F 2 "" H 3150 6000 50  0001 C CNN
-F 3 "" H 3150 6000 50  0001 C CNN
-	1    3150 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L MARP-rescue:292304-1-Connector P1
-U 1 1 5B7DF5B3
-P 900 2050
-F 0 "P1" H 945 1633 50  0000 C CNN
-F 1 "292304-1" H 945 1724 50  0000 C CNN
-F 2 "" H 900 1600 50  0001 L BNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/292304-1/A31725-ND/773785?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 900 1500 50  0001 L BNN
-F 4 "TE Connectivity" H 900 1350 50  0001 L BNN "Field4"
-F 5 "A31725-ND" H 900 1200 50  0001 L BNN "Field6"
-F 6 "292304-1" H 900 2500 50  0001 L BNN "Field7"
-F 7 "http://www.te.com/usa-en/product-292304-1.html" H 950 2650 50  0001 L BNN "Field9"
-F 8 "USB B R/A RECP CONNECTOR,LEAD FREE" H 950 2850 50  0001 L BNN "Field10"
-	1    900  2050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Interface_USB:FT232RL U1
-U 1 1 5B695E11
-P 3600 1900
-F 0 "U1" H 4050 2900 50  0000 C CNN
-F 1 "FT232RL" H 4050 2800 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 3600 1900 50  0001 C CNN
-F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 3600 1900 50  0001 C CNN
-	1    3600 1900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1250 1900 1250 900 
-Wire Wire Line
-	3600 900  3500 900 
-Connection ~ 3600 900 
-Wire Wire Line
-	3500 900  3400 900 
-Connection ~ 3500 900 
-Wire Wire Line
-	3400 900  1250 900 
-Connection ~ 3400 900 
-Wire Wire Line
-	1250 900  1050 900 
-Connection ~ 1250 900 
-$Comp
-L power:GND #PWR02
-U 1 1 5B7E42BB
-P 1050 900
-F 0 "#PWR02" H 1050 650 50  0001 C CNN
-F 1 "GND" V 1055 772 50  0000 R CNN
-F 2 "" H 1050 900 50  0001 C CNN
-F 3 "" H 1050 900 50  0001 C CNN
-	1    1050 900 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1250 1900 1100 1900
-Wire Wire Line
-	3700 3150 3500 3150
-Wire Wire Line
-	3500 2900 3500 3150
-Wire Wire Line
-	3700 2900 3700 3150
-$Comp
-L MARP:ATSAMD21J18A-AU U2
-U 1 1 5B7E00C6
-P 6150 4150
-F 0 "U2" H 6150 6317 50  0000 C CNN
-F 1 "ATSAMD21J18A-AU" H 6150 6226 50  0000 C CNN
-F 2 "" H 6150 4150 50  0001 L BNN
-F 3 "None" H 6150 4150 50  0001 L BNN
-F 4 "Microchip" H 6150 4150 50  0001 L BNN "Field4"
-F 5 "TQFP-64 Microchip" H 6150 4150 50  0001 L BNN "Field5"
-F 6 "SAMD21J Series 256 kB Flash 32 kB RAM 48 MHz 32-Bit Microcontroller - TQFP-64" H 6150 4150 50  0001 L BNN "Field6"
-F 7 "ATSAMD21J18A-AU" H 6150 4150 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 6150 4150 50  0001 L BNN "Field8"
-	1    6150 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L XBEE_900HP:XBP9B-XCWT-002 U3
-U 1 1 5B7E3A21
-P 9700 2050
-F 0 "U3" H 9700 3117 50  0000 C CNN
-F 1 "XBP9B-XCWT-002" H 9700 3026 50  0000 C CNN
-F 2 "" H 9700 2050 50  0001 L BNN
-F 3 "https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf" H 9700 2050 50  0001 L BNN
-F 4 "Digi International" H 9700 2050 50  0001 L BNN "Field4"
-F 5 "38.03 USD" H 9700 2050 50  0001 L BNN "Field5"
-F 6 "Bad" H 9700 2050 50  0001 L BNN "Field6"
-F 7 "Module Digi International" H 9700 2050 50  0001 L BNN "Field7"
-F 8 "XBP9B-XCWT-002" H 9700 2050 50  0001 L BNN "Field8"
-	1    9700 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Ferrite_Bead_Small L1
-U 1 1 5B7E66B6
-P 1400 2300
-F 0 "L1" H 1300 2254 50  0000 R CNN
-F 1 "Ferrite_Bead_Small" H 1300 2345 50  0000 R CNN
-F 2 "" V 1330 2300 50  0001 C CNN
-F 3 "~" H 1400 2300 50  0001 C CNN
-	1    1400 2300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3800 900  3600 900 
-$Comp
-L Device:CP1_Small C1
-U 1 1 5B7E9379
-P 1150 2450
-F 0 "C1" H 1241 2496 50  0000 L CNN
-F 1 "10nF" H 1241 2405 50  0000 L CNN
-F 2 "" H 1150 2450 50  0001 C CNN
-F 3 "~" H 1150 2450 50  0001 C CNN
-	1    1150 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5B7E9569
-P 1150 2550
-F 0 "#PWR03" H 1150 2300 50  0001 C CNN
-F 1 "GND" H 1155 2377 50  0000 C CNN
-F 2 "" H 1150 2550 50  0001 C CNN
-F 3 "" H 1150 2550 50  0001 C CNN
-	1    1150 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 3150 3500 3150
-Connection ~ 3500 3150
-Wire Wire Line
-	1100 2200 1150 2200
-Wire Wire Line
-	1150 2350 1150 2200
-Connection ~ 1150 2200
-Wire Wire Line
-	1150 2200 1400 2200
-Text Label 4450 2200 0    50   ~ 0
-USB_TX_TO_RX
-Text Label 1200 2000 0    50   ~ 0
-USB_TX_TO_RX
-Wire Wire Line
-	4450 2200 4400 2200
-Wire Wire Line
-	1200 2000 1100 2000
-Wire Wire Line
-	1100 2100 1200 2100
-Text Label 1200 2100 0    50   ~ 0
-USB_RX_TO_TX
-Wire Wire Line
-	4400 2300 4450 2300
-Text Label 4450 2300 0    50   ~ 0
-USB_RX_TO_TX
-$Comp
-L Device:C_Small C2
-U 1 1 5B7F1251
-P 4400 2700
-F 0 "C2" H 4492 2746 50  0000 L CNN
-F 1 "100nF" H 4450 2600 50  0000 L CNN
-F 2 "" H 4400 2700 50  0001 C CNN
-F 3 "~" H 4400 2700 50  0001 C CNN
-	1    4400 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 2800 4400 2950
-$Comp
-L power:GND #PWR011
-U 1 1 5B7F1B2A
-P 4400 2950
-F 0 "#PWR011" H 4400 2700 50  0001 C CNN
-F 1 "GND" H 4405 2777 50  0000 C CNN
-F 2 "" H 4400 2950 50  0001 C CNN
-F 3 "" H 4400 2950 50  0001 C CNN
-	1    4400 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 2600 4600 2600
-Connection ~ 4400 2600
-Text Label 4350 5900 0    50   ~ 0
-~RESET
-Text Label 5450 2400 2    50   ~ 0
-~RESET
-Wire Wire Line
-	6950 2550 7250 2550
-$Comp
-L Device:C_Small C6
-U 1 1 5B80318D
-P 7250 2650
-F 0 "C6" H 7350 2750 50  0000 C CNN
-F 1 "1uF" H 7150 2750 50  0000 C CNN
-F 2 "" H 7250 2650 50  0001 C CNN
-F 3 "~" H 7250 2650 50  0001 C CNN
-	1    7250 2650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 5B8058F2
-P 7750 2550
-F 0 "C7" H 7850 2700 50  0000 R CNN
-F 1 "100nF" H 7950 2800 50  0000 R CNN
-F 2 "" H 7750 2550 50  0001 C CNN
-F 3 "~" H 7750 2550 50  0001 C CNN
-	1    7750 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 5B805988
-P 7250 2800
-F 0 "#PWR015" H 7250 2550 50  0001 C CNN
-F 1 "GND" H 7255 2627 50  0000 C CNN
-F 2 "" H 7250 2800 50  0001 C CNN
-F 3 "" H 7250 2800 50  0001 C CNN
-	1    7250 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 2750 7250 2800
-Wire Wire Line
-	7750 2450 7950 2450
-$Comp
-L Device:C_Small C8
-U 1 1 5B80850B
-P 7950 2550
-F 0 "C8" H 8042 2596 50  0000 L CNN
-F 1 "10uF" H 8050 2500 50  0000 L CNN
-F 2 "" H 7950 2550 50  0001 C CNN
-F 3 "~" H 7950 2550 50  0001 C CNN
-	1    7950 2550
-	1    0    0    -1  
-$EndComp
-Connection ~ 7750 2450
-Wire Wire Line
-	6950 2450 7050 2450
-Text Label 7650 2650 2    50   ~ 0
-GNDANA
-Wire Wire Line
-	7950 2650 7750 2650
-Wire Wire Line
-	7750 2650 7650 2650
-Connection ~ 7750 2650
-$Comp
-L power:GND #PWR017
-U 1 1 5B8130A8
-P 7950 2650
-F 0 "#PWR017" H 7950 2400 50  0001 C CNN
-F 1 "GND" H 7955 2477 50  0000 C CNN
-F 2 "" H 7950 2650 50  0001 C CNN
-F 3 "" H 7950 2650 50  0001 C CNN
-	1    7950 2650
-	1    0    0    -1  
-$EndComp
-Connection ~ 7950 2650
-Text Label 7200 6050 0    50   ~ 0
-GNDANA
-Wire Wire Line
-	7200 6050 6950 6050
-Wire Wire Line
-	7000 6150 6950 6150
-$Comp
-L power:GND #PWR013
-U 1 1 5B814BC6
-P 7000 6150
-F 0 "#PWR013" H 7000 5900 50  0001 C CNN
-F 1 "GND" V 7005 6022 50  0000 R CNN
-F 2 "" H 7000 6150 50  0001 C CNN
-F 3 "" H 7000 6150 50  0001 C CNN
-	1    7000 6150
+L MARP-rescue:MAX31855KASA_-dk_Interface-Sensor-and-Detector-Interfaces U?
+U 1 1 5C9122C6
+P 2000 31000
+AR Path="/5B7E0FCD/5C9122C6" Ref="U?"  Part="1" 
+AR Path="/5C9122C6" Ref="U?"  Part="1" 
+F 0 "U?" V 2103 30259 60  0000 R CNN
+F 1 "MAX31855KASA_" V 1997 30259 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 2200 31200 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 2200 31300 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 2200 31400 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 2200 31500 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 2200 31600 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 2200 31700 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 2200 31800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 2200 31900 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 2200 32000 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 2200 32100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2200 32200 60  0001 L CNN "Status"
+	1    2000 31000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6950 2350 7000 2350
+	2700 30800 3000 30800
 $Comp
-L Device:C_Small C4
-U 1 1 5B818E44
-P 7200 2300
-F 0 "C4" H 7150 2250 50  0000 R CNN
-F 1 "100nF" H 7100 2300 50  0000 R CNN
-F 2 "" H 7200 2300 50  0001 C CNN
-F 3 "~" H 7200 2300 50  0001 C CNN
-	1    7200 2300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7200 2400 7550 2400
-$Comp
-L power:GND #PWR016
-U 1 1 5B81A62F
-P 7550 2350
-F 0 "#PWR016" H 7550 2100 50  0001 C CNN
-F 1 "GND" V 7555 2222 50  0000 R CNN
-F 2 "" H 7550 2350 50  0001 C CNN
-F 3 "" H 7550 2350 50  0001 C CNN
-	1    7550 2350
+L power:GND #PWR?
+U 1 1 5C9122CE
+P 3000 30800
+AR Path="/5B7E0FCD/5C9122CE" Ref="#PWR?"  Part="1" 
+AR Path="/5C9122CE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 30550 50  0001 C CNN
+F 1 "GND" V 3005 30672 50  0000 R CNN
+F 2 "" H 3000 30800 50  0001 C CNN
+F 3 "" H 3000 30800 50  0001 C CNN
+	1    3000 30800
 	0    -1   -1   0   
 $EndComp
-Connection ~ 7950 2450
 Wire Wire Line
-	7000 2200 7200 2200
-Wire Wire Line
-	6950 1750 7250 1750
-Wire Wire Line
-	6950 1750 6950 2250
+	1900 30900 1700 30900
 $Comp
-L Device:C_Small C5
-U 1 1 5B82F90F
-P 7250 1850
-F 0 "C5" H 7342 1896 50  0000 L CNN
-F 1 "100nF" H 7342 1805 50  0000 L CNN
-F 2 "" H 7250 1850 50  0001 C CNN
-F 3 "~" H 7250 1850 50  0001 C CNN
-	1    7250 1850
-	1    0    0    -1  
-$EndComp
-Connection ~ 7250 1750
-$Comp
-L power:GND #PWR014
-U 1 1 5B82F9C1
-P 7250 1950
-F 0 "#PWR014" H 7250 1700 50  0001 C CNN
-F 1 "GND" H 7255 1777 50  0000 C CNN
-F 2 "" H 7250 1950 50  0001 C CNN
-F 3 "" H 7250 1950 50  0001 C CNN
-	1    7250 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 1750 7950 2200
-Wire Wire Line
-	7200 2200 7950 2200
-Connection ~ 7200 2200
-Connection ~ 7950 2200
-Wire Wire Line
-	7950 2200 7950 2450
-Wire Wire Line
-	7250 2450 7750 2450
-$Comp
-L Device:Ferrite_Bead_Small L2
-U 1 1 5B832535
-P 7150 2450
-F 0 "L2" V 7200 2550 50  0000 C CNN
-F 1 "220OHM" V 7200 2250 50  0000 C CNN
-F 2 "" V 7080 2450 50  0001 C CNN
-F 3 "~" H 7150 2450 50  0001 C CNN
-	1    7150 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 5B83ADDA
-P 5150 3100
-F 0 "C3" H 4950 3100 50  0000 L CNN
-F 1 "100nF" H 4900 3000 50  0000 L CNN
-F 2 "" H 5150 3100 50  0001 C CNN
-F 3 "~" H 5150 3100 50  0001 C CNN
-	1    5150 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 2750 5250 2750
-$Comp
-L power:GND #PWR012
-U 1 1 5B83BEA9
-P 5150 3450
-F 0 "#PWR012" H 5150 3200 50  0001 C CNN
-F 1 "GND" H 5150 3400 50  0000 C CNN
-F 2 "" H 5150 3450 50  0001 C CNN
-F 3 "" H 5150 3450 50  0001 C CNN
-	1    5150 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Pushbutton-Switches:GPTS203211B S1
-U 1 1 5B83D84B
-P 4700 3250
-F 0 "S1" H 4800 3100 50  0000 C CNN
-F 1 "GPTS203211B" H 4600 3200 50  0000 C CNN
-F 2 "digikey-footprints:PushButton_12x12mm_THT_GPTS203211B" H 4900 3450 50  0001 L CNN
-F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4900 3550 60  0001 L CNN
-F 4 "CW181-ND" H 4900 3650 60  0001 L CNN "Digi-Key_PN"
-F 5 "GPTS203211B" H 4900 3750 60  0001 L CNN "MPN"
-F 6 "Switches" H 4900 3850 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 4900 3950 60  0001 L CNN "Family"
-F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 4900 4050 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 4900 4150 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 4900 4250 60  0001 L CNN "Description"
-F 11 "CW Industries" H 4900 4350 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4900 4450 60  0001 L CNN "Status"
-	1    4700 3250
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R_Small R8
-U 1 1 5B843DBE
-P 4850 2750
-F 0 "R8" V 4654 2750 50  0000 C CNN
-F 1 "330" V 4745 2750 50  0000 C CNN
-F 2 "" H 4850 2750 50  0001 C CNN
-F 3 "~" H 4850 2750 50  0001 C CNN
-	1    4850 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5150 2750 5000 2750
-Connection ~ 5150 2750
-Wire Wire Line
-	4700 2750 4700 3050
-Wire Wire Line
-	4700 3450 5150 3450
-Connection ~ 5150 3450
-Wire Wire Line
-	5150 3200 5150 3450
-Wire Wire Line
-	5150 2750 5150 3000
-Wire Wire Line
-	4750 2750 4700 2750
-Wire Wire Line
-	5000 2750 5000 2600
-$Comp
-L Device:R_Small R9
-U 1 1 5B84CA38
-P 5000 2500
-F 0 "R9" H 5059 2546 50  0000 L CNN
-F 1 "R_Small" H 5059 2455 50  0000 L CNN
-F 2 "" H 5000 2500 50  0001 C CNN
-F 3 "~" H 5000 2500 50  0001 C CNN
-	1    5000 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 2750 5000 2750
-Connection ~ 5000 2750
-Wire Wire Line
-	7550 2400 7550 2350
-Text Label 5250 5150 2    50   ~ 0
-SAMD21_FTDI_TX_TO_RX
-Text Label 2700 2500 2    50   ~ 0
-SAMD21_FTDI_TX_TO_RX
-Text Label 5250 5250 2    50   ~ 0
-SAMD21_FTDI_RX_TO_TX
-Text Label 2700 2600 2    50   ~ 0
-SAMD21_FTDI_RX_TO_TX
-Wire Wire Line
-	5350 5150 5250 5150
-Wire Wire Line
-	5350 5250 5250 5250
-Wire Wire Line
-	2800 2500 2700 2500
-Wire Wire Line
-	2800 2600 2700 2600
-Wire Wire Line
-	5250 2750 5250 2400
-Wire Wire Line
-	5250 2400 5450 2400
-Connection ~ 5250 2750
-Wire Wire Line
-	5250 2750 5350 2750
-Text Label 7100 3750 0    50   ~ 0
-SAMD21_XBEE_TX_TO_RX
-Text Label 7850 1250 2    50   ~ 0
-SAMD21_XBEE_TX_TO_RX
-Wire Wire Line
-	8600 1350 8450 1350
-Wire Wire Line
-	8450 1350 8450 1100
-Wire Wire Line
-	7000 2200 7000 2350
-Text Label 8450 1100 2    50   ~ 0
-~RESET
-Wire Wire Line
-	8200 1750 8600 1750
-Wire Wire Line
-	6950 3750 7100 3750
-Wire Wire Line
-	6950 3850 7100 3850
-Text Label 7100 3850 0    50   ~ 0
-SAMD21_XBEE_RX_TO_TX
-Text Label 7850 1150 2    50   ~ 0
-SAMD21_XBEE_RX_TO_TX
-Wire Wire Line
-	8600 1650 8300 1650
-Wire Wire Line
-	8300 1150 7850 1150
-Wire Wire Line
-	8300 1150 8300 1650
-Wire Wire Line
-	8200 1750 8200 1250
-Wire Wire Line
-	8200 1250 7850 1250
-Wire Wire Line
-	10800 1250 10900 1250
-Wire Wire Line
-	10900 1250 10900 1100
-Wire Wire Line
-	3200 3950 2900 3950
-Wire Wire Line
-	3400 3950 5350 3950
-Wire Wire Line
-	2300 3950 2300 4100
-$Comp
-L power:GND #PWR07
-U 1 1 5B87BBC5
-P 2300 4100
-F 0 "#PWR07" H 2300 3850 50  0001 C CNN
-F 1 "GND" H 2305 3927 50  0000 C CNN
-F 2 "" H 2300 4100 50  0001 C CNN
-F 3 "" H 2300 4100 50  0001 C CNN
-	1    2300 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 3950 2300 3950
-$Comp
-L Device:LED D4
-U 1 1 5B8778B1
-P 2750 3950
-F 0 "D4" H 2741 4166 50  0000 C CNN
-F 1 "XBEE TX LED" H 2741 4075 50  0000 C CNN
-F 2 "" H 2750 3950 50  0001 C CNN
-F 3 "~" H 2750 3950 50  0001 C CNN
-	1    2750 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5B877C91
-P 3300 3950
-F 0 "R5" V 3104 3950 50  0000 C CNN
-F 1 "330" V 3195 3950 50  0000 C CNN
-F 2 "" H 3300 3950 50  0001 C CNN
-F 3 "~" H 3300 3950 50  0001 C CNN
-	1    3300 3950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3300 4400 3000 4400
-Wire Wire Line
-	3500 4400 3850 4400
-Wire Wire Line
-	2400 4400 2400 4550
-$Comp
-L power:GND #PWR08
-U 1 1 5B8893D6
-P 2400 4550
-F 0 "#PWR08" H 2400 4300 50  0001 C CNN
-F 1 "GND" H 2405 4377 50  0000 C CNN
-F 2 "" H 2400 4550 50  0001 C CNN
-F 3 "" H 2400 4550 50  0001 C CNN
-	1    2400 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 4400 2400 4400
-$Comp
-L Device:LED D5
-U 1 1 5B8893DD
-P 2850 4400
-F 0 "D5" H 2841 4616 50  0000 C CNN
-F 1 "XBEE RX LED" H 2841 4525 50  0000 C CNN
-F 2 "" H 2850 4400 50  0001 C CNN
-F 3 "~" H 2850 4400 50  0001 C CNN
-	1    2850 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 5B8893E3
-P 3400 4400
-F 0 "R6" V 3204 4400 50  0000 C CNN
-F 1 "330" V 3295 4400 50  0000 C CNN
-F 2 "" H 3400 4400 50  0001 C CNN
-F 3 "~" H 3400 4400 50  0001 C CNN
-	1    3400 4400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3850 4400 3850 4050
-Wire Wire Line
-	3850 4050 5350 4050
-Wire Wire Line
-	2800 1600 2400 1600
-Wire Wire Line
-	2800 1500 2400 1500
-Wire Wire Line
-	2400 1600 2400 1750
-$Comp
-L power:VCC #PWR05
-U 1 1 5B89FE85
-P 1550 1750
-F 0 "#PWR05" H 1550 1600 50  0001 C CNN
-F 1 "VCC" H 1400 1850 50  0000 C CNN
-F 2 "" H 1550 1750 50  0001 C CNN
-F 3 "" H 1550 1750 50  0001 C CNN
-	1    1550 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR04
-U 1 1 5B89FEC3
-P 1550 1350
-F 0 "#PWR04" H 1550 1200 50  0001 C CNN
-F 1 "VCC" H 1400 1500 50  0000 C CNN
-F 2 "" H 1550 1350 50  0001 C CNN
-F 3 "" H 1550 1350 50  0001 C CNN
-	1    1550 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 1750 1650 1750
-$Comp
-L Device:R_Small R4
-U 1 1 5B8A2C37
-P 1750 1750
-F 0 "R4" V 1554 1750 50  0000 C CNN
-F 1 "330" V 1645 1750 50  0000 C CNN
-F 2 "" H 1750 1750 50  0001 C CNN
-F 3 "~" H 1750 1750 50  0001 C CNN
-	1    1750 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D3
-U 1 1 5B8A2CC3
-P 2000 1750
-F 0 "D3" H 1950 1950 50  0000 C CNN
-F 1 "USB_TX_LED" H 2000 1850 50  0000 C CNN
-F 2 "" H 2000 1750 50  0001 C CNN
-F 3 "~" H 2000 1750 50  0001 C CNN
-	1    2000 1750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2400 1750 2150 1750
-$Comp
-L Device:R_Small R3
-U 1 1 5B8A8E4B
-P 1750 1350
-F 0 "R3" V 1554 1350 50  0000 C CNN
-F 1 "330" V 1645 1350 50  0000 C CNN
-F 2 "" H 1750 1350 50  0001 C CNN
-F 3 "~" H 1750 1350 50  0001 C CNN
-	1    1750 1350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1550 1350 1650 1350
-$Comp
-L Device:LED D2
-U 1 1 5B8ABCF4
-P 2000 1350
-F 0 "D2" H 1950 1550 50  0000 C CNN
-F 1 "USB_RX_LED" H 2000 1450 50  0000 C CNN
-F 2 "" H 2000 1350 50  0001 C CNN
-F 3 "~" H 2000 1350 50  0001 C CNN
-	1    2000 1350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2150 1350 2400 1350
-Wire Wire Line
-	2400 1350 2400 1500
-Wire Wire Line
-	4400 1900 4700 1900
-Text Label 4700 1900 0    50   ~ 0
-~RESET
-Wire Wire Line
-	4400 1200 4400 900 
-Wire Wire Line
-	4400 900  3800 900 
-Connection ~ 3800 900 
-Wire Wire Line
-	10800 2850 10950 2850
-Wire Wire Line
-	10950 2850 10950 3000
-$Comp
-L power:GND #PWR018
-U 1 1 5B8BE9D5
-P 10950 3000
-F 0 "#PWR018" H 10950 2750 50  0001 C CNN
-F 1 "GND" H 10955 2827 50  0000 C CNN
-F 2 "" H 10950 3000 50  0001 C CNN
-F 3 "" H 10950 3000 50  0001 C CNN
-	1    10950 3000
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 12100 50   8800 8250
-U 5B7E0FCD
-F0 "MARP_PM" 50
-F1 "marp_sensory_hub.sch" 50
-$EndSheet
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:FQP27P06 Q2
-U 1 1 5C1D1632
-P 3950 3500
-F 0 "Q2" H 4058 3553 60  0000 L CNN
-F 1 "FQP27P06" H 4058 3447 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 4150 3700 60  0001 L CNN
-F 3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 4150 3800 60  0001 L CNN
-F 4 "FQP27P06-ND" H 4150 3900 60  0001 L CNN "Digi-Key_PN"
-F 5 "FQP27P06" H 4150 4000 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 4150 4100 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 4150 4200 60  0001 L CNN "Family"
-F 8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 4150 4300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" H 4150 4400 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 60V 27A TO-220" H 4150 4500 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 4150 4600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4150 4700 60  0001 L CNN "Status"
-	1    3950 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:FQP27P06 Q1
-U 1 1 5C1D1E45
-P 1100 3650
-F 0 "Q1" H 1208 3703 60  0000 L CNN
-F 1 "FQP27P06" H 1208 3597 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 1300 3850 60  0001 L CNN
-F 3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 1300 3950 60  0001 L CNN
-F 4 "FQP27P06-ND" H 1300 4050 60  0001 L CNN "Digi-Key_PN"
-F 5 "FQP27P06" H 1300 4150 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 1300 4250 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 1300 4350 60  0001 L CNN "Family"
-F 8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 1300 4450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" H 1300 4550 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 60V 27A TO-220" H 1300 4650 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 1300 4750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1300 4850 60  0001 L CNN "Status"
-	1    1100 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5C1D5CC0
-P 650 3150
-F 0 "R2" V 454 3150 50  0000 C CNN
-F 1 "2200" V 545 3150 50  0000 C CNN
-F 2 "" H 650 3150 50  0001 C CNN
-F 3 "~" H 650 3150 50  0001 C CNN
-	1    650  3150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5C1DAC43
-P 550 3850
-F 0 "R1" H 609 3896 50  0000 L CNN
-F 1 "4700" H 609 3805 50  0000 L CNN
-F 2 "" H 550 3850 50  0001 C CNN
-F 3 "~" H 550 3850 50  0001 C CNN
-	1    550  3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	550  3750 800  3750
-$Comp
-L power:GND #PWR01
-U 1 1 5C1E208D
-P 550 4000
-F 0 "#PWR01" H 550 3750 50  0001 C CNN
-F 1 "GND" H 555 3827 50  0000 C CNN
-F 2 "" H 550 4000 50  0001 C CNN
-F 3 "" H 550 4000 50  0001 C CNN
-	1    550  4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	550  3150 550  3750
-Connection ~ 550  3750
-Wire Wire Line
-	1400 2400 1400 3150
-Wire Wire Line
-	750  3150 1100 3150
-Connection ~ 1400 3150
-Connection ~ 1100 3150
-Wire Wire Line
-	1100 3150 1400 3150
-$Comp
-L Device:LED D1
-U 1 1 5C215B6A
-P 1250 3300
-F 0 "D1" H 1242 3045 50  0000 C CNN
-F 1 "LED" H 1242 3136 50  0000 C CNN
-F 2 "" H 1250 3300 50  0001 C CNN
-F 3 "~" H 1250 3300 50  0001 C CNN
-	1    1250 3300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1100 3150 1100 3300
-Wire Wire Line
-	1100 3450 1500 3450
-Wire Wire Line
-	1500 3450 1500 3300
-Wire Wire Line
-	1500 3300 1400 3300
-Wire Wire Line
-	550  3950 550  4000
-Wire Wire Line
-	1100 3850 1100 4400
-Wire Wire Line
-	1100 4400 750  4400
-Wire Wire Line
-	4600 2600 4600 2900
-Wire Wire Line
-	4600 2900 4050 2900
-Wire Wire Line
-	3800 2900 3800 3300
-Wire Wire Line
-	3800 3300 3650 3300
-Wire Wire Line
-	3650 3300 3650 3600
-Wire Wire Line
-	1500 3300 1700 3300
-Connection ~ 1500 3300
-$Comp
-L MAX31855:+5V #P+01
-U 1 1 5C231E45
-P 1800 3300
-F 0 "#P+01" H 1800 3300 50  0001 C CNN
-F 1 "+5V" V 1800 3369 59  0000 L CNN
-F 2 "" H 1800 3300 50  0001 C CNN
-F 3 "" H 1800 3300 50  0001 C CNN
-	1    1800 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR010
-U 1 1 5C232AA5
-P 4150 3250
-F 0 "#PWR010" H 4150 3100 50  0001 C CNN
-F 1 "+3V3" V 4165 3378 50  0000 L CNN
-F 2 "" H 4150 3250 50  0001 C CNN
-F 3 "" H 4150 3250 50  0001 C CNN
-	1    4150 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D6
-U 1 1 5C232BB7
-P 4050 3050
-F 0 "D6" V 4088 2933 50  0000 R CNN
-F 1 "LED" V 3997 2933 50  0000 R CNN
-F 2 "" H 4050 3050 50  0001 C CNN
-F 3 "~" H 4050 3050 50  0001 C CNN
-	1    4050 3050
+L MARP-rescue:+3V3-MAX31855 #+3V?
+U 1 1 5C9122D5
+P 1600 30900
+AR Path="/5C9122D5" Ref="#+3V?"  Part="1" 
+AR Path="/5B7E0FCD/5C9122D5" Ref="#+3V?"  Part="1" 
+F 0 "#+3V?" H 1600 30900 50  0001 C CNN
+F 1 "+3V3" V 1600 30969 59  0000 L CNN
+F 2 "" H 1600 30900 50  0001 C CNN
+F 3 "" H 1600 30900 50  0001 C CNN
+	1    1600 30900
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4050 2900
 Wire Wire Line
-	4050 2900 3800 2900
-Wire Wire Line
-	3950 3300 3950 3200
-Wire Wire Line
-	3950 3200 4050 3200
-Wire Wire Line
-	4050 3200 4150 3200
-Wire Wire Line
-	4150 3200 4150 3250
-Connection ~ 4050 3200
-Wire Wire Line
-	7950 1750 7950 1600
-Wire Wire Line
-	7950 1600 7800 1600
-Connection ~ 7950 1750
-Wire Wire Line
-	5000 2400 5000 2350
-Wire Wire Line
-	5000 2350 5150 2350
-Wire Wire Line
-	5150 2350 5150 2250
-Wire Wire Line
-	7250 1750 7950 1750
+	2200 31300 2200 31600
 $Comp
-L MOLEX_47219-2001:MOLEX_47219-2001 J1
+L Device:C C?
+U 1 1 5C9122DC
+P 2050 31600
+AR Path="/5B7E0FCD/5C9122DC" Ref="C?"  Part="1" 
+AR Path="/5C9122DC" Ref="C?"  Part="1" 
+F 0 "C?" V 2200 31600 50  0000 C CNN
+F 1 "10nF" V 1889 31600 50  0000 C CNN
+F 2 "" H 2088 31450 50  0001 C CNN
+F 3 "~" H 2050 31600 50  0001 C CNN
+	1    2050 31600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 31300 1900 31600
+Wire Wire Line
+	1900 31300 2100 31300
+Wire Wire Line
+	1900 31600 1900 31850
+Connection ~ 1900 31600
+Wire Wire Line
+	2200 31600 2200 31850
+Connection ~ 2200 31600
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C9122E9
+P 1900 31950
+AR Path="/5B7E0FCD/5C9122E9" Ref="FB?"  Part="1" 
+AR Path="/5C9122E9" Ref="FB?"  Part="1" 
+F 0 "FB?" V 1850 32050 50  0000 L CNN
+F 1 "470OHM" V 1750 31950 50  0000 L CNN
+F 2 "" V 1830 31950 50  0001 C CNN
+F 3 "~" H 1900 31950 50  0001 C CNN
+	1    1900 31950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C9122F0
+P 2200 31950
+AR Path="/5B7E0FCD/5C9122F0" Ref="FB?"  Part="1" 
+AR Path="/5C9122F0" Ref="FB?"  Part="1" 
+F 0 "FB?" V 2250 32100 50  0000 L CNN
+F 1 "470OHM" V 2350 31950 50  0000 L CNN
+F 2 "" V 2130 31950 50  0001 C CNN
+F 3 "~" H 2200 31950 50  0001 C CNN
+	1    2200 31950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 32050 1900 32050
+Wire Wire Line
+	1950 32250 2000 32250
+Wire Wire Line
+	2200 32050 2150 32050
+Wire Wire Line
+	2150 32050 2150 32250
+Wire Wire Line
+	2150 32250 2100 32250
+Wire Wire Line
+	1950 32050 1950 32250
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C9122FD
+P 2100 32450
+AR Path="/5B7E0FCD/5C9122FD" Ref="J?"  Part="1" 
+AR Path="/5C9122FD" Ref="J?"  Part="1" 
+F 0 "J?" V 2253 32363 50  0000 R CNN
+F 1 "TP0_1_P" V 2162 32363 50  0000 R CNN
+F 2 "" H 2100 32450 50  0001 C CNN
+F 3 "~" H 2100 32450 50  0001 C CNN
+	1    2100 32450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C912304
+P 2000 32450
+AR Path="/5B7E0FCD/5C912304" Ref="J?"  Part="1" 
+AR Path="/5C912304" Ref="J?"  Part="1" 
+F 0 "J?" V 2150 32600 50  0000 R CNN
+F 1 "TP0_1_N" V 2050 32750 50  0000 R CNN
+F 2 "" H 2000 32450 50  0001 C CNN
+F 3 "~" H 2000 32450 50  0001 C CNN
+	1    2000 32450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 31300 2300 31550
+Wire Wire Line
+	2300 31550 2400 31550
+Text GLabel 2400 31550 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	2400 31300 2400 31400
+Wire Wire Line
+	2400 31400 2550 31400
+Text GLabel 2550 31400 2    50   Input ~ 0
+~SPI0_THERMO0_SS
+$Comp
+L MARP-rescue:MAX31855KASA_-dk_Interface-Sensor-and-Detector-Interfaces U?
+U 1 1 5C91231A
+P 4350 30950
+AR Path="/5B7E0FCD/5C91231A" Ref="U?"  Part="1" 
+AR Path="/5C91231A" Ref="U?"  Part="1" 
+F 0 "U?" V 4453 30209 60  0000 R CNN
+F 1 "MAX31855KASA_" V 4347 30209 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 4550 31150 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 4550 31250 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 4550 31350 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 4550 31450 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4550 31550 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 4550 31650 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 4550 31750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 4550 31850 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 4550 31950 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 4550 32050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4550 32150 60  0001 L CNN "Status"
+	1    4350 30950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 30750 5350 30750
+$Comp
+L power:GND #PWR?
+U 1 1 5C912322
+P 5350 30750
+AR Path="/5B7E0FCD/5C912322" Ref="#PWR?"  Part="1" 
+AR Path="/5C912322" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5350 30500 50  0001 C CNN
+F 1 "GND" V 5355 30622 50  0000 R CNN
+F 2 "" H 5350 30750 50  0001 C CNN
+F 3 "" H 5350 30750 50  0001 C CNN
+	1    5350 30750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 30850 4050 30850
+$Comp
+L MARP-rescue:+3V3-MAX31855 #+3V?
+U 1 1 5C912329
+P 3950 30850
+AR Path="/5C912329" Ref="#+3V?"  Part="1" 
+AR Path="/5B7E0FCD/5C912329" Ref="#+3V?"  Part="1" 
+F 0 "#+3V?" H 3950 30850 50  0001 C CNN
+F 1 "+3V3" V 3950 30919 59  0000 L CNN
+F 2 "" H 3950 30850 50  0001 C CNN
+F 3 "" H 3950 30850 50  0001 C CNN
+	1    3950 30850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 31250 4550 31550
+$Comp
+L Device:C C?
+U 1 1 5C912330
+P 4400 31550
+AR Path="/5B7E0FCD/5C912330" Ref="C?"  Part="1" 
+AR Path="/5C912330" Ref="C?"  Part="1" 
+F 0 "C?" V 4550 31550 50  0000 C CNN
+F 1 "10nF" V 4239 31550 50  0000 C CNN
+F 2 "" H 4438 31400 50  0001 C CNN
+F 3 "~" H 4400 31550 50  0001 C CNN
+	1    4400 31550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 31250 4250 31550
+Wire Wire Line
+	4250 31250 4450 31250
+Wire Wire Line
+	4250 31550 4250 31800
+Connection ~ 4250 31550
+Wire Wire Line
+	4550 31550 4550 31800
+Connection ~ 4550 31550
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C91233D
+P 4250 31900
+AR Path="/5B7E0FCD/5C91233D" Ref="FB?"  Part="1" 
+AR Path="/5C91233D" Ref="FB?"  Part="1" 
+F 0 "FB?" V 4200 32000 50  0000 L CNN
+F 1 "470OHM" V 4100 31900 50  0000 L CNN
+F 2 "" V 4180 31900 50  0001 C CNN
+F 3 "~" H 4250 31900 50  0001 C CNN
+	1    4250 31900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C912344
+P 4550 31900
+AR Path="/5B7E0FCD/5C912344" Ref="FB?"  Part="1" 
+AR Path="/5C912344" Ref="FB?"  Part="1" 
+F 0 "FB?" V 4600 32050 50  0000 L CNN
+F 1 "470OHM" V 4700 31900 50  0000 L CNN
+F 2 "" V 4480 31900 50  0001 C CNN
+F 3 "~" H 4550 31900 50  0001 C CNN
+	1    4550 31900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 32000 4250 32000
+Wire Wire Line
+	4300 32200 4350 32200
+Wire Wire Line
+	4550 32000 4500 32000
+Wire Wire Line
+	4500 32000 4500 32200
+Wire Wire Line
+	4500 32200 4450 32200
+Wire Wire Line
+	4300 32000 4300 32200
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C912351
+P 4450 32400
+AR Path="/5B7E0FCD/5C912351" Ref="J?"  Part="1" 
+AR Path="/5C912351" Ref="J?"  Part="1" 
+F 0 "J?" V 4603 32313 50  0000 R CNN
+F 1 "TP1_1_P" V 4512 32313 50  0000 R CNN
+F 2 "" H 4450 32400 50  0001 C CNN
+F 3 "~" H 4450 32400 50  0001 C CNN
+	1    4450 32400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C912358
+P 4350 32400
+AR Path="/5B7E0FCD/5C912358" Ref="J?"  Part="1" 
+AR Path="/5C912358" Ref="J?"  Part="1" 
+F 0 "J?" V 4500 32550 50  0000 R CNN
+F 1 "TP1_1_N" V 4400 32750 50  0000 R CNN
+F 2 "" H 4350 32400 50  0001 C CNN
+F 3 "~" H 4350 32400 50  0001 C CNN
+	1    4350 32400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 31250 4650 31500
+Wire Wire Line
+	4650 31500 4750 31500
+Text GLabel 4750 31500 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	4750 31250 4750 31350
+Wire Wire Line
+	4750 31350 4900 31350
+Text GLabel 4900 31350 2    50   Input ~ 0
+~SPI0_THERMO1_SS
+$Comp
+L MARP-rescue:MAX31855KASA_-dk_Interface-Sensor-and-Detector-Interfaces U?
+U 1 1 5C91236E
+P 6750 30900
+AR Path="/5B7E0FCD/5C91236E" Ref="U?"  Part="1" 
+AR Path="/5C91236E" Ref="U?"  Part="1" 
+F 0 "U?" V 6853 30159 60  0000 R CNN
+F 1 "MAX31855KASA_" V 6747 30159 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 6950 31100 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6950 31200 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 6950 31300 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 6950 31400 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6950 31500 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 6950 31600 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6950 31700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 6950 31800 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 6950 31900 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 6950 32000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6950 32100 60  0001 L CNN "Status"
+	1    6750 30900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 30700 7750 30700
+$Comp
+L power:GND #PWR?
+U 1 1 5C912376
+P 7750 30700
+AR Path="/5B7E0FCD/5C912376" Ref="#PWR?"  Part="1" 
+AR Path="/5C912376" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7750 30450 50  0001 C CNN
+F 1 "GND" V 7755 30572 50  0000 R CNN
+F 2 "" H 7750 30700 50  0001 C CNN
+F 3 "" H 7750 30700 50  0001 C CNN
+	1    7750 30700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 30800 6450 30800
+$Comp
+L MARP-rescue:+3V3-MAX31855 #+3V?
+U 1 1 5C91237D
+P 6350 30800
+AR Path="/5C91237D" Ref="#+3V?"  Part="1" 
+AR Path="/5B7E0FCD/5C91237D" Ref="#+3V?"  Part="1" 
+F 0 "#+3V?" H 6350 30800 50  0001 C CNN
+F 1 "+3V3" V 6350 30869 59  0000 L CNN
+F 2 "" H 6350 30800 50  0001 C CNN
+F 3 "" H 6350 30800 50  0001 C CNN
+	1    6350 30800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 31200 6950 31500
+$Comp
+L Device:C C?
+U 1 1 5C912384
+P 6800 31500
+AR Path="/5B7E0FCD/5C912384" Ref="C?"  Part="1" 
+AR Path="/5C912384" Ref="C?"  Part="1" 
+F 0 "C?" V 6950 31500 50  0000 C CNN
+F 1 "10nF" V 6639 31500 50  0000 C CNN
+F 2 "" H 6838 31350 50  0001 C CNN
+F 3 "~" H 6800 31500 50  0001 C CNN
+	1    6800 31500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 31200 6650 31500
+Wire Wire Line
+	6650 31200 6850 31200
+Wire Wire Line
+	6650 31500 6650 31750
+Connection ~ 6650 31500
+Wire Wire Line
+	6950 31500 6950 31750
+Connection ~ 6950 31500
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C912391
+P 6650 31850
+AR Path="/5B7E0FCD/5C912391" Ref="FB?"  Part="1" 
+AR Path="/5C912391" Ref="FB?"  Part="1" 
+F 0 "FB?" V 6600 31950 50  0000 L CNN
+F 1 "470OHM" V 6500 31850 50  0000 L CNN
+F 2 "" V 6580 31850 50  0001 C CNN
+F 3 "~" H 6650 31850 50  0001 C CNN
+	1    6650 31850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C912398
+P 6950 31850
+AR Path="/5B7E0FCD/5C912398" Ref="FB?"  Part="1" 
+AR Path="/5C912398" Ref="FB?"  Part="1" 
+F 0 "FB?" V 7000 32000 50  0000 L CNN
+F 1 "470OHM" V 7100 31850 50  0000 L CNN
+F 2 "" V 6880 31850 50  0001 C CNN
+F 3 "~" H 6950 31850 50  0001 C CNN
+	1    6950 31850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 31950 6650 31950
+Wire Wire Line
+	6700 32150 6750 32150
+Wire Wire Line
+	6950 31950 6900 31950
+Wire Wire Line
+	6900 31950 6900 32150
+Wire Wire Line
+	6900 32150 6850 32150
+Wire Wire Line
+	6700 31950 6700 32150
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C9123A5
+P 6850 32350
+AR Path="/5B7E0FCD/5C9123A5" Ref="J?"  Part="1" 
+AR Path="/5C9123A5" Ref="J?"  Part="1" 
+F 0 "J?" V 7003 32263 50  0000 R CNN
+F 1 "TP2_1_P" V 6912 32263 50  0000 R CNN
+F 2 "" H 6850 32350 50  0001 C CNN
+F 3 "~" H 6850 32350 50  0001 C CNN
+	1    6850 32350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C9123AC
+P 6750 32350
+AR Path="/5B7E0FCD/5C9123AC" Ref="J?"  Part="1" 
+AR Path="/5C9123AC" Ref="J?"  Part="1" 
+F 0 "J?" V 6900 32500 50  0000 R CNN
+F 1 "TP2_1_N" V 6800 32700 50  0000 R CNN
+F 2 "" H 6750 32350 50  0001 C CNN
+F 3 "~" H 6750 32350 50  0001 C CNN
+	1    6750 32350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 31200 7050 31450
+Wire Wire Line
+	7050 31450 7150 31450
+Text GLabel 7150 31450 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	7150 31200 7150 31300
+Wire Wire Line
+	7150 31300 7300 31300
+Text GLabel 7300 31300 2    50   Input ~ 0
+~SPI0_THERMO2_SS
+$Comp
+L MARP-rescue:MAX31855KASA_-dk_Interface-Sensor-and-Detector-Interfaces U?
+U 1 1 5C9123C2
+P 9200 30900
+AR Path="/5B7E0FCD/5C9123C2" Ref="U?"  Part="1" 
+AR Path="/5C9123C2" Ref="U?"  Part="1" 
+F 0 "U?" V 9303 30159 60  0000 R CNN
+F 1 "MAX31855KASA_" V 9197 30159 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 9400 31100 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 9400 31200 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 9400 31300 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 9400 31400 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 9400 31500 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 9400 31600 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 9400 31700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 9400 31800 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 9400 31900 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 9400 32000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9400 32100 60  0001 L CNN "Status"
+	1    9200 30900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9123CA
+P 10200 30700
+AR Path="/5B7E0FCD/5C9123CA" Ref="#PWR?"  Part="1" 
+AR Path="/5C9123CA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10200 30450 50  0001 C CNN
+F 1 "GND" V 10205 30572 50  0000 R CNN
+F 2 "" H 10200 30700 50  0001 C CNN
+F 3 "" H 10200 30700 50  0001 C CNN
+	1    10200 30700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MARP-rescue:+3V3-MAX31855 #+3V?
+U 1 1 5C9123D1
+P 8800 30800
+AR Path="/5C9123D1" Ref="#+3V?"  Part="1" 
+AR Path="/5B7E0FCD/5C9123D1" Ref="#+3V?"  Part="1" 
+F 0 "#+3V?" H 8800 30800 50  0001 C CNN
+F 1 "+3V3" V 8800 30869 59  0000 L CNN
+F 2 "" H 8800 30800 50  0001 C CNN
+F 3 "" H 8800 30800 50  0001 C CNN
+	1    8800 30800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 31200 9400 31500
+$Comp
+L Device:C C?
+U 1 1 5C9123D8
+P 9250 31500
+AR Path="/5B7E0FCD/5C9123D8" Ref="C?"  Part="1" 
+AR Path="/5C9123D8" Ref="C?"  Part="1" 
+F 0 "C?" V 9400 31500 50  0000 C CNN
+F 1 "10nF" V 9089 31500 50  0000 C CNN
+F 2 "" H 9288 31350 50  0001 C CNN
+F 3 "~" H 9250 31500 50  0001 C CNN
+	1    9250 31500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 31200 9100 31500
+Wire Wire Line
+	9100 31200 9300 31200
+Wire Wire Line
+	9100 31500 9100 31750
+Connection ~ 9100 31500
+Wire Wire Line
+	9400 31500 9400 31750
+Connection ~ 9400 31500
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C9123E5
+P 9100 31850
+AR Path="/5B7E0FCD/5C9123E5" Ref="FB?"  Part="1" 
+AR Path="/5C9123E5" Ref="FB?"  Part="1" 
+F 0 "FB?" V 9050 31950 50  0000 L CNN
+F 1 "470OHM" V 8950 31850 50  0000 L CNN
+F 2 "" V 9030 31850 50  0001 C CNN
+F 3 "~" H 9100 31850 50  0001 C CNN
+	1    9100 31850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5C9123EC
+P 9400 31850
+AR Path="/5B7E0FCD/5C9123EC" Ref="FB?"  Part="1" 
+AR Path="/5C9123EC" Ref="FB?"  Part="1" 
+F 0 "FB?" V 9450 32000 50  0000 L CNN
+F 1 "470OHM" V 9550 31850 50  0000 L CNN
+F 2 "" V 9330 31850 50  0001 C CNN
+F 3 "~" H 9400 31850 50  0001 C CNN
+	1    9400 31850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 31950 9100 31950
+Wire Wire Line
+	9150 32150 9200 32150
+Wire Wire Line
+	9400 31950 9350 31950
+Wire Wire Line
+	9350 31950 9350 32150
+Wire Wire Line
+	9350 32150 9300 32150
+Wire Wire Line
+	9150 31950 9150 32150
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C9123F9
+P 9300 32350
+AR Path="/5B7E0FCD/5C9123F9" Ref="J?"  Part="1" 
+AR Path="/5C9123F9" Ref="J?"  Part="1" 
+F 0 "J?" V 9453 32263 50  0000 R CNN
+F 1 "TP3_1_P" V 9362 32263 50  0000 R CNN
+F 2 "" H 9300 32350 50  0001 C CNN
+F 3 "~" H 9300 32350 50  0001 C CNN
+	1    9300 32350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5C912400
+P 9200 32350
+AR Path="/5B7E0FCD/5C912400" Ref="J?"  Part="1" 
+AR Path="/5C912400" Ref="J?"  Part="1" 
+F 0 "J?" V 9350 32500 50  0000 R CNN
+F 1 "TP3_1_N" V 9250 32650 50  0000 R CNN
+F 2 "" H 9200 32350 50  0001 C CNN
+F 3 "~" H 9200 32350 50  0001 C CNN
+	1    9200 32350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 31200 9500 31450
+Wire Wire Line
+	9500 31450 9600 31450
+Text GLabel 9600 31450 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	9600 31200 9600 31300
+Text GLabel 9750 31300 2    50   Input ~ 0
+~SPI0_THERMO3_SS
+$Comp
+L MARP-rescue:MOLEX_47219-2001-MOLEX_47219-2001 J1
 U 1 1 5C1B24FE
 P 800 4600
 F 0 "J1" H 1288 4476 50  0000 C CNN
@@ -953,241 +634,1364 @@ F 3 "" H 800 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 5600 1700 5600
+	9600 31300 9750 31300
 Wire Wire Line
-	1600 6000 1750 6000
+	9100 30800 8900 30800
+Wire Wire Line
+	9900 30700 10200 30700
+Wire Wire Line
+	3950 19500 4250 19500
 $Comp
-L power:GND #PWR06
-U 1 1 5C1D3B3C
-P 1750 6000
-F 0 "#PWR06" H 1750 5750 50  0001 C CNN
-F 1 "GND" V 1755 5872 50  0000 R CNN
-F 2 "" H 1750 6000 50  0001 C CNN
-F 3 "" H 1750 6000 50  0001 C CNN
-	1    1750 6000
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 1600 6400
-NoConn ~ 1600 5000
-Wire Wire Line
-	1750 6000 1750 6600
-Wire Wire Line
-	1750 7200 1600 7200
-Connection ~ 1750 6000
-Wire Wire Line
-	1600 7000 1750 7000
-Connection ~ 1750 7000
-Wire Wire Line
-	1750 7000 1750 7200
-Wire Wire Line
-	1600 6800 1750 6800
-Connection ~ 1750 6800
-Wire Wire Line
-	1750 6800 1750 7000
-Wire Wire Line
-	1600 6600 1750 6600
-Connection ~ 1750 6600
-Wire Wire Line
-	1750 6600 1750 6800
-$Comp
-L MAX31855:+3V3 #+3V01
-U 1 1 5C19B06E
-P 1800 5600
-F 0 "#+3V01" H 1800 5600 50  0001 C CNN
-F 1 "+3V3" V 1800 5669 59  0000 L CNN
-F 2 "" H 1800 5600 50  0001 C CNN
-F 3 "" H 1800 5600 50  0001 C CNN
-	1    1800 5600
-	0    1    1    0   
+L Device:C_Small C?
+U 1 1 5CB1E167
+P 4250 19600
+F 0 "C?" H 4350 19700 50  0000 C CNN
+F 1 "1uF" H 4150 19700 50  0000 C CNN
+F 2 "" H 4250 19600 50  0001 C CNN
+F 3 "~" H 4250 19600 50  0001 C CNN
+	1    4250 19600
+	-1   0    0    1   
 $EndComp
 $Comp
-L MAX31855:+3V3 #+3V05
-U 1 1 5C19BD33
-P 5150 2150
-F 0 "#+3V05" H 5150 2150 50  0001 C CNN
-F 1 "+3V3" H 5150 2271 59  0000 C CNN
-F 2 "" H 5150 2150 50  0001 C CNN
-F 3 "" H 5150 2150 50  0001 C CNN
-	1    5150 2150
-	1    0    0    -1  
+L Device:C_Small C?
+U 1 1 5CB1E16D
+P 4750 19500
+F 0 "C?" H 4850 19650 50  0000 R CNN
+F 1 "100nF" H 4950 19750 50  0000 R CNN
+F 2 "" H 4750 19500 50  0001 C CNN
+F 3 "~" H 4750 19500 50  0001 C CNN
+	1    4750 19500
+	-1   0    0    1   
 $EndComp
 $Comp
-L MAX31855:+3V3 #+3V06
-U 1 1 5C19C2E1
-P 7700 1600
-F 0 "#+3V06" H 7700 1600 50  0001 C CNN
-F 1 "+3V3" V 7700 1669 59  0000 L CNN
-F 2 "" H 7700 1600 50  0001 C CNN
-F 3 "" H 7700 1600 50  0001 C CNN
-	1    7700 1600
-	0    -1   -1   0   
-$EndComp
-Text GLabel 5000 4900 0    50   Input ~ 0
-SPI0_SCK
-Text GLabel 5000 4450 0    50   Input ~ 0
-SPI0_MISO
-Text GLabel 5050 4750 0    50   Input ~ 0
-SPI0_MOSI
-Wire Wire Line
-	5350 4750 5050 4750
-Text GLabel 5050 4600 0    50   Input ~ 0
-~SPI0_SDCARD_SS
-Wire Wire Line
-	5050 4600 5200 4600
-Wire Wire Line
-	5200 4600 5200 4650
-Wire Wire Line
-	5200 4650 5350 4650
-Wire Wire Line
-	5350 4850 5200 4850
-Wire Wire Line
-	5200 4850 5200 4900
-Wire Wire Line
-	5200 4900 5000 4900
-Wire Wire Line
-	5000 4450 5100 4450
-Wire Wire Line
-	5100 4450 5100 4550
-Wire Wire Line
-	5100 4550 5350 4550
-Wire Wire Line
-	1600 6200 2000 6200
-Text GLabel 2000 6200 2    50   Input ~ 0
-SPI0_MISO
-Text GLabel 2000 5800 2    50   Input ~ 0
-SPI0_SCK
-Wire Wire Line
-	2000 5800 1600 5800
-Text GLabel 2000 5400 2    50   Input ~ 0
-SPI0_MOSI
-Wire Wire Line
-	2000 5400 1600 5400
-Text GLabel 2000 5200 2    50   Input ~ 0
-~SPI0_SDCARD_SS
-Wire Wire Line
-	2000 5200 1600 5200
-$Comp
-L MAX31855:+3V3 #+3V07
-U 1 1 5C1E2997
-P 10900 1000
-F 0 "#+3V07" H 10900 1000 50  0001 C CNN
-F 1 "+3V3" H 10900 1121 59  0000 C CNN
-F 2 "" H 10900 1000 50  0001 C CNN
-F 3 "" H 10900 1000 50  0001 C CNN
-	1    10900 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L MAX31855:+3V3 #+3V02
-U 1 1 5C1E3BA9
-P 3400 5500
-F 0 "#+3V02" H 3400 5500 50  0001 C CNN
-F 1 "+3V3" V 3400 5569 59  0000 L CNN
-F 2 "" H 3400 5500 50  0001 C CNN
-F 3 "" H 3400 5500 50  0001 C CNN
-	1    3400 5500
-	0    -1   -1   0   
-$EndComp
-Text GLabel 4100 5000 0    50   Input ~ 0
-~SPI0_THERMO0_SS
-Text GLabel 4100 4850 0    50   Input ~ 0
-~SPI0_THERMO1_SS
-Text GLabel 4100 4700 0    50   Input ~ 0
-~SPI0_THERMO2_SS
-Text GLabel 4100 4550 0    50   Input ~ 0
-~SPI0_THERMO3_SS
-Wire Wire Line
-	4100 5000 4350 5000
-Wire Wire Line
-	4350 5000 4350 4350
-Wire Wire Line
-	4350 4350 5150 4350
-Wire Wire Line
-	5150 4350 5150 4450
-Wire Wire Line
-	5150 4450 5350 4450
-Wire Wire Line
-	4100 4850 4300 4850
-Wire Wire Line
-	4300 4850 4300 4300
-Wire Wire Line
-	4300 4300 5200 4300
-Wire Wire Line
-	5200 4300 5200 4350
-Wire Wire Line
-	5200 4350 5350 4350
-Wire Wire Line
-	4100 4700 4250 4700
-Wire Wire Line
-	4250 4700 4250 4250
-Wire Wire Line
-	4250 4250 5350 4250
-Wire Wire Line
-	4100 4550 4200 4550
-Wire Wire Line
-	4200 4550 4200 4150
-Wire Wire Line
-	4200 4150 5350 4150
-$Comp
-L Device:R_Small R10
-U 1 1 5C236068
-P 5000 3650
-F 0 "R10" H 5059 3696 50  0000 L CNN
-F 1 "10k" H 5059 3605 50  0000 L CNN
-F 2 "" H 5000 3650 50  0001 C CNN
-F 3 "~" H 5000 3650 50  0001 C CNN
-	1    5000 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L MAX31855:+3V3 #+3V04
-U 1 1 5C236184
-P 4850 3550
-F 0 "#+3V04" H 4850 3550 50  0001 C CNN
-F 1 "+3V3" V 4800 3500 59  0000 L CNN
-F 2 "" H 4850 3550 50  0001 C CNN
-F 3 "" H 4850 3550 50  0001 C CNN
-	1    4850 3550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5000 3750 5350 3750
-Wire Wire Line
-	5000 3550 4950 3550
-$Comp
-L Device:R_Small R7
-U 1 1 5C248C59
-P 4150 3750
-F 0 "R7" H 4209 3796 50  0000 L CNN
-F 1 "10k" H 4209 3705 50  0000 L CNN
-F 2 "" H 4150 3750 50  0001 C CNN
-F 3 "~" H 4150 3750 50  0001 C CNN
-	1    4150 3750
+L power:GND #PWR?
+U 1 1 5CB1E173
+P 4250 19750
+F 0 "#PWR?" H 4250 19500 50  0001 C CNN
+F 1 "GND" H 4255 19577 50  0000 C CNN
+F 2 "" H 4250 19750 50  0001 C CNN
+F 3 "" H 4250 19750 50  0001 C CNN
+	1    4250 19750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 3750 4950 3750
-Connection ~ 5000 3750
-Text GLabel 4950 3750 0    50   Input ~ 0
-I2C0_SDA
+	4250 19700 4250 19750
 Wire Wire Line
-	4150 3850 5350 3850
+	4750 19400 4950 19400
 $Comp
-L MAX31855:+3V3 #+3V03
-U 1 1 5C2BB330
-P 4400 3650
-F 0 "#+3V03" H 4400 3650 50  0001 C CNN
-F 1 "+3V3" V 4400 3550 59  0000 L CNN
-F 2 "" H 4400 3650 50  0001 C CNN
-F 3 "" H 4400 3650 50  0001 C CNN
-	1    4400 3650
+L Device:C_Small C?
+U 1 1 5CB1E17B
+P 4950 19500
+F 0 "C?" H 5042 19546 50  0000 L CNN
+F 1 "10uF" H 5050 19450 50  0000 L CNN
+F 2 "" H 4950 19500 50  0001 C CNN
+F 3 "~" H 4950 19500 50  0001 C CNN
+	1    4950 19500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 19400
+Wire Wire Line
+	3950 19400 4050 19400
+Text Label 4650 19600 2    50   ~ 0
+GNDANA
+Wire Wire Line
+	4950 19600 4750 19600
+Wire Wire Line
+	4750 19600 4650 19600
+Connection ~ 4750 19600
+$Comp
+L power:GND #PWR?
+U 1 1 5CB1E187
+P 4950 19600
+F 0 "#PWR?" H 4950 19350 50  0001 C CNN
+F 1 "GND" H 4955 19427 50  0000 C CNN
+F 2 "" H 4950 19600 50  0001 C CNN
+F 3 "" H 4950 19600 50  0001 C CNN
+	1    4950 19600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 19600
+Text Label 4200 23000 0    50   ~ 0
+GNDANA
+Wire Wire Line
+	4200 23000 3950 23000
+Wire Wire Line
+	4000 23100 3950 23100
+$Comp
+L power:GND #PWR?
+U 1 1 5CB1E191
+P 4000 23100
+F 0 "#PWR?" H 4000 22850 50  0001 C CNN
+F 1 "GND" V 4005 22972 50  0000 R CNN
+F 2 "" H 4000 23100 50  0001 C CNN
+F 3 "" H 4000 23100 50  0001 C CNN
+	1    4000 23100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 19300 4000 19300
+$Comp
+L Device:C_Small C?
+U 1 1 5CB1E198
+P 4200 19250
+F 0 "C?" H 4150 19200 50  0000 R CNN
+F 1 "100nF" H 4100 19250 50  0000 R CNN
+F 2 "" H 4200 19250 50  0001 C CNN
+F 3 "~" H 4200 19250 50  0001 C CNN
+	1    4200 19250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 19350 4550 19350
+$Comp
+L power:GND #PWR?
+U 1 1 5CB1E19F
+P 4550 19300
+F 0 "#PWR?" H 4550 19050 50  0001 C CNN
+F 1 "GND" V 4555 19172 50  0000 R CNN
+F 2 "" H 4550 19300 50  0001 C CNN
+F 3 "" H 4550 19300 50  0001 C CNN
+	1    4550 19300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4950 19400
+Wire Wire Line
+	4000 19150 4200 19150
+Wire Wire Line
+	3950 18700 4250 18700
+Wire Wire Line
+	3950 18700 3950 19200
+$Comp
+L Device:C_Small C?
+U 1 1 5CB1E1A9
+P 4250 18800
+F 0 "C?" H 4342 18846 50  0000 L CNN
+F 1 "100nF" H 4342 18755 50  0000 L CNN
+F 2 "" H 4250 18800 50  0001 C CNN
+F 3 "~" H 4250 18800 50  0001 C CNN
+	1    4250 18800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 18700
+$Comp
+L power:GND #PWR?
+U 1 1 5CB1E1B0
+P 4250 18900
+F 0 "#PWR?" H 4250 18650 50  0001 C CNN
+F 1 "GND" H 4255 18727 50  0000 C CNN
+F 2 "" H 4250 18900 50  0001 C CNN
+F 3 "" H 4250 18900 50  0001 C CNN
+	1    4250 18900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 18700 4950 19150
+Wire Wire Line
+	4200 19150 4950 19150
+Connection ~ 4200 19150
+Connection ~ 4950 19150
+Wire Wire Line
+	4950 19150 4950 19400
+Wire Wire Line
+	4250 19400 4750 19400
+$Comp
+L Device:Ferrite_Bead_Small L?
+U 1 1 5CB1E1BC
+P 4150 19400
+F 0 "L?" V 4200 19500 50  0000 C CNN
+F 1 "220OHM" V 4200 19200 50  0000 C CNN
+F 2 "" V 4080 19400 50  0001 C CNN
+F 3 "~" H 4150 19400 50  0001 C CNN
+	1    4150 19400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4150 3650 4300 3650
+	4550 19350 4550 19300
 Wire Wire Line
-	4150 3850 4050 3850
-Connection ~ 4150 3850
-Text GLabel 4050 3850 0    50   Input ~ 0
-I2C0_SCL
+	4000 19150 4000 19300
+Wire Wire Line
+	4950 18700 4950 18550
+Wire Wire Line
+	4950 18550 4800 18550
+Connection ~ 4950 18700
+Wire Wire Line
+	4250 18700 4950 18700
+$Comp
+L MARP-rescue:+3V3-MAX31855 #+3V?
+U 1 1 5CB1E1C8
+P 4700 18550
+F 0 "#+3V?" H 4700 18550 50  0001 C CNN
+F 1 "+3V3" V 4700 18619 59  0000 L CNN
+F 2 "" H 4700 18550 50  0001 C CNN
+F 3 "" H 4700 18550 50  0001 C CNN
+	1    4700 18550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MARP:ATSAMD21J18A-AU U?
+U 1 1 5CB1E1D3
+P 3150 21100
+F 0 "U?" H 3150 23267 50  0000 C CNN
+F 1 "D21_DAQ_AND_HEALTH_MONITORING" H 3150 23176 50  0000 C CNN
+F 2 "" H 3150 21100 50  0001 L BNN
+F 3 "None" H 3150 21100 50  0001 L BNN
+F 4 "Microchip" H 3150 21100 50  0001 L BNN "Field4"
+F 5 "TQFP-64 Microchip" H 3150 21100 50  0001 L BNN "Field5"
+F 6 "SAMD21J Series 256 kB Flash 32 kB RAM 48 MHz 32-Bit Microcontroller - TQFP-64" H 3150 21100 50  0001 L BNN "Field6"
+F 7 "ATSAMD21J18A-AU" H 3150 21100 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 3150 21100 50  0001 L BNN "Field8"
+	1    3150 21100
+	1    0    0    -1  
+$EndComp
+Text Notes 650  1100 0    394  ~ 0
+BRAIN
+Text Notes 850  17500 0    394  ~ 0
+DAQ HUB
+$Comp
+L MARP-rescue:MAX31855KASA_-dk_Interface-Sensor-and-Detector-Interfaces U?
+U 1 1 5CB683CD
+P 11550 30850
+AR Path="/5B7E0FCD/5CB683CD" Ref="U?"  Part="1" 
+AR Path="/5CB683CD" Ref="U?"  Part="1" 
+F 0 "U?" V 11653 30109 60  0000 R CNN
+F 1 "MAX31855KASA_" V 11547 30109 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 11750 31050 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 11750 31150 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 11750 31250 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 11750 31350 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 11750 31450 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 11750 31550 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 11750 31650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 11750 31750 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 11750 31850 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 11750 31950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11750 32050 60  0001 L CNN "Status"
+	1    11550 30850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB683D3
+P 12550 30650
+AR Path="/5B7E0FCD/5CB683D3" Ref="#PWR?"  Part="1" 
+AR Path="/5CB683D3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12550 30400 50  0001 C CNN
+F 1 "GND" V 12555 30522 50  0000 R CNN
+F 2 "" H 12550 30650 50  0001 C CNN
+F 3 "" H 12550 30650 50  0001 C CNN
+	1    12550 30650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MARP-rescue:+3V3-MAX31855 #+3V?
+U 1 1 5CB683D9
+P 11150 30750
+AR Path="/5CB683D9" Ref="#+3V?"  Part="1" 
+AR Path="/5B7E0FCD/5CB683D9" Ref="#+3V?"  Part="1" 
+F 0 "#+3V?" H 11150 30750 50  0001 C CNN
+F 1 "+3V3" V 11150 30819 59  0000 L CNN
+F 2 "" H 11150 30750 50  0001 C CNN
+F 3 "" H 11150 30750 50  0001 C CNN
+	1    11150 30750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11750 31150 11750 31450
+$Comp
+L Device:C C?
+U 1 1 5CB683E0
+P 11600 31450
+AR Path="/5B7E0FCD/5CB683E0" Ref="C?"  Part="1" 
+AR Path="/5CB683E0" Ref="C?"  Part="1" 
+F 0 "C?" V 11750 31450 50  0000 C CNN
+F 1 "10nF" V 11439 31450 50  0000 C CNN
+F 2 "" H 11638 31300 50  0001 C CNN
+F 3 "~" H 11600 31450 50  0001 C CNN
+	1    11600 31450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11450 31150 11450 31450
+Wire Wire Line
+	11450 31150 11650 31150
+Wire Wire Line
+	11450 31450 11450 31700
+Connection ~ 11450 31450
+Wire Wire Line
+	11750 31450 11750 31700
+Connection ~ 11750 31450
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5CB683EC
+P 11450 31800
+AR Path="/5B7E0FCD/5CB683EC" Ref="FB?"  Part="1" 
+AR Path="/5CB683EC" Ref="FB?"  Part="1" 
+F 0 "FB?" V 11400 31900 50  0000 L CNN
+F 1 "470OHM" V 11300 31800 50  0000 L CNN
+F 2 "" V 11380 31800 50  0001 C CNN
+F 3 "~" H 11450 31800 50  0001 C CNN
+	1    11450 31800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5CB683F2
+P 11750 31800
+AR Path="/5B7E0FCD/5CB683F2" Ref="FB?"  Part="1" 
+AR Path="/5CB683F2" Ref="FB?"  Part="1" 
+F 0 "FB?" V 11800 31950 50  0000 L CNN
+F 1 "470OHM" V 11900 31800 50  0000 L CNN
+F 2 "" V 11680 31800 50  0001 C CNN
+F 3 "~" H 11750 31800 50  0001 C CNN
+	1    11750 31800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 31900 11450 31900
+Wire Wire Line
+	11500 32100 11550 32100
+Wire Wire Line
+	11750 31900 11700 31900
+Wire Wire Line
+	11700 31900 11700 32100
+Wire Wire Line
+	11700 32100 11650 32100
+Wire Wire Line
+	11500 31900 11500 32100
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5CB683FE
+P 11650 32300
+AR Path="/5B7E0FCD/5CB683FE" Ref="J?"  Part="1" 
+AR Path="/5CB683FE" Ref="J?"  Part="1" 
+F 0 "J?" V 11803 32213 50  0000 R CNN
+F 1 "TP3_1_P" V 11712 32213 50  0000 R CNN
+F 2 "" H 11650 32300 50  0001 C CNN
+F 3 "~" H 11650 32300 50  0001 C CNN
+	1    11650 32300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5CB68404
+P 11550 32300
+AR Path="/5B7E0FCD/5CB68404" Ref="J?"  Part="1" 
+AR Path="/5CB68404" Ref="J?"  Part="1" 
+F 0 "J?" V 11700 32450 50  0000 R CNN
+F 1 "TP3_1_N" V 11600 32600 50  0000 R CNN
+F 2 "" H 11550 32300 50  0001 C CNN
+F 3 "~" H 11550 32300 50  0001 C CNN
+	1    11550 32300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11850 31150 11850 31400
+Wire Wire Line
+	11850 31400 11950 31400
+Text GLabel 11950 31400 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	11950 31150 11950 31250
+Text GLabel 12100 31250 2    50   Input ~ 0
+~SPI0_THERMO4_SS
+Wire Wire Line
+	11950 31250 12100 31250
+Wire Wire Line
+	11450 30750 11250 30750
+Wire Wire Line
+	12250 30650 12550 30650
+$Comp
+L MARP-rescue:MAX31855KASA_-dk_Interface-Sensor-and-Detector-Interfaces U?
+U 1 1 5CB75D06
+P 13850 30750
+AR Path="/5B7E0FCD/5CB75D06" Ref="U?"  Part="1" 
+AR Path="/5CB75D06" Ref="U?"  Part="1" 
+F 0 "U?" V 13953 30009 60  0000 R CNN
+F 1 "MAX31855KASA_" V 13847 30009 60  0000 R CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 14050 30950 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 14050 31050 60  0001 L CNN
+F 4 "MAX31855KASA+-ND" H 14050 31150 60  0001 L CNN "Digi-Key_PN"
+F 5 "MAX31855KASA+" H 14050 31250 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 14050 31350 60  0001 L CNN "Category"
+F 7 "Interface - Sensor and Detector Interfaces" H 14050 31450 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 14050 31550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/MAX31855KASA-/MAX31855KASA--ND/2591564" H 14050 31650 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC CONV THERMOCOUPLE-DGTL SOIC" H 14050 31750 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 14050 31850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 14050 31950 60  0001 L CNN "Status"
+	1    13850 30750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB75D0C
+P 14850 30550
+AR Path="/5B7E0FCD/5CB75D0C" Ref="#PWR?"  Part="1" 
+AR Path="/5CB75D0C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 14850 30300 50  0001 C CNN
+F 1 "GND" V 14855 30422 50  0000 R CNN
+F 2 "" H 14850 30550 50  0001 C CNN
+F 3 "" H 14850 30550 50  0001 C CNN
+	1    14850 30550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MARP-rescue:+3V3-MAX31855 #+3V?
+U 1 1 5CB75D12
+P 13450 30650
+AR Path="/5CB75D12" Ref="#+3V?"  Part="1" 
+AR Path="/5B7E0FCD/5CB75D12" Ref="#+3V?"  Part="1" 
+F 0 "#+3V?" H 13450 30650 50  0001 C CNN
+F 1 "+3V3" V 13450 30719 59  0000 L CNN
+F 2 "" H 13450 30650 50  0001 C CNN
+F 3 "" H 13450 30650 50  0001 C CNN
+	1    13450 30650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14050 31050 14050 31350
+$Comp
+L Device:C C?
+U 1 1 5CB75D19
+P 13900 31350
+AR Path="/5B7E0FCD/5CB75D19" Ref="C?"  Part="1" 
+AR Path="/5CB75D19" Ref="C?"  Part="1" 
+F 0 "C?" V 14050 31350 50  0000 C CNN
+F 1 "10nF" V 13739 31350 50  0000 C CNN
+F 2 "" H 13938 31200 50  0001 C CNN
+F 3 "~" H 13900 31350 50  0001 C CNN
+	1    13900 31350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13750 31050 13750 31350
+Wire Wire Line
+	13750 31050 13950 31050
+Wire Wire Line
+	13750 31350 13750 31600
+Connection ~ 13750 31350
+Wire Wire Line
+	14050 31350 14050 31600
+Connection ~ 14050 31350
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5CB75D25
+P 13750 31700
+AR Path="/5B7E0FCD/5CB75D25" Ref="FB?"  Part="1" 
+AR Path="/5CB75D25" Ref="FB?"  Part="1" 
+F 0 "FB?" V 13700 31800 50  0000 L CNN
+F 1 "470OHM" V 13600 31700 50  0000 L CNN
+F 2 "" V 13680 31700 50  0001 C CNN
+F 3 "~" H 13750 31700 50  0001 C CNN
+	1    13750 31700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5CB75D2B
+P 14050 31700
+AR Path="/5B7E0FCD/5CB75D2B" Ref="FB?"  Part="1" 
+AR Path="/5CB75D2B" Ref="FB?"  Part="1" 
+F 0 "FB?" V 14100 31850 50  0000 L CNN
+F 1 "470OHM" V 14200 31700 50  0000 L CNN
+F 2 "" V 13980 31700 50  0001 C CNN
+F 3 "~" H 14050 31700 50  0001 C CNN
+	1    14050 31700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 31800 13750 31800
+Wire Wire Line
+	13800 32000 13850 32000
+Wire Wire Line
+	14050 31800 14000 31800
+Wire Wire Line
+	14000 31800 14000 32000
+Wire Wire Line
+	14000 32000 13950 32000
+Wire Wire Line
+	13800 31800 13800 32000
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5CB75D37
+P 13950 32200
+AR Path="/5B7E0FCD/5CB75D37" Ref="J?"  Part="1" 
+AR Path="/5CB75D37" Ref="J?"  Part="1" 
+F 0 "J?" V 14103 32113 50  0000 R CNN
+F 1 "TP3_1_P" V 14012 32113 50  0000 R CNN
+F 2 "" H 13950 32200 50  0001 C CNN
+F 3 "~" H 13950 32200 50  0001 C CNN
+	1    13950 32200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5CB75D3D
+P 13850 32200
+AR Path="/5B7E0FCD/5CB75D3D" Ref="J?"  Part="1" 
+AR Path="/5CB75D3D" Ref="J?"  Part="1" 
+F 0 "J?" V 14000 32350 50  0000 R CNN
+F 1 "TP3_1_N" V 13900 32500 50  0000 R CNN
+F 2 "" H 13850 32200 50  0001 C CNN
+F 3 "~" H 13850 32200 50  0001 C CNN
+	1    13850 32200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14150 31050 14150 31300
+Wire Wire Line
+	14150 31300 14250 31300
+Text GLabel 14250 31300 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	14250 31050 14250 31150
+Text GLabel 14400 31150 2    50   Input ~ 0
+~SPI0_THERMO5_SS
+Wire Wire Line
+	14250 31150 14400 31150
+Wire Wire Line
+	13750 30650 13550 30650
+Wire Wire Line
+	14550 30550 14850 30550
+Text GLabel 2250 30450 2    50   Input ~ 0
+SPI0_SO
+Wire Wire Line
+	2250 30450 2200 30450
+Wire Wire Line
+	2200 30450 2200 30600
+Text GLabel 4600 30400 2    50   Input ~ 0
+SPI0_SO
+Wire Wire Line
+	4600 30400 4550 30400
+Wire Wire Line
+	4550 30400 4550 30550
+Text GLabel 7000 30350 2    50   Input ~ 0
+SPI0_SO
+Wire Wire Line
+	7000 30350 6950 30350
+Wire Wire Line
+	6950 30350 6950 30500
+Text GLabel 9450 30350 2    50   Input ~ 0
+SPI0_SO
+Wire Wire Line
+	9450 30350 9400 30350
+Wire Wire Line
+	9400 30350 9400 30500
+Text GLabel 11800 30300 2    50   Input ~ 0
+SPI0_SO
+Wire Wire Line
+	11800 30300 11750 30300
+Wire Wire Line
+	11750 30300 11750 30450
+Text GLabel 14100 30200 2    50   Input ~ 0
+SPI0_SO
+Wire Wire Line
+	14100 30200 14050 30200
+Wire Wire Line
+	14050 30200 14050 30350
+$Comp
+L Device:Thermistor TH?
+U 1 1 5C8FDCBD
+P 5900 22900
+F 0 "TH?" H 6005 22946 50  0000 L CNN
+F 1 "Thermistor" H 6005 22855 50  0000 L CNN
+F 2 "" H 5900 22900 50  0001 C CNN
+F 3 "~" H 5900 22900 50  0001 C CNN
+	1    5900 22900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Thermistor TH?
+U 1 1 5C8FEF86
+P 5900 22350
+F 0 "TH?" H 6005 22396 50  0000 L CNN
+F 1 "Thermistor" H 6005 22305 50  0000 L CNN
+F 2 "" H 5900 22350 50  0001 C CNN
+F 3 "~" H 5900 22350 50  0001 C CNN
+	1    5900 22350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Thermistor TH?
+U 1 1 5C8FF00A
+P 5900 21800
+F 0 "TH?" H 6005 21846 50  0000 L CNN
+F 1 "Thermistor" H 6005 21755 50  0000 L CNN
+F 2 "" H 5900 21800 50  0001 C CNN
+F 3 "~" H 5900 21800 50  0001 C CNN
+	1    5900 21800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Thermistor TH?
+U 1 1 5C8FF086
+P 5900 21200
+F 0 "TH?" H 6005 21246 50  0000 L CNN
+F 1 "Thermistor" H 6005 21155 50  0000 L CNN
+F 2 "" H 5900 21200 50  0001 C CNN
+F 3 "~" H 5900 21200 50  0001 C CNN
+	1    5900 21200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Thermistor TH?
+U 1 1 5C8FF106
+P 5900 20600
+F 0 "TH?" H 6005 20646 50  0000 L CNN
+F 1 "Thermistor" H 6005 20555 50  0000 L CNN
+F 2 "" H 5900 20600 50  0001 C CNN
+F 3 "~" H 5900 20600 50  0001 C CNN
+	1    5900 20600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Thermistor TH?
+U 1 1 5C8FF188
+P 5900 20000
+F 0 "TH?" H 6005 20046 50  0000 L CNN
+F 1 "Thermistor" H 6005 19955 50  0000 L CNN
+F 2 "" H 5900 20000 50  0001 C CNN
+F 3 "~" H 5900 20000 50  0001 C CNN
+	1    5900 20000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MARP:Press_Transducer_Header J?
+U 1 1 5C920AAB
+P 20850 30200
+F 0 "J?" H 20850 30515 50  0000 C CNN
+F 1 "PT_0" H 20850 30424 50  0000 C CNN
+F 2 "" H 20850 30200 50  0001 C CNN
+F 3 "" H 20850 30200 50  0001 C CNN
+	1    20850 30200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP:Press_Transducer_Header J?
+U 1 1 5C9218EA
+P 20850 30750
+F 0 "J?" H 20850 31065 50  0000 C CNN
+F 1 "PT_1" H 20850 30974 50  0000 C CNN
+F 2 "" H 20850 30750 50  0001 C CNN
+F 3 "" H 20850 30750 50  0001 C CNN
+	1    20850 30750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP:Press_Transducer_Header J?
+U 1 1 5C9219AA
+P 20850 31350
+F 0 "J?" H 20850 31665 50  0000 C CNN
+F 1 "PT_2" H 20850 31574 50  0000 C CNN
+F 2 "" H 20850 31350 50  0001 C CNN
+F 3 "" H 20850 31350 50  0001 C CNN
+	1    20850 31350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP:Press_Transducer_Header J?
+U 1 1 5C921A50
+P 20850 32050
+F 0 "J?" H 20850 32365 50  0000 C CNN
+F 1 "PT_3" H 20850 32274 50  0000 C CNN
+F 2 "" H 20850 32050 50  0001 C CNN
+F 3 "" H 20850 32050 50  0001 C CNN
+	1    20850 32050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP:Press_Transducer_Header J?
+U 1 1 5C921B00
+P 24150 30100
+F 0 "J?" H 24150 30415 50  0000 C CNN
+F 1 "Press_Transducer_Header" H 24150 30324 50  0000 C CNN
+F 2 "" H 24150 30100 50  0001 C CNN
+F 3 "" H 24150 30100 50  0001 C CNN
+	1    24150 30100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP:Press_Transducer_Header J?
+U 1 1 5C921BA2
+P 24150 30700
+F 0 "J?" H 24150 31015 50  0000 C CNN
+F 1 "Press_Transducer_Header" H 24150 30924 50  0000 C CNN
+F 2 "" H 24150 30700 50  0001 C CNN
+F 3 "" H 24150 30700 50  0001 C CNN
+	1    24150 30700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP:Press_Transducer_Header J?
+U 1 1 5C921C50
+P 24150 31350
+F 0 "J?" H 24150 31665 50  0000 C CNN
+F 1 "Press_Transducer_Header" H 24150 31574 50  0000 C CNN
+F 2 "" H 24150 31350 50  0001 C CNN
+F 3 "" H 24150 31350 50  0001 C CNN
+	1    24150 31350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP:Press_Transducer_Header J?
+U 1 1 5C921CF4
+P 24150 32050
+F 0 "J?" H 24150 32365 50  0000 C CNN
+F 1 "Press_Transducer_Header" H 24150 32274 50  0000 C CNN
+F 2 "" H 24150 32050 50  0001 C CNN
+F 3 "" H 24150 32050 50  0001 C CNN
+	1    24150 32050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog:AD5593R U?
+U 1 1 5C929F5B
+P 22500 30800
+F 0 "U?" V 22454 30160 50  0000 R CNN
+F 1 "AD5593R" V 22545 30160 50  0000 R CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 23500 30300 50  0001 C CIN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD5593R.pdf" H 22500 30600 50  0001 C CNN
+	1    22500 30800
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 5C98DFB4
+P 41350 2500
+F 0 "K?" H 41350 2900 50  0000 L CNN
+F 1 "24V_GP_RELAY_1" H 41250 2100 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 41800 2450 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 41350 2500 50  0001 C CNN
+	1    41350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP-rescue:FQP27P06-dk_Transistors-FETs-MOSFETs-Single Q?
+U 1 1 5C98FCD2
+P 41150 3300
+F 0 "Q?" H 41258 3353 60  0000 L CNN
+F 1 "GP_RELAY_NFET" H 41258 3247 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 41350 3500 60  0001 L CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 41350 3600 60  0001 L CNN
+F 4 "FQP27P06-ND" H 41350 3700 60  0001 L CNN "Digi-Key_PN"
+F 5 "FQP27P06" H 41350 3800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 41350 3900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 41350 4000 60  0001 L CNN "Family"
+F 8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 41350 4100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" H 41350 4200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 60V 27A TO-220" H 41350 4300 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 41350 4400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 41350 4500 60  0001 L CNN "Status"
+	1    41150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5C9907AB
+P 40550 2550
+F 0 "D?" V 40596 2422 50  0000 R CNN
+F 1 "DIODE" V 40505 2422 50  0000 R CNN
+F 2 "" H 40550 2550 50  0001 C CNN
+F 3 "~" H 40550 2550 50  0001 C CNN
+	1    40550 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	40550 2350 40550 2200
+Wire Wire Line
+	40550 2200 41150 2200
+Wire Wire Line
+	40550 2750 40550 2800
+Wire Wire Line
+	40550 2800 41150 2800
+$Comp
+L power:+5V #PWR?
+U 1 1 5C99D5BE
+P 41150 2050
+F 0 "#PWR?" H 41150 1900 50  0001 C CNN
+F 1 "+5V" H 41165 2223 50  0000 C CNN
+F 2 "" H 41150 2050 50  0001 C CNN
+F 3 "" H 41150 2050 50  0001 C CNN
+	1    41150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	41150 2800 41150 3100
+Connection ~ 41150 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5C9A634C
+P 41150 3900
+F 0 "#PWR?" H 41150 3650 50  0001 C CNN
+F 1 "GND" H 41155 3727 50  0000 C CNN
+F 2 "" H 41150 3900 50  0001 C CNN
+F 3 "" H 41150 3900 50  0001 C CNN
+	1    41150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	41150 2200 41150 2050
+Connection ~ 41150 2200
+Wire Wire Line
+	40850 3400 40850 3500
+$Comp
+L Device:R R?
+U 1 1 5C9C4898
+P 40850 3650
+F 0 "R?" H 40920 3696 50  0000 L CNN
+F 1 "10k" H 40920 3605 50  0000 L CNN
+F 2 "" V 40780 3650 50  0001 C CNN
+F 3 "~" H 40850 3650 50  0001 C CNN
+	1    40850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	40850 3800 40850 3850
+Wire Wire Line
+	41150 3500 41150 3850
+Wire Wire Line
+	40850 3850 41150 3850
+Connection ~ 41150 3850
+Wire Wire Line
+	41150 3850 41150 3900
+Wire Wire Line
+	40850 3400 40650 3400
+Connection ~ 40850 3400
+Text GLabel 40650 3400 0    50   Input ~ 0
+SIG_24V_RELAY_1
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 5CA2DE0F
+P 38800 2550
+F 0 "K?" H 38800 2950 50  0000 L CNN
+F 1 "24V_GP_RELAY_0" H 38700 2150 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 39250 2500 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 38800 2550 50  0001 C CNN
+	1    38800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP-rescue:FQP27P06-dk_Transistors-FETs-MOSFETs-Single Q?
+U 1 1 5CA2DE1E
+P 38600 3350
+F 0 "Q?" H 38708 3403 60  0000 L CNN
+F 1 "GP_RELAY_NFET" H 38708 3297 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 38800 3550 60  0001 L CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 38800 3650 60  0001 L CNN
+F 4 "FQP27P06-ND" H 38800 3750 60  0001 L CNN "Digi-Key_PN"
+F 5 "FQP27P06" H 38800 3850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 38800 3950 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 38800 4050 60  0001 L CNN "Family"
+F 8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 38800 4150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" H 38800 4250 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 60V 27A TO-220" H 38800 4350 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 38800 4450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 38800 4550 60  0001 L CNN "Status"
+	1    38600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5CA2DE24
+P 38000 2600
+F 0 "D?" V 38046 2472 50  0000 R CNN
+F 1 "DIODE" V 37955 2472 50  0000 R CNN
+F 2 "" H 38000 2600 50  0001 C CNN
+F 3 "~" H 38000 2600 50  0001 C CNN
+	1    38000 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	38000 2400 38000 2250
+Wire Wire Line
+	38000 2250 38600 2250
+Wire Wire Line
+	38000 2800 38000 2850
+Wire Wire Line
+	38000 2850 38600 2850
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA2DE2E
+P 38600 2100
+F 0 "#PWR?" H 38600 1950 50  0001 C CNN
+F 1 "+5V" H 38615 2273 50  0000 C CNN
+F 2 "" H 38600 2100 50  0001 C CNN
+F 3 "" H 38600 2100 50  0001 C CNN
+	1    38600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38600 2850 38600 3150
+Connection ~ 38600 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5CA2DE36
+P 38600 3950
+F 0 "#PWR?" H 38600 3700 50  0001 C CNN
+F 1 "GND" H 38605 3777 50  0000 C CNN
+F 2 "" H 38600 3950 50  0001 C CNN
+F 3 "" H 38600 3950 50  0001 C CNN
+	1    38600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38600 2250 38600 2100
+Connection ~ 38600 2250
+Wire Wire Line
+	38300 3450 38300 3550
+$Comp
+L Device:R R?
+U 1 1 5CA2DE3F
+P 38300 3700
+F 0 "R?" H 38370 3746 50  0000 L CNN
+F 1 "10k" H 38370 3655 50  0000 L CNN
+F 2 "" V 38230 3700 50  0001 C CNN
+F 3 "~" H 38300 3700 50  0001 C CNN
+	1    38300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38300 3850 38300 3900
+Wire Wire Line
+	38600 3550 38600 3900
+Wire Wire Line
+	38300 3900 38600 3900
+Connection ~ 38600 3900
+Wire Wire Line
+	38600 3900 38600 3950
+Wire Wire Line
+	38300 3450 38100 3450
+Connection ~ 38300 3450
+Text GLabel 38100 3450 0    50   Input ~ 0
+SIG_24V_RELAY_0
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 5CA5AF38
+P 41350 4900
+F 0 "K?" H 41350 5300 50  0000 L CNN
+F 1 "12V_GP_RELAY_0" H 41250 4500 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 41800 4850 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 41350 4900 50  0001 C CNN
+	1    41350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP-rescue:FQP27P06-dk_Transistors-FETs-MOSFETs-Single Q?
+U 1 1 5CA5AF47
+P 41150 5700
+F 0 "Q?" H 41258 5753 60  0000 L CNN
+F 1 "GP_RELAY_NFET" H 41258 5647 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 41350 5900 60  0001 L CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 41350 6000 60  0001 L CNN
+F 4 "FQP27P06-ND" H 41350 6100 60  0001 L CNN "Digi-Key_PN"
+F 5 "FQP27P06" H 41350 6200 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 41350 6300 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 41350 6400 60  0001 L CNN "Family"
+F 8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 41350 6500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" H 41350 6600 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 60V 27A TO-220" H 41350 6700 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 41350 6800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 41350 6900 60  0001 L CNN "Status"
+	1    41150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5CA5AF4D
+P 40550 4950
+F 0 "D?" V 40596 4822 50  0000 R CNN
+F 1 "DIODE" V 40505 4822 50  0000 R CNN
+F 2 "" H 40550 4950 50  0001 C CNN
+F 3 "~" H 40550 4950 50  0001 C CNN
+	1    40550 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	40550 4750 40550 4600
+Wire Wire Line
+	40550 4600 41150 4600
+Wire Wire Line
+	40550 5150 40550 5200
+Wire Wire Line
+	40550 5200 41150 5200
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA5AF57
+P 41150 4450
+F 0 "#PWR?" H 41150 4300 50  0001 C CNN
+F 1 "+5V" H 41165 4623 50  0000 C CNN
+F 2 "" H 41150 4450 50  0001 C CNN
+F 3 "" H 41150 4450 50  0001 C CNN
+	1    41150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	41150 5200 41150 5500
+Connection ~ 41150 5200
+$Comp
+L power:GND #PWR?
+U 1 1 5CA5AF5F
+P 41150 6300
+F 0 "#PWR?" H 41150 6050 50  0001 C CNN
+F 1 "GND" H 41155 6127 50  0000 C CNN
+F 2 "" H 41150 6300 50  0001 C CNN
+F 3 "" H 41150 6300 50  0001 C CNN
+	1    41150 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	41150 4600 41150 4450
+Connection ~ 41150 4600
+Wire Wire Line
+	40850 5800 40850 5900
+$Comp
+L Device:R R?
+U 1 1 5CA5AF68
+P 40850 6050
+F 0 "R?" H 40920 6096 50  0000 L CNN
+F 1 "10k" H 40920 6005 50  0000 L CNN
+F 2 "" V 40780 6050 50  0001 C CNN
+F 3 "~" H 40850 6050 50  0001 C CNN
+	1    40850 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	40850 6200 40850 6250
+Wire Wire Line
+	41150 5900 41150 6250
+Wire Wire Line
+	40850 6250 41150 6250
+Connection ~ 41150 6250
+Wire Wire Line
+	41150 6250 41150 6300
+Wire Wire Line
+	40850 5800 40650 5800
+Connection ~ 40850 5800
+Text GLabel 40650 5800 0    50   Input ~ 0
+SIG_12V_RELAY_0
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 5CA5AF76
+P 38800 4950
+F 0 "K?" H 38800 5350 50  0000 L CNN
+F 1 "24V_GP_RELAY_2" H 38700 4550 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 39250 4900 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 38800 4950 50  0001 C CNN
+	1    38800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP-rescue:FQP27P06-dk_Transistors-FETs-MOSFETs-Single Q?
+U 1 1 5CA5AF85
+P 38600 5750
+F 0 "Q?" H 38708 5803 60  0000 L CNN
+F 1 "GP_RELAY_NFET" H 38708 5697 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 38800 5950 60  0001 L CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 38800 6050 60  0001 L CNN
+F 4 "FQP27P06-ND" H 38800 6150 60  0001 L CNN "Digi-Key_PN"
+F 5 "FQP27P06" H 38800 6250 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 38800 6350 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 38800 6450 60  0001 L CNN "Family"
+F 8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 38800 6550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" H 38800 6650 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 60V 27A TO-220" H 38800 6750 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 38800 6850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 38800 6950 60  0001 L CNN "Status"
+	1    38600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5CA5AF8B
+P 38000 5000
+F 0 "D?" V 38046 4872 50  0000 R CNN
+F 1 "DIODE" V 37955 4872 50  0000 R CNN
+F 2 "" H 38000 5000 50  0001 C CNN
+F 3 "~" H 38000 5000 50  0001 C CNN
+	1    38000 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	38000 4800 38000 4650
+Wire Wire Line
+	38000 4650 38600 4650
+Wire Wire Line
+	38000 5200 38000 5250
+Wire Wire Line
+	38000 5250 38600 5250
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA5AF95
+P 38600 4500
+F 0 "#PWR?" H 38600 4350 50  0001 C CNN
+F 1 "+5V" H 38615 4673 50  0000 C CNN
+F 2 "" H 38600 4500 50  0001 C CNN
+F 3 "" H 38600 4500 50  0001 C CNN
+	1    38600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38600 5250 38600 5550
+Connection ~ 38600 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5CA5AF9D
+P 38600 6350
+F 0 "#PWR?" H 38600 6100 50  0001 C CNN
+F 1 "GND" H 38605 6177 50  0000 C CNN
+F 2 "" H 38600 6350 50  0001 C CNN
+F 3 "" H 38600 6350 50  0001 C CNN
+	1    38600 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38600 4650 38600 4500
+Connection ~ 38600 4650
+Wire Wire Line
+	38300 5850 38300 5950
+$Comp
+L Device:R R?
+U 1 1 5CA5AFA6
+P 38300 6100
+F 0 "R?" H 38370 6146 50  0000 L CNN
+F 1 "10k" H 38370 6055 50  0000 L CNN
+F 2 "" V 38230 6100 50  0001 C CNN
+F 3 "~" H 38300 6100 50  0001 C CNN
+	1    38300 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38300 6250 38300 6300
+Wire Wire Line
+	38600 5950 38600 6300
+Wire Wire Line
+	38300 6300 38600 6300
+Connection ~ 38600 6300
+Wire Wire Line
+	38600 6300 38600 6350
+Wire Wire Line
+	38300 5850 38100 5850
+Connection ~ 38300 5850
+Text GLabel 38100 5850 0    50   Input ~ 0
+SIG_24V_RELAY_2
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 5CA6342B
+P 38800 7300
+F 0 "K?" H 38800 7700 50  0000 L CNN
+F 1 "12V_GP_RELAY_0" H 38700 6900 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 39250 7250 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 38800 7300 50  0001 C CNN
+	1    38800 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP-rescue:FQP27P06-dk_Transistors-FETs-MOSFETs-Single Q?
+U 1 1 5CA6343A
+P 38600 8100
+F 0 "Q?" H 38708 8153 60  0000 L CNN
+F 1 "GP_RELAY_NFET" H 38708 8047 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 38800 8300 60  0001 L CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 38800 8400 60  0001 L CNN
+F 4 "FQP27P06-ND" H 38800 8500 60  0001 L CNN "Digi-Key_PN"
+F 5 "FQP27P06" H 38800 8600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 38800 8700 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 38800 8800 60  0001 L CNN "Family"
+F 8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 38800 8900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" H 38800 9000 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 60V 27A TO-220" H 38800 9100 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 38800 9200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 38800 9300 60  0001 L CNN "Status"
+	1    38600 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5CA63440
+P 38000 7350
+F 0 "D?" V 38046 7222 50  0000 R CNN
+F 1 "DIODE" V 37955 7222 50  0000 R CNN
+F 2 "" H 38000 7350 50  0001 C CNN
+F 3 "~" H 38000 7350 50  0001 C CNN
+	1    38000 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	38000 7150 38000 7000
+Wire Wire Line
+	38000 7000 38600 7000
+Wire Wire Line
+	38000 7550 38000 7600
+Wire Wire Line
+	38000 7600 38600 7600
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA6344A
+P 38600 6850
+F 0 "#PWR?" H 38600 6700 50  0001 C CNN
+F 1 "+5V" H 38615 7023 50  0000 C CNN
+F 2 "" H 38600 6850 50  0001 C CNN
+F 3 "" H 38600 6850 50  0001 C CNN
+	1    38600 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38600 7600 38600 7900
+Connection ~ 38600 7600
+$Comp
+L power:GND #PWR?
+U 1 1 5CA63452
+P 38600 8700
+F 0 "#PWR?" H 38600 8450 50  0001 C CNN
+F 1 "GND" H 38605 8527 50  0000 C CNN
+F 2 "" H 38600 8700 50  0001 C CNN
+F 3 "" H 38600 8700 50  0001 C CNN
+	1    38600 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38600 7000 38600 6850
+Connection ~ 38600 7000
+Wire Wire Line
+	38300 8200 38300 8300
+$Comp
+L Device:R R?
+U 1 1 5CA6345B
+P 38300 8450
+F 0 "R?" H 38370 8496 50  0000 L CNN
+F 1 "10k" H 38370 8405 50  0000 L CNN
+F 2 "" V 38230 8450 50  0001 C CNN
+F 3 "~" H 38300 8450 50  0001 C CNN
+	1    38300 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38300 8600 38300 8650
+Wire Wire Line
+	38600 8300 38600 8650
+Wire Wire Line
+	38300 8650 38600 8650
+Connection ~ 38600 8650
+Wire Wire Line
+	38600 8650 38600 8700
+Wire Wire Line
+	38300 8200 38100 8200
+Connection ~ 38300 8200
+Text GLabel 38100 8200 0    50   Input ~ 0
+SIG_12V_RELAY_1
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 5CA6B562
+P 41250 7250
+F 0 "K?" H 41250 7650 50  0000 L CNN
+F 1 "12V_GP_RELAY_0" H 41150 6850 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 41700 7200 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 41250 7250 50  0001 C CNN
+	1    41250 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MARP-rescue:FQP27P06-dk_Transistors-FETs-MOSFETs-Single Q?
+U 1 1 5CA6B571
+P 41050 8050
+F 0 "Q?" H 41158 8103 60  0000 L CNN
+F 1 "GP_RELAY_NFET" H 41158 7997 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 41250 8250 60  0001 L CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 41250 8350 60  0001 L CNN
+F 4 "FQP27P06-ND" H 41250 8450 60  0001 L CNN "Digi-Key_PN"
+F 5 "FQP27P06" H 41250 8550 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 41250 8650 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 41250 8750 60  0001 L CNN "Family"
+F 8 "https://www.fairchildsemi.com/datasheets/FQ/FQP27P06.pdf" H 41250 8850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FQP27P06/FQP27P06-ND/965349" H 41250 8950 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 60V 27A TO-220" H 41250 9050 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 41250 9150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 41250 9250 60  0001 L CNN "Status"
+	1    41050 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5CA6B577
+P 40450 7300
+F 0 "D?" V 40496 7172 50  0000 R CNN
+F 1 "DIODE" V 40405 7172 50  0000 R CNN
+F 2 "" H 40450 7300 50  0001 C CNN
+F 3 "~" H 40450 7300 50  0001 C CNN
+	1    40450 7300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	40450 7100 40450 6950
+Wire Wire Line
+	40450 6950 41050 6950
+Wire Wire Line
+	40450 7500 40450 7550
+Wire Wire Line
+	40450 7550 41050 7550
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA6B581
+P 41050 6800
+F 0 "#PWR?" H 41050 6650 50  0001 C CNN
+F 1 "+5V" H 41065 6973 50  0000 C CNN
+F 2 "" H 41050 6800 50  0001 C CNN
+F 3 "" H 41050 6800 50  0001 C CNN
+	1    41050 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	41050 7550 41050 7850
+Connection ~ 41050 7550
+$Comp
+L power:GND #PWR?
+U 1 1 5CA6B589
+P 41050 8650
+F 0 "#PWR?" H 41050 8400 50  0001 C CNN
+F 1 "GND" H 41055 8477 50  0000 C CNN
+F 2 "" H 41050 8650 50  0001 C CNN
+F 3 "" H 41050 8650 50  0001 C CNN
+	1    41050 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	41050 6950 41050 6800
+Connection ~ 41050 6950
+Wire Wire Line
+	40750 8150 40750 8250
+$Comp
+L Device:R R?
+U 1 1 5CA6B592
+P 40750 8400
+F 0 "R?" H 40820 8446 50  0000 L CNN
+F 1 "10k" H 40820 8355 50  0000 L CNN
+F 2 "" V 40680 8400 50  0001 C CNN
+F 3 "~" H 40750 8400 50  0001 C CNN
+	1    40750 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	40750 8550 40750 8600
+Wire Wire Line
+	41050 8250 41050 8600
+Wire Wire Line
+	40750 8600 41050 8600
+Connection ~ 41050 8600
+Wire Wire Line
+	41050 8600 41050 8650
+Wire Wire Line
+	40750 8150 40550 8150
+Connection ~ 40750 8150
+Text GLabel 40550 8150 0    50   Input ~ 0
+SIG_12V_RELAY_0
+Text Notes 37300 1350 0    394  ~ 0
+GEN PURPOSE HUB
+Text Notes 1450 29650 0    394  ~ 0
+THERMOCOUPLE HUB
+Text Notes 18650 28950 0    394  ~ 0
+PRESSURE TRANSDUCER HUB
+Text GLabel 1200 20250 2    50   Input ~ 0
+SPI0_SO
+Text GLabel 1200 20400 2    50   Input ~ 0
+SPI0_SCK
 $EndSCHEMATC
