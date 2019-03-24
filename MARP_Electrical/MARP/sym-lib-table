@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name MARP)(type Legacy)(uri ${KIPRJMOD}/Libraries/MARP.lib)(options "")(descr ""))
   (lib (name MARP-rescue)(type Legacy)(uri ${KIPRJMOD}/MARP-rescue.lib)(options "")(descr ""))
+  (lib (name compute_module-rescue)(type Legacy)(uri /home/penguin/Documents/raspberry-pi-compute-module-base-board/compute_module-rescue.lib)(options "")(descr ""))
 )

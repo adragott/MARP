@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr E 44000 34000
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "MARP Brain"
 Date ""
 Rev ""
@@ -3438,15 +3438,4 @@ Text GLabel 29200 21750 0    50   Input ~ 0
 DAQ_I2C_SDA
 Text GLabel 29200 21850 0    50   Input ~ 0
 DAQ_I2C_SCL
-$Comp
-L Battery_Management:AS8506C U?
-U 1 1 5C9B506A
-P 14050 14800
-F 0 "U?" H 14050 13914 50  0000 C CNN
-F 1 "AS8506C" H 14050 13823 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm" H 14050 14800 50  0001 C CNN
-F 3 "http://ams.com/eng/content/download/476603/1402377/252935" H 13100 15000 50  0001 C CNN
-	1    14050 14800
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
