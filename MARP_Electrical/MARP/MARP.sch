@@ -833,7 +833,7 @@ F 8 "Unavailable" H 20950 23250 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 Text Notes 19650 20300 0    394  ~ 0
-DAQ BRAIN
+DAQ HEALTH MON BRAIN
 $Comp
 L MARP-rescue:MAX31855KASA_-dk_Interface-Sensor-and-Detector-Interfaces U?
 U 1 1 5CB683CD
@@ -3333,10 +3333,6 @@ Wire Wire Line
 	29350 21750 29200 21750
 Wire Wire Line
 	29350 21850 29200 21850
-Text GLabel 29200 21750 0    50   Input ~ 0
-BRAIN_SDA
-Text GLabel 29200 21850 0    50   Input ~ 0
-BRAIN_SCL
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J?
 U 1 1 5DA73EFE
@@ -3438,4 +3434,8 @@ Text Notes 3550 2500 0    236  ~ 0
 USB
 Text Notes 12250 2650 0    236  ~ 0
 900MHz XBEE
+Text GLabel 29200 21750 0    50   Input ~ 0
+DAQ_I2C_SDA
+Text GLabel 29200 21850 0    50   Input ~ 0
+DAQ_I2C_SCL
 $EndSCHEMATC
