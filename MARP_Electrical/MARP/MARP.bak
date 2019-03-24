@@ -833,7 +833,7 @@ F 8 "Unavailable" H 20950 23250 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 Text Notes 19650 20300 0    394  ~ 0
-DAQ BRAIN
+DAQ HEALTH MON BRAIN
 $Comp
 L MARP-rescue:MAX31855KASA_-dk_Interface-Sensor-and-Detector-Interfaces U?
 U 1 1 5CB683CD
